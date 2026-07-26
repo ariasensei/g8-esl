@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260723-05-e9a76f4"}');</script><script src="/_sdk/e358eac22bd01364.telemetry_sdk.js" integrity="sha512-KPxp3rw4K8Nu9ceWJc3gyM7srgaZxiFWOVbyu260EYzzAqdz10mfo5xyXrCx+wEKtGo77JbtmwXvFLbwrGzwvw=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expressing Opinions | Grade 8 ESL</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #18314f;
+      --blue: #4d8df7;
+      --purple: #8168e8;
+      --yellow: #ffd66b;
+      --mint: #a9e9d0;
+      --peach: #ffb88c;
+      --paper: #f7fbff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      width: 100%;
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(#cfe1f8 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    button, input, textarea { font: inherit; }
+    button:focus-visible, a:focus-visible, textarea:focus-visible {
+      outline: 3px solid #18314f;
+      outline-offset: 3px;
+    }
+
+    .lesson-shell {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .nav-chip {
+      white-space: nowrap;
+      border: 1px solid #d8e6fa;
+      background: #fff;
+      color: #315378;
+      transition: 0.2s ease;
+    }
+    .nav-chip:hover { background: #eaf3ff; transform: translateY(-1px); }
+
+    .lesson-card {
+      border: 1px solid rgba(182, 209, 241, 0.8);
+      box-shadow: 0 12px 30px rgba(49, 92, 141, 0.10);
+    }
+
+    .section-kicker {
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .75rem;
+      font-weight: 800;
+      color: #5c67a8;
+    }
+
+    .objective-card {
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .objective-card:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 0 14px 26px rgba(60, 83, 130, .14); }
+
+    .choice-card, .vocab-card, .phrase-btn, .prompt-card, .topic-chip, .debate-btn {
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .choice-card:hover, .vocab-card:hover, .phrase-btn:hover, .prompt-card:hover, .topic-chip:hover, .debate-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 22px rgba(61, 84, 128, .13);
+    }
+
+    .is-selected {
+      border-color: #315ea9 !important;
+      background: #e6f0ff !important;
+      box-shadow: 0 0 0 3px rgba(77, 141, 247, .20) !important;
+    }
+
+    .vocab-card .vocab-detail { display: none; }
+    .vocab-card.is-revealed .vocab-detail { display: block; animation: rise .22s ease both; }
+    .vocab-card.is-revealed .reveal-hint { display: none; }
+
+    .answer-panel { display: none; }
+    .answer-panel.is-open { display: flex; animation: rise .22s ease both; }
+
+    .student-note {
+      min-height: 78px;
+      resize: vertical;
+      border: 2px dashed #bcd0ed;
+      background: #fff;
+    }
+    .student-note:focus { border-color: var(--purple); outline: none; }
+
+    .notebook-lines {
+      background-image: linear-gradient(to bottom, transparent 31px, #dbe9fb 32px);
+      background-size: 100% 33px;
+      line-height: 33px;
+    }
+
+    .float-random {
+      position: fixed;
+      z-index: 20;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      box-shadow: 0 16px 36px rgba(47, 68, 119, .26);
+    }
+
+    .hero-orb { animation: drift 4.8s ease-in-out infinite; }
+    .hero-orb.two { animation-delay: -2s; }
+    .spark { animation: pulseSpark 2.7s ease-in-out infinite; }
+    .spark.delay { animation-delay: -1.25s; }
+
+    @keyframes drift {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-10px) rotate(4deg); }
+    }
+    @keyframes pulseSpark {
+      0%, 100% { transform: scale(.86); opacity: .6; }
+      50% { transform: scale(1.12); opacity: 1; }
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .float-random { right: .8rem; bottom: .8rem; }
+    }
+  </style>
+  <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
+  <script src="/_sdk/6030e540d4419216.resizing_sdk.js" type="text/javascript" integrity="sha512-b5KWzyoXsbWP4smq4sftIi6Kts4YVBpBsz0BwCViwbBJkK64a3/Z6ZMdWA+qnplNcXw4mhZeqvQi3mOosiRJdA=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(247, 251, 255);">
+  <div class="lesson-shell">
+   <header class="sticky top-0 z-30 border-b border-blue-100 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex w-full max-w-7xl items-center gap-4 px-4 py-3 sm:px-6"><a href="#top" class="flex shrink-0 items-center gap-2 font-extrabold text-[#315378]" aria-label="Back to lesson start"> <span class="grid h-9 w-9 place-items-center rounded-xl bg-[#ffd66b] text-[#315378]"><i data-lucide="messages-square" class="h-5 w-5"></i></span> <span class="hidden sm:inline">Opinion Lab</span> </a>
+     <nav class="flex min-w-0 flex-1 gap-2 overflow-x-auto pb-1" aria-label="Lesson sections"><a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#warmup">Warm-up</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#vocabulary">Vocabulary</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#grammar">Grammar</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#reading">Reading</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#speaking">Speaking</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#writing">Writing</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#homework">Homework</a>
+     </nav>
+    </div>
+   </header>
+   <main id="top">
+    <section data-template-id="hero-section" class="canva-banner relative overflow-hidden bg-gradient-to-br from-[#dcecff] via-[#eef0ff] to-[#fff6c9]" style="background: linear-gradient(135deg, rgb(220, 236, 255), rgb(238, 240, 255), rgb(255, 246, 201));">
+     <div class="hero-orb absolute -left-16 top-16 h-36 w-36 rounded-full bg-[#a9e9d0]/70"></div>
+     <div class="hero-orb two absolute right-8 top-6 h-20 w-20 rounded-full bg-[#ffb88c]/70"></div><span class="spark absolute left-[13%] top-10 text-3xl">✦</span> <span class="spark delay absolute right-[27%] top-24 text-2xl text-[#8168e8]">✦</span>
+     <div class="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.15fr_.85fr] lg:py-20">
+      <div class="animate-[rise_.5s_ease_both]">
+       <p data-template-id="hero-eyebrow" class="canva-tag mb-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-extrabold text-[#5c67a8] shadow-sm" style="color: rgb(92, 103, 168); font-weight: 800; font-style: normal; font-size: 16px;">Grade 8 ESL • Lesson 2</p>
+       <h1 data-template-id="hero-title" class="canva-text max-w-3xl font-extrabold tracking-[-0.04em] text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 32px; line-height: 1.05;">Expressing Opinions and Agreeing or Disagreeing</h1>
+       <p data-template-id="hero-subtitle" class="canva-text mt-5 max-w-2xl font-bold text-[#536a88]" style="color: rgb(83, 106, 136); font-weight: 700; font-style: normal; font-size: 19px;">Grade 8 ESL Lesson 1 </p>
+       <p data-template-id="teacher-note" class="canva-text mt-4 max-w-2xl rounded-2xl border border-white bg-white/80 px-5 py-4 font-medium text-[#315378] shadow-sm" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">Practice opinion phrases, polite disagreement, reading, speaking, and writing.</p>
+       <div class="mt-7 flex flex-wrap gap-3"><a href="#warmup" data-template-id="hero-start-button" class="canva-button inline-flex items-center gap-2 rounded-xl px-5 py-3 font-extrabold shadow-md transition hover:-translate-y-1" aria-label="Start the warm-up activity" style="background: rgb(77, 141, 247); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Start warm-up</a> <a href="#vocabulary" data-template-id="hero-vocabulary-link" class="canva-link inline-flex items-center gap-2 rounded-xl border-2 border-[#c6dafa] bg-white px-5 py-3 font-extrabold text-[#315378] transition hover:-translate-y-1" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Explore words</a>
+       </div>
+      </div>
+      <div class="relative mx-auto w-full max-w-md">
+       <div class="absolute -inset-3 rotate-3 rounded-[2.5rem] bg-white/65"></div>
+       <div class="relative rounded-[2.25rem] border-4 border-white bg-[#8fc8ff] p-6 shadow-xl">
+        <div class="absolute -right-5 -top-4 rounded-2xl bg-[#ffd66b] p-3 shadow-md"><i data-lucide="message-circle" class="h-8 w-8 text-[#315378]"></i>
+        </div>
+        <svg viewBox="0 0 420 320" role="img" aria-label="Student speaking confidently in a classroom" class="h-auto w-full"><rect x="12" y="18" width="396" height="274" rx="28" fill="#EAF6FF"></rect> <rect x="34" y="40" width="170" height="90" rx="10" fill="#5B8FD8"></rect> <rect x="45" y="50" width="148" height="70" rx="5" fill="#B7E7B6"></rect> <path d="M70 103c18-24 35-14 48-42 10 25 25 16 42 41" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"></path> <rect x="281" y="176" width="87" height="67" rx="8" fill="#FFD66B"></rect> <rect x="292" y="186" width="65" height="9" rx="4" fill="#fff"></rect> <rect x="292" y="204" width="48" height="9" rx="4" fill="#fff"></rect> <ellipse cx="210" cy="259" rx="143" ry="16" fill="#75B5E7"></ellipse> <path d="M155 245c0-53 19-91 57-91s57 38 57 91" fill="#8168E8"></path> <path d="M167 161c6-33 31-55 60-55 31 0 57 23 60 60-21-14-38-18-62-17-21 1-35 5-51 16 1-2 1-3 2-4z" fill="#27394D"></path> <circle cx="210" cy="148" r="42" fill="#A76B4F"></circle> <path d="M178 126c12-33 60-34 68 3-16-11-47-14-68-3z" fill="#27394D"></path> <circle cx="195" cy="148" r="3.5" fill="#18314F"></circle> <circle cx="225" cy="148" r="3.5" fill="#18314F"></circle> <path d="M198 166c9 7 17 7 25 0" fill="none" stroke="#18314F" stroke-width="3" stroke-linecap="round"></path> <path d="M187 193h47l24 58h-91z" fill="#FFB88C"></path> <path d="M226 196c26 16 47 27 61 1" fill="none" stroke="#A76B4F" stroke-width="13" stroke-linecap="round"></path> <circle cx="291" cy="196" r="8" fill="#A76B4F"></circle> <path d="M272 77h84c11 0 18 8 18 18v24c0 10-7 18-18 18h-38l-18 18 3-18h-31c-10 0-18-8-18-18V95c0-10 8-18 18-18z" fill="#fff"></path> <path d="M291 108h49M291 121h30" stroke="#8168E8" stroke-width="6" stroke-linecap="round"></path> <path d="M95 215l22-15 21 15v28H95z" fill="#fff"></path> <path d="M110 212v30" stroke="#FFB88C" stroke-width="4"></path> <circle cx="109" cy="203" r="7" fill="#FFD66B"></circle>
+        </svg>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <div class="mb-7 flex flex-wrap items-end justify-between gap-4">
+      <div>
+       <p class="section-kicker">Today’s mission</p>
+       <h2 data-template-id="objectives-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">By the end, you can…</h2>
+      </div>
+      <div class="rounded-full bg-[#fff2bd] px-4 py-2 text-sm font-bold text-[#73541d]">
+       5 learning targets
+      </div>
+     </div>
+     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <article data-template-id="objective-1" class="canva-card objective-card rounded-3xl bg-white p-5" style="background: rgb(255, 255, 255);"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-[#dff7eb] text-[#228a62]"><i data-lucide="check" class="h-5 w-5"></i></span>
+       <p data-template-id="objective-1-text" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Express opinions confidently</p>
+      </article>
+      <article data-template-id="objective-2" class="canva-card objective-card rounded-3xl bg-white p-5" style="background: rgb(255, 255, 255);"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-[#eee9ff] text-[#6950c9]"><i data-lucide="check" class="h-5 w-5"></i></span>
+       <p data-template-id="objective-2-text" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Agree and disagree politely</p>
+      </article>
+      <article data-template-id="objective-3" class="canva-card objective-card rounded-3xl bg-white p-5" style="background: rgb(255, 255, 255);"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-[#fff2bd] text-[#9b7422]"><i data-lucide="check" class="h-5 w-5"></i></span>
+       <p data-template-id="objective-3-text" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Give simple reasons</p>
+      </article>
+      <article data-template-id="objective-4" class="canva-card objective-card rounded-3xl bg-white p-5" style="background: rgb(255, 255, 255);"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-[#ffe7d6] text-[#be7042]"><i data-lucide="check" class="h-5 w-5"></i></span>
+       <p data-template-id="objective-4-text" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Speak using complete sentences</p>
+      </article>
+      <article data-template-id="objective-5" class="canva-card objective-card rounded-3xl bg-white p-5" style="background: rgb(255, 255, 255);"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-[#dfeeff] text-[#3e78cc]"><i data-lucide="check" class="h-5 w-5"></i></span>
+       <p data-template-id="objective-5-text" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Write a short opinion paragraph</p>
+      </article>
+     </div>
+    </section>
+    <section id="warmup" class="scroll-mt-24 bg-[#edf7ff] py-14">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <div class="grid gap-9 lg:grid-cols-[.85fr_1.15fr]">
+       <div>
+        <p class="section-kicker">Warm-up · 7 minutes</p>
+        <h2 data-template-id="warmup-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Would You Rather?</h2>
+        <p data-template-id="warmup-description" class="canva-text mt-3 max-w-md font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 17px;">Choose one option, then share your opinion with a partner.</p>
+        <div data-template-id="complete-sentences-reminder" class="canva-banner mt-6 rounded-3xl border-2 border-[#ffe18a] bg-[#fff9db] p-5 text-[#73541d]" style="background: rgb(255, 249, 219); color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">Use complete sentences.</div>
+        <div class="mt-6 rounded-3xl bg-[#8168e8] p-6 text-white shadow-lg">
+         <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#ded7ff]">Speaking prompt</p>
+         <p id="rather-prompt" class="mt-2 text-xl font-extrabold" aria-live="polite">Say: I would rather live in the mountains because ___.</p>
+        </div>
+       </div>
+       <div class="grid gap-4 sm:grid-cols-2">
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="text-xs font-extrabold uppercase tracking-[.12em] text-[#738aa3]">Choose one</p>
+         <div class="mt-4 grid gap-2"><button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="live in the mountains">🏔️ live in the mountains</button> <button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="live at the beach">🏖️ live at the beach</button>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="text-xs font-extrabold uppercase tracking-[.12em] text-[#738aa3]">Choose one</p>
+         <div class="mt-4 grid gap-2"><button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="have a pet dog">🐶 have a pet dog</button> <button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="have a pet cat">🐱 have a pet cat</button>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="text-xs font-extrabold uppercase tracking-[.12em] text-[#738aa3]">Choose one</p>
+         <div class="mt-4 grid gap-2"><button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="read books">📚 read books</button> <button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="watch movies">🎬 watch movies</button>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="text-xs font-extrabold uppercase tracking-[.12em] text-[#738aa3]">Choose one</p>
+         <div class="mt-4 grid gap-2"><button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="travel to space">🚀 travel to space</button> <button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="travel under the ocean">🐠 travel under the ocean</button>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5 sm:col-span-2">
+         <p class="text-xs font-extrabold uppercase tracking-[.12em] text-[#738aa3]">Choose one</p>
+         <div class="mt-4 grid gap-2 sm:grid-cols-2"><button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="eat pizza every day">🍕 eat pizza every day</button> <button type="button" class="choice-card rather-choice rounded-2xl border-2 border-[#dbe8f8] px-4 py-3 text-left font-bold" data-choice="eat hamburgers every day">🍔 eat hamburgers every day</button>
+         </div>
+        </article>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="vocabulary" class="scroll-mt-24 py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+       <div>
+        <p class="section-kicker">Vocabulary explorer</p>
+        <h2 data-template-id="vocab-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Vocabulary Explorer</h2>
+        <p data-template-id="vocab-description" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 17px;">Click a card to reveal the meaning and an example sentence.</p>
+       </div>
+       <div class="flex flex-wrap gap-2" aria-label="Vocabulary filters"><button type="button" class="vocab-filter is-selected rounded-full border-2 border-[#dbe8f8] bg-white px-4 py-2 text-sm font-bold" data-filter="all">All</button> <button type="button" class="vocab-filter rounded-full border-2 border-[#dbe8f8] bg-white px-4 py-2 text-sm font-bold" data-filter="opinion">Opinion</button> <button type="button" class="vocab-filter rounded-full border-2 border-[#dbe8f8] bg-white px-4 py-2 text-sm font-bold" data-filter="agree">Agree</button> <button type="button" class="vocab-filter rounded-full border-2 border-[#dbe8f8] bg-white px-4 py-2 text-sm font-bold" data-filter="feelings">Feelings</button> <button type="button" class="vocab-filter rounded-full border-2 border-[#dbe8f8] bg-white px-4 py-2 text-sm font-bold" data-filter="reasons">Reasons</button>
+       </div>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="opinion">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#e8eeff] px-3 py-1 text-xs font-extrabold text-[#6351bb]">Opinion</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">opinion</h3><p class="mt-1 font-bold text-[#8168e8]">意见 · yì jiàn</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> what you think</p>
+         <p class="mt-2 rounded-xl bg-[#f3f7ff] p-3"><b>Example:</b> My opinion is that reading is fun.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="agree">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#dff7eb] px-3 py-1 text-xs font-extrabold text-[#26835f]">Agree</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">agree</h3><p class="mt-1 font-bold text-[#26835f]">同意 · tóng yì</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> to have the same opinion</p>
+         <p class="mt-2 rounded-xl bg-[#f0fff7] p-3"><b>Example:</b> I agree with my teacher.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="agree">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#ffe7d6] px-3 py-1 text-xs font-extrabold text-[#b76b41]">Agree</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">disagree</h3><p class="mt-1 font-bold text-[#b76b41]">不同意 · bù tóng yì</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> to have a different opinion</p>
+         <p class="mt-2 rounded-xl bg-[#fff5ed] p-3"><b>Example:</b> I disagree because I like cats.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="reasons">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#fff2bd] px-3 py-1 text-xs font-extrabold text-[#926d1e]">Reasons</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">reason</h3><p class="mt-1 font-bold text-[#a17822]">原因 · yuán yīn</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> why something happens</p>
+         <p class="mt-2 rounded-xl bg-[#fffbea] p-3"><b>Example:</b> My reason is that it is interesting.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="opinion">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#e8eeff] px-3 py-1 text-xs font-extrabold text-[#6351bb]">Opinion</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">prefer</h3><p class="mt-1 font-bold text-[#8168e8]">更喜欢 · gèng xǐ huān</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> to like something more</p>
+         <p class="mt-2 rounded-xl bg-[#f3f7ff] p-3"><b>Example:</b> I prefer chocolate over vanilla.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="feelings">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#dff7eb] px-3 py-1 text-xs font-extrabold text-[#26835f]">Feelings</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">interesting</h3><p class="mt-1 font-bold text-[#26835f]">有趣的 · yǒu qù de</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> fun or exciting to learn</p>
+         <p class="mt-2 rounded-xl bg-[#f0fff7] p-3"><b>Example:</b> Science is interesting.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="feelings">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#ffe7d6] px-3 py-1 text-xs font-extrabold text-[#b76b41]">Feelings</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">boring</h3><p class="mt-1 font-bold text-[#b76b41]">无聊的 · wú liáo de</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> not interesting</p>
+         <p class="mt-2 rounded-xl bg-[#fff5ed] p-3"><b>Example:</b> Waiting in line is boring.</p>
+        </div></button> <button type="button" class="vocab-card lesson-card rounded-3xl bg-white p-5 text-left" data-group="reasons">
+        <div class="flex items-start justify-between gap-3">
+         <span class="rounded-xl bg-[#fff2bd] px-3 py-1 text-xs font-extrabold text-[#926d1e]">Reasons</span><i data-lucide="rotate-3d" class="h-5 w-5 text-[#7790af]"></i>
+        </div><h3 class="mt-4 text-2xl font-extrabold">important</h3><p class="mt-1 font-bold text-[#a17822]">重要的 · zhòng yào de</p><p class="reveal-hint mt-4 text-sm font-bold text-[#7289a3]">Click to reveal →</p>
+        <div class="vocab-detail mt-4 border-t border-[#e5eef9] pt-4 text-sm">
+         <p><b>Meaning:</b> something that has great value</p>
+         <p class="mt-2 rounded-xl bg-[#fffbea] p-3"><b>Example:</b> Family is important.</p>
+        </div></button>
+      </div>
+     </div>
+    </section>
+    <section id="grammar" class="scroll-mt-24 bg-[#f4efff] py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="section-kicker">Grammar lab</p>
+      <h2 data-template-id="grammar-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Build Better Opinion Sentences</h2>
+      <p data-template-id="grammar-reminder" class="canva-banner mt-4 max-w-3xl rounded-2xl bg-white px-5 py-4 font-bold text-[#6351bb] shadow-sm" style="background: rgb(255, 255, 255); color: rgb(99, 81, 187); font-weight: 800; font-style: normal; font-size: 17px;">Disagreeing is okay — be polite and explain your reason.</p>
+      <div class="mt-8 grid gap-5 lg:grid-cols-3">
+       <article class="lesson-card rounded-3xl border-t-8 border-[#4d8df7] bg-white p-6">
+        <h3 data-template-id="opinion-group-title" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Giving an Opinion</h3>
+        <div class="mt-5 flex flex-wrap gap-2"><button type="button" class="phrase-btn rounded-xl bg-[#e7f1ff] px-4 py-3 font-bold text-[#315ea9]" data-phrase="I think">I think…</button> <button type="button" class="phrase-btn rounded-xl bg-[#e7f1ff] px-4 py-3 font-bold text-[#315ea9]" data-phrase="I believe">I believe…</button> <button type="button" class="phrase-btn rounded-xl bg-[#e7f1ff] px-4 py-3 font-bold text-[#315ea9]" data-phrase="In my opinion">In my opinion…</button> <button type="button" class="phrase-btn rounded-xl bg-[#e7f1ff] px-4 py-3 font-bold text-[#315ea9]" data-phrase="I feel that">I feel that…</button>
+        </div>
+       </article>
+       <article class="lesson-card rounded-3xl border-t-8 border-[#43b889] bg-white p-6">
+        <h3 data-template-id="agree-group-title" class="canva-text font-extrabold text-[#287155]" style="color: rgb(40, 113, 85); font-weight: 800; font-style: normal; font-size: 19px;">Agreeing</h3>
+        <div class="mt-5 flex flex-wrap gap-2"><button type="button" class="phrase-btn rounded-xl bg-[#e6fbf0] px-4 py-3 font-bold text-[#287155]" data-phrase="I agree">I agree.</button> <button type="button" class="phrase-btn rounded-xl bg-[#e6fbf0] px-4 py-3 font-bold text-[#287155]" data-phrase="I agree because">I agree because…</button> <button type="button" class="phrase-btn rounded-xl bg-[#e6fbf0] px-4 py-3 font-bold text-[#287155]" data-phrase="That’s true">That’s true.</button> <button type="button" class="phrase-btn rounded-xl bg-[#e6fbf0] px-4 py-3 font-bold text-[#287155]" data-phrase="You’re right">You’re right.</button>
+        </div>
+       </article>
+       <article class="lesson-card rounded-3xl border-t-8 border-[#ff9e68] bg-white p-6">
+        <h3 data-template-id="disagree-group-title" class="canva-text font-extrabold text-[#a55c38]" style="color: rgb(165, 92, 56); font-weight: 800; font-style: normal; font-size: 19px;">Disagreeing Politely</h3>
+        <div class="mt-5 flex flex-wrap gap-2"><button type="button" class="phrase-btn rounded-xl bg-[#fff0e8] px-4 py-3 font-bold text-[#a55c38]" data-phrase="I don’t agree">I don’t agree.</button> <button type="button" class="phrase-btn rounded-xl bg-[#fff0e8] px-4 py-3 font-bold text-[#a55c38]" data-phrase="I disagree because">I disagree because…</button> <button type="button" class="phrase-btn rounded-xl bg-[#fff0e8] px-4 py-3 font-bold text-[#a55c38]" data-phrase="I see your point, but">I see your point, but…</button>
+        </div>
+       </article>
+      </div>
+      <div class="mt-7 rounded-[2rem] bg-[#18314f] p-6 text-white shadow-xl sm:p-8">
+       <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+         <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#a9e9d0]">Sentence builder</p>
+         <p id="builder-sentence" class="mt-2 text-xl font-extrabold sm:text-2xl" aria-live="polite">Choose a phrase above to build your sentence!</p>
+        </div><span class="rounded-full bg-white/15 px-4 py-2 text-sm font-bold">Add your reason: because…</span>
+       </div>
+      </div>
+      <div class="mt-10">
+       <h3 data-template-id="practice-title" class="canva-text font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 19px;">Guided Practice: Fill in the Blanks</h3>
+       <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="font-bold">I ______ chocolate more than vanilla.</p><button type="button" class="answer-toggle mt-4 rounded-xl bg-[#e8eeff] px-3 py-2 text-sm font-extrabold text-[#6351bb]" data-answer="prefer">Show answer</button>
+         <div class="answer-panel mt-3 items-center gap-2 rounded-xl bg-[#f4f1ff] p-3 text-sm font-bold text-[#6351bb]">
+          ✓ <span>prefer</span>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="font-bold">I ______ with my teacher.</p><button type="button" class="answer-toggle mt-4 rounded-xl bg-[#e6fbf0] px-3 py-2 text-sm font-extrabold text-[#287155]" data-answer="agree">Show answer</button>
+         <div class="answer-panel mt-3 items-center gap-2 rounded-xl bg-[#f0fff7] p-3 text-sm font-bold text-[#287155]">
+          ✓ <span>agree</span>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="font-bold">My ______ is that reading is fun.</p><button type="button" class="answer-toggle mt-4 rounded-xl bg-[#e8eeff] px-3 py-2 text-sm font-extrabold text-[#6351bb]" data-answer="opinion">Show answer</button>
+         <div class="answer-panel mt-3 items-center gap-2 rounded-xl bg-[#f4f1ff] p-3 text-sm font-bold text-[#6351bb]">
+          ✓ <span>opinion</span>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="font-bold">Exercise is very ______.</p><button type="button" class="answer-toggle mt-4 rounded-xl bg-[#fff2bd] px-3 py-2 text-sm font-extrabold text-[#926d1e]" data-answer="important">Show answer</button>
+         <div class="answer-panel mt-3 items-center gap-2 rounded-xl bg-[#fffbea] p-3 text-sm font-bold text-[#926d1e]">
+          ✓ <span>important</span>
+         </div>
+        </article>
+        <article class="lesson-card rounded-3xl bg-white p-5">
+         <p class="font-bold">Watching TV all day is ______.</p><button type="button" class="answer-toggle mt-4 rounded-xl bg-[#fff0e8] px-3 py-2 text-sm font-extrabold text-[#a55c38]" data-answer="boring">Show answer</button>
+         <div class="answer-panel mt-3 items-center gap-2 rounded-xl bg-[#fff5ed] p-3 text-sm font-bold text-[#a55c38]">
+          ✓ <span>boring</span>
+         </div>
+        </article>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="reading" class="scroll-mt-24 py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="section-kicker">Reading activity · 10 minutes</p>
+      <h2 data-template-id="reading-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Read: Which Hobby is Better?</h2>
+      <div class="mt-8 grid gap-7 lg:grid-cols-[1.1fr_.9fr]">
+       <article data-template-id="reading-story-card" class="canva-card rounded-[2rem] bg-white p-6 sm:p-8" style="background: rgb(255, 255, 255);">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+         <h3 data-template-id="story-title" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Which Hobby is Better?</h3><span class="rounded-full bg-[#fff2bd] px-4 py-2 text-sm font-extrabold text-[#8b681d]">Read, then answer!</span>
+        </div>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+         <div class="rounded-3xl bg-[#eaf4ff] p-5">
+          <div class="flex items-center gap-3">
+           <span class="grid h-12 w-12 place-items-center rounded-full bg-[#ffb88c] text-2xl">📚</span><b class="text-lg">Emma</b>
+          </div>
+          <p class="mt-4 leading-7 text-[#385a7a]">Emma enjoys reading books. In her opinion, reading is exciting because she can learn new ideas and visit different worlds in her imagination. She thinks reading helps people become more creative.</p>
+         </div>
+         <div class="rounded-3xl bg-[#f2eeff] p-5">
+          <div class="flex items-center gap-3">
+           <span class="grid h-12 w-12 place-items-center rounded-full bg-[#a9e9d0] text-2xl">🎮</span><b class="text-lg">Lucas</b>
+          </div>
+          <p class="mt-4 leading-7 text-[#385a7a]">Lucas enjoys playing video games. He believes games are fun because he can solve problems and play with friends. He agrees that reading is useful, but he prefers video games after school.</p>
+         </div>
+        </div>
+        <div class="mt-5 rounded-3xl border-2 border-dashed border-[#c9daf0] bg-[#f7fbff] p-5">
+         <p class="font-bold text-[#315378]">Emma and Lucas have different opinions, but they listen respectfully. They do not argue.</p>
+        </div>
+       </article>
+       <aside class="lesson-card rounded-[2rem] bg-[#18314f] p-6 text-white sm:p-8">
+        <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#a9e9d0]">Quick check</p>
+        <div class="mt-5 space-y-3"><button type="button" class="reading-question w-full rounded-2xl bg-white/10 p-4 text-left font-bold hover:bg-white/20" data-reading-answer="Emma enjoys reading books.">1. What hobby does Emma enjoy?</button> <button type="button" class="reading-question w-full rounded-2xl bg-white/10 p-4 text-left font-bold hover:bg-white/20" data-reading-answer="Lucas enjoys playing video games.">2. What hobby does Lucas enjoy?</button> <button type="button" class="reading-question w-full rounded-2xl bg-white/10 p-4 text-left font-bold hover:bg-white/20" data-reading-answer="She likes reading because she learns ideas and imagines different worlds.">3. Why does Emma like reading?</button> <button type="button" class="reading-question w-full rounded-2xl bg-white/10 p-4 text-left font-bold hover:bg-white/20" data-reading-answer="He likes games because he solves problems and plays with friends.">4. Why does Lucas like video games?</button> <button type="button" class="reading-question w-full rounded-2xl bg-white/10 p-4 text-left font-bold hover:bg-white/20" data-reading-answer="No. They listen to each other respectfully.">5. Did they argue?</button>
+        </div>
+        <div id="reading-answer" class="mt-5 rounded-2xl bg-[#a9e9d0] p-4 font-extrabold text-[#18314f]" aria-live="polite">
+         Click a question to reveal the answer.
+        </div>
+       </aside>
+      </div>
+     </div>
+    </section>
+    <section id="speaking" class="scroll-mt-24 bg-[#fff8df] py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="section-kicker">Speaking activity · 10 minutes</p>
+      <h2 data-template-id="speaking-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Opinion Prompt Deck</h2>
+      <p data-template-id="speaking-description" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 17px;">Choose a card. Speak for 20–30 seconds and give a reason for your opinion.</p>
+      <div class="mt-7 flex flex-wrap gap-2 rounded-3xl bg-white p-4 shadow-sm"><span class="rounded-full bg-[#e8eeff] px-4 py-2 font-bold text-[#6351bb]">I think…</span> <span class="rounded-full bg-[#e6fbf0] px-4 py-2 font-bold text-[#287155]">I believe…</span> <span class="rounded-full bg-[#fff0e8] px-4 py-2 font-bold text-[#a55c38]">In my opinion…</span> <span class="rounded-full bg-[#e7f1ff] px-4 py-2 font-bold text-[#315ea9]">I agree because…</span> <span class="rounded-full bg-[#fff2bd] px-4 py-2 font-bold text-[#926d1e]">I disagree because…</span>
+      </div>
+      <div class="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Which subject is your favorite?">📘 Which subject is your favorite?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Do you think homework is useful?">📝 Do you think homework is useful?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Which season do you like most?">🌦️ Which season do you like most?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Is English important?">🌍 Is English important?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Which is better: books or movies?">🎥 Which is better: books or movies?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Which animal would you like as a pet?">🐾 Which animal would you like as a pet?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="Should students wear uniforms?">👕 Should students wear uniforms?</button> <button type="button" class="prompt-card speaking-prompt lesson-card rounded-3xl bg-white p-5 text-left font-extrabold" data-question="What is the best hobby?">⭐ What is the best hobby?</button>
+      </div>
+      <div class="mt-7 rounded-3xl bg-[#8168e8] p-6 text-white shadow-lg">
+       <p class="text-xs font-extrabold uppercase tracking-[.15em] text-[#ded7ff]">Selected speaking question</p>
+       <p id="selected-question" class="mt-2 text-xl font-extrabold" aria-live="polite">Choose a question card and share your opinion.</p>
+      </div>
+     </div>
+    </section>
+    <section id="writing" class="scroll-mt-24 py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="section-kicker">Writing activity · 12 minutes</p>
+      <h2 data-template-id="writing-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">My Opinion</h2>
+      <div class="mt-8 grid gap-7 lg:grid-cols-[.8fr_1.2fr]">
+       <aside class="lesson-card rounded-[2rem] bg-[#e9f4ff] p-6 sm:p-8">
+        <h3 data-template-id="writing-task-title" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Writing task</h3>
+        <p data-template-id="writing-task-description" class="canva-text mt-3 font-medium leading-7 text-[#4d6f91]" style="color: rgb(77, 111, 145); font-weight: 500; font-style: normal; font-size: 16px;">Write a short paragraph about the best hobby for teenagers. Use at least one opinion phrase and two reasons.</p>
+        <ul class="mt-6 space-y-3 font-bold text-[#315378]">
+         <li class="flex gap-3"><span>1.</span><span>What hobby do you choose?</span></li>
+         <li class="flex gap-3"><span>2.</span><span>Why is it good?</span></li>
+         <li class="flex gap-3"><span>3.</span><span>What skills can people learn?</span></li>
+         <li class="flex gap-3"><span>4.</span><span>Why do you recommend it?</span></li>
+         <li class="flex gap-3"><span>5.</span><span>How does it make people feel?</span></li>
+        </ul>
+        <div class="mt-7 rounded-3xl bg-white p-5 shadow-sm">
+         <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#8168e8]">Example paragraph</p>
+         <p class="mt-3 leading-7 text-[#385a7a]">In my opinion, reading is the best hobby for teenagers. I think it is interesting because books can take us to different worlds. Reading helps people learn new words and become more creative. I recommend reading because it is relaxing and useful. It can make people feel calm, curious, and happy.</p>
+        </div>
+       </aside>
+       <div class="lesson-card rounded-[2rem] bg-white p-6 sm:p-8">
+        <div class="flex items-center justify-between gap-3">
+         <div>
+          <h3 class="text-xl font-extrabold">My Opinion Planner</h3>
+          <p class="mt-1 text-sm font-medium text-[#6e85a0]">Write notes first. Then turn them into a paragraph.</p>
+         </div><span class="grid h-12 w-12 place-items-center rounded-2xl bg-[#fff2bd] text-[#8b681d]"><i data-lucide="pen-line" class="h-6 w-6"></i></span>
+        </div>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+         <div>
+          <label for="note-1" class="mb-2 block text-sm font-extrabold text-[#315378]">1. My hobby:</label><textarea id="note-1" class="student-note w-full rounded-2xl p-3" placeholder="I choose..."></textarea>
+         </div>
+         <div>
+          <label for="note-2" class="mb-2 block text-sm font-extrabold text-[#315378]">2. My opinion phrase:</label><textarea id="note-2" class="student-note w-full rounded-2xl p-3" placeholder="In my opinion..."></textarea>
+         </div>
+         <div>
+          <label for="note-3" class="mb-2 block text-sm font-extrabold text-[#315378]">3. Reason one:</label><textarea id="note-3" class="student-note w-full rounded-2xl p-3" placeholder="It is good because..."></textarea>
+         </div>
+         <div>
+          <label for="note-4" class="mb-2 block text-sm font-extrabold text-[#315378]">4. Reason two:</label><textarea id="note-4" class="student-note w-full rounded-2xl p-3" placeholder="It also helps people..."></textarea>
+         </div>
+         <div>
+          <label for="note-5" class="mb-2 block text-sm font-extrabold text-[#315378]">5. Skills:</label><textarea id="note-5" class="student-note w-full rounded-2xl p-3" placeholder="People can learn..."></textarea>
+         </div>
+         <div>
+          <label for="note-6" class="mb-2 block text-sm font-extrabold text-[#315378]">6. Feelings:</label><textarea id="note-6" class="student-note w-full rounded-2xl p-3" placeholder="It makes people feel..."></textarea>
+         </div>
+        </div>
+        <div class="mt-5"><label for="final-paragraph" class="mb-2 block text-sm font-extrabold text-[#315378]">7. Write your short paragraph:</label> <textarea id="final-paragraph" class="notebook-lines w-full rounded-2xl border-2 border-[#c6dafa] p-4 text-[#315378]" rows="6" placeholder="Start with: In my opinion..."></textarea>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="homework" class="scroll-mt-24 bg-[#edf7ff] py-16">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <div class="grid gap-7 lg:grid-cols-2">
+       <article data-template-id="homework-card" class="canva-card rounded-[2rem] bg-white p-6 sm:p-8" style="background: rgb(255, 255, 255);">
+        <div class="flex items-start justify-between gap-4">
+         <div>
+          <p class="section-kicker">Homework</p>
+          <h2 data-template-id="homework-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Choose a Homework Topic</h2>
+         </div><span class="grid h-12 w-12 place-items-center rounded-2xl bg-[#ffd66b] text-[#73541d]"><i data-lucide="house" class="h-6 w-6"></i></span>
+        </div>
+        <p data-template-id="homework-instruction" class="canva-text mt-4 font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Choose one topic and write a short opinion paragraph at home.</p>
+        <div class="mt-6 flex flex-wrap gap-3"><button type="button" class="topic-chip rounded-2xl border-2 border-[#dbe8f8] bg-[#f8fbff] px-4 py-3 text-left font-bold">Should students have less homework?</button> <button type="button" class="topic-chip rounded-2xl border-2 border-[#dbe8f8] bg-[#f8fbff] px-4 py-3 text-left font-bold">Which is better: online learning or classroom learning?</button> <button type="button" class="topic-chip rounded-2xl border-2 border-[#dbe8f8] bg-[#f8fbff] px-4 py-3 text-left font-bold">Is social media helpful for teenagers?</button> <button type="button" class="topic-chip rounded-2xl border-2 border-[#dbe8f8] bg-[#f8fbff] px-4 py-3 text-left font-bold">Which season is the best?</button> <button type="button" class="topic-chip rounded-2xl border-2 border-[#dbe8f8] bg-[#f8fbff] px-4 py-3 text-left font-bold">Should every student play sports?</button>
+        </div>
+        <div data-template-id="homework-reminder" class="canva-banner mt-6 rounded-2xl bg-[#f4efff] px-5 py-4 font-extrabold text-[#6351bb]" style="background: rgb(244, 239, 255); color: rgb(99, 81, 187); font-weight: 800; font-style: normal; font-size: 16px;">Remember: use at least three opinion phrases.</div>
+       </article>
+       <article data-template-id="debate-card" class="canva-card rounded-[2rem] bg-[#18314f] p-6 text-white sm:p-8" style="background: rgb(24, 49, 79);">
+        <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#a9e9d0]">Bonus challenge</p>
+        <h2 data-template-id="debate-title" class="canva-text mt-2 font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">Opinion Debate</h2>
+        <div class="mt-5 rounded-3xl bg-white/10 p-5">
+         <p class="text-xs font-extrabold uppercase tracking-[.13em] text-[#d8d2ff]">Teacher statement</p>
+         <p data-template-id="debate-statement" class="canva-text mt-2 text-xl font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 21px;">Everyone should have a pet.</p>
+        </div>
+        <div class="mt-5 grid gap-3 sm:grid-cols-3"><button type="button" class="debate-btn rounded-2xl bg-[#a9e9d0] px-4 py-4 font-extrabold text-[#18314f]" data-debate="Agree: I agree because...">Agree</button> <button type="button" class="debate-btn rounded-2xl bg-[#ffb88c] px-4 py-4 font-extrabold text-[#18314f]" data-debate="Disagree: I disagree because...">Disagree</button> <button type="button" class="debate-btn rounded-2xl bg-[#ffd66b] px-4 py-4 font-extrabold text-[#18314f]" data-debate="Follow-up: Why do you think that?">Ask a follow-up question</button>
+        </div>
+        <p id="debate-output" class="mt-5 rounded-2xl bg-white p-4 font-extrabold text-[#315378]" aria-live="polite">Choose a response to begin your debate.</p>
+        <p data-template-id="debate-hint" class="canva-text mt-4 font-bold text-[#d8d2ff]" style="color: rgb(216, 210, 255); font-weight: 700; font-style: normal; font-size: 15px;">Hint: Give at least three reasons.</p>
+       </article>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer data-template-id="footer-section" class="canva-footer bg-[#315378] py-10 text-white" style="background: rgb(49, 83, 120);">
+    <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+     <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+       <p data-template-id="footer-title" class="canva-text font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 21px;">Vocabulary to Master</p>
+       <p data-template-id="footer-subtitle" class="canva-text mt-1 text-[#cfe4ff]" style="color: rgb(207, 228, 255); font-weight: 500; font-style: normal; font-size: 15px;">Review these words before the next lesson.</p>
+      </div><span class="rounded-full bg-white/10 px-4 py-2 text-sm font-bold">Respect every opinion 💬</span>
+     </div>
+     <div class="mt-6 flex flex-wrap gap-2"><span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">opinion</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">agree</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">disagree</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">reason</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">prefer</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">believe</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">important</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">interesting</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">boring</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">respect</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">hobby</span> <span class="rounded-full bg-white/10 px-3 py-2 text-sm font-bold">recommend</span>
+     </div>
+    </div>
+   </footer><button type="button" id="random-question-btn" data-template-id="random-question-button" class="canva-button float-random inline-flex items-center gap-2 rounded-full px-5 py-3 font-extrabold text-[#18314f]" style="background: rgb(255, 214, 107); color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 16px;">Random Question</button>
+  </div>
+  <script src="/_sdk/c939c145c3c74230.editing_sdk.js" integrity="sha512-jh2pv/gl9Gzzn5dxfzwQO4wkqtnAQIim+LIUDYfVu2cdqPkQV2MqbjsDUW5IYbrSZFjRlOBrIWzlvWDXQYxOjg=="></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      const ratherPrompt = document.getElementById("rather-prompt");
+      document.querySelectorAll(".rather-choice").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".rather-choice").forEach((choice) => choice.classList.remove("is-selected"));
+          button.classList.add("is-selected");
+          ratherPrompt.textContent = `Say: I would rather ${button.dataset.choice} because ___.`;
+        });
+      });
+
+      document.querySelectorAll(".vocab-filter").forEach((filterButton) => {
+        filterButton.addEventListener("click", () => {
+          const filter = filterButton.dataset.filter;
+          document.querySelectorAll(".vocab-filter").forEach((button) => button.classList.remove("is-selected"));
+          filterButton.classList.add("is-selected");
+          document.querySelectorAll(".vocab-card").forEach((card) => {
+            card.style.display = filter === "all" || card.dataset.group === filter ? "" : "none";
+          });
+        });
+      });
+
+      document.querySelectorAll(".vocab-card").forEach((card) => {
+        card.addEventListener("click", () => card.classList.toggle("is-revealed"));
+      });
+
+      const sentence = document.getElementById("builder-sentence");
+      document.querySelectorAll(".phrase-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".phrase-btn").forEach((item) => item.classList.remove("is-selected"));
+          button.classList.add("is-selected");
+          const phrase = button.dataset.phrase;
+          let sample = `${phrase} reading is a great hobby because it helps us learn new things.`;
+          if (phrase === "I agree" || phrase === "That’s true" || phrase === "You’re right") {
+            sample = `${phrase} Reading can help people learn new things.`;
+          } else if (phrase === "I see your point, but") {
+            sample = `${phrase} I prefer games because I can play with friends.`;
+          }
+          sentence.textContent = sample;
+        });
+      });
+
+      document.querySelectorAll(".answer-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const panel = button.nextElementSibling;
+          const isOpen = panel.classList.toggle("is-open");
+          button.textContent = isOpen ? "Hide answer" : "Show answer";
+        });
+      });
+
+      const readingAnswer = document.getElementById("reading-answer");
+      document.querySelectorAll(".reading-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          readingAnswer.textContent = question.dataset.readingAnswer;
+          document.querySelectorAll(".reading-question").forEach((item) => item.classList.remove("ring-2", "ring-[#a9e9d0]"));
+          question.classList.add("ring-2", "ring-[#a9e9d0]");
+        });
+      });
+
+      const selectedQuestion = document.getElementById("selected-question");
+      const promptCards = [...document.querySelectorAll(".speaking-prompt")];
+      function selectPrompt(card) {
+        promptCards.forEach((item) => item.classList.remove("is-selected"));
+        card.classList.add("is-selected");
+        selectedQuestion.textContent = card.dataset.question;
+      }
+      promptCards.forEach((card) => card.addEventListener("click", () => selectPrompt(card)));
+
+      document.getElementById("random-question-btn").addEventListener("click", () => {
+        const randomCard = promptCards[Math.floor(Math.random() * promptCards.length)];
+        selectPrompt(randomCard);
+        randomCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      document.querySelectorAll(".topic-chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          document.querySelectorAll(".topic-chip").forEach((item) => item.classList.remove("is-selected"));
+          chip.classList.add("is-selected");
+        });
+      });
+
+      const debateOutput = document.getElementById("debate-output");
+      document.querySelectorAll(".debate-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".debate-btn").forEach((item) => item.classList.remove("ring-4", "ring-white"));
+          button.classList.add("ring-4", "ring-white");
+          debateOutput.textContent = `${button.dataset.debate} Give at least three reasons.`;
+        });
+      });
+    });
+  </script>
+ 
+</body></html>
