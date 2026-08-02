@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260731-05-8d4b1dd","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,0","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHO2EIdDP0,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YADy3sAhvXQ,0","Oleo Script":"YACgEQQ14jI,0","Playfair Display":"YAFdJhem5V8,1","Poppins":"YAE5fPSY9qM,0","Press Start 2P":"YAFyGr-8pmQ,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/1c274b9c2bdd3519.telemetry_sdk.js" integrity="sha512-QvDGWM2/VIwB7KXA4cwqkIBlxCdJGd0uO9ksM8wsqNKNiFgewrwdYlGY9ioCTg42Djm5Sw7uha/WH60UzzKOhQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3 — Talking About Future Plans</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:#18314f; --blue:#4d8df7; --purple:#8168e8; --yellow:#ffd66b;
+      --mint:#a9e9d0; --paper:#f7fbff; --line:#d8e6fa;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      width:100%; margin:0; color:var(--ink); font-family:"DM Sans",sans-serif;
+      background-color:var(--paper);
+      background-image:radial-gradient(#cfe1f8 1px, transparent 1px);
+      background-size:24px 24px;
+    }
+    button,input,textarea { font:inherit; }
+    button { cursor:pointer; }
+    button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible {
+      outline:3px solid var(--ink); outline-offset:3px;
+    }
+    .app-wrapper { width:100%; overflow:hidden; }
+    .section-anchor { scroll-margin-top:90px; }
+    .lesson-card { box-shadow:0 12px 28px rgba(49,92,141,.10); }
+    .nav-chip { white-space:nowrap; border:1px solid var(--line); background:#ffffffea; color:#315378; transition:.2s; }
+    .nav-chip:hover { transform:translateY(-2px); background:#eaf3ff; }
+    .warm-card,.word-card,.reveal-card,.prompt-card,.quiz-option,.time-chip { transition:.2s ease; }
+    .warm-card:hover,.word-card:hover,.reveal-card:hover,.prompt-card:hover,.quiz-option:hover,.time-chip:hover {
+      transform:translateY(-3px); box-shadow:0 13px 25px rgba(49,92,141,.13);
+    }
+    .warm-card.is-selected,.prompt-card.is-selected,.time-chip.is-selected {
+      border-color:var(--purple); background:#f4f0ff; box-shadow:0 0 0 4px #8168e830;
+    }
+    .word-card .word-detail,.reveal-card .answer,.sample-answer { display:none; }
+    .word-card.is-open .word-detail,.reveal-card.is-revealed .answer,.sample-answer.is-open { display:block; }
+    .word-card.is-open,.reveal-card.is-revealed { border-color:var(--purple); background:#f5f2ff; }
+    .quiz-option.is-selected { border-color:var(--blue); background:#eaf3ff; }
+    .quiz-option.is-correct { border-color:#25815d; background:#e4f8ef; }
+    .quiz-option.is-wrong { border-color:#dc6464; background:#fff0ef; }
+    .floaty { animation:floaty 5s ease-in-out infinite; }
+    .floaty-delay { animation:floaty 5s ease-in-out -2s infinite; }
+    @keyframes floaty { 50% { transform:translateY(-12px) rotate(4deg); } }
+  </style>
+  <script src="/_sdk/63b5ed99e5b990a7.data_sdk.js" type="text/javascript" integrity="sha512-fLUGE0rNLPgXS9olxs6QORKg6Diqpi0PSKoNistdAaH/GruBuq5/XhrOdSOcKfqcIIRQ1KvO66J1vCBvvLj4rA=="></script>
+  <script src="/_sdk/797e0a7e8af7c7f8.resizing_sdk.js" type="text/javascript" integrity="sha512-giNZj5eBnASPpYcJXEVOn6FguxFDnaH+gnf5nbRfUgfRDqtOdV+5Dna/CwvXiPeR//Plhtbt32CML3VF4+oCLw=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(247, 251, 255);">
+  <div class="app-wrapper">
+   <header data-template-id="site-header" class="canva-header sticky top-0 z-40 border-b border-blue-100 bg-white/90 backdrop-blur" style="background: rgba(255, 255, 255, 0.9);">
+    <div class="mx-auto flex w-full max-w-7xl items-center gap-4 px-4 py-3 sm:px-6"><a href="#top" class="flex shrink-0 items-center gap-2 font-extrabold text-[#315378]" aria-label="Go to top of lesson"> <span class="grid h-10 w-10 place-items-center rounded-xl bg-[#ffd66b]"><i data-lucide="graduation-cap" class="h-5 w-5"></i></span> <span data-template-id="header-label" class="canva-text hidden sm:inline" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Grade 8 ESL • Lesson 3</span> </a>
+     <nav class="flex min-w-0 flex-1 gap-2 overflow-x-auto pb-1" aria-label="Lesson sections"><a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#warmup">Warm-up</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#vocabulary">Vocabulary</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#grammar">Grammar</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#reading">Reading</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#speaking">Speaking</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#writing">Writing</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#quiz">Quiz</a> <a class="nav-chip rounded-full px-3 py-2 text-sm font-bold" href="#homework">Homework</a>
+     </nav>
+    </div>
+   </header>
+   <main id="top">
+    <section data-template-id="hero-section" class="canva-banner relative overflow-hidden" style="background: linear-gradient(135deg, rgb(220, 236, 255), rgb(238, 234, 255), rgb(255, 246, 201));">
+     <div class="floaty absolute -left-8 top-20 h-28 w-28 rounded-full bg-[#a9e9d0]/70"></div>
+     <div class="floaty-delay absolute right-8 top-8 h-24 w-24 rounded-full bg-[#ffd66b]/70"></div>
+     <div class="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
+      <div>
+       <p data-template-id="hero-eyebrow" class="canva-tag inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 font-extrabold text-[#6552c4] shadow-sm" style="color: rgb(101, 82, 196); font-weight: 800; font-style: normal; font-size: 16px;">Plan it. Say it. Do it.</p>
+       <h1 data-template-id="hero-title" class="canva-text mt-5 max-w-3xl font-extrabold tracking-[-.045em] text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 38px; line-height: 1.05;">Lesson 3 — Talking About Future Plans</h1>
+       <p data-template-id="hero-subtitle" class="canva-text mt-5 max-w-2xl font-bold text-[#536a88]" style="color: rgb(83, 106, 136); font-weight: 700; font-style: normal; font-size: 18px;">Grammar Focus: Be going to for Future Plans • Duration: 50–60 minutes</p>
+       <p data-template-id="hero-intro" class="canva-text mt-4 max-w-2xl rounded-2xl border border-white bg-white/85 px-5 py-4 font-medium text-[#315378] shadow-sm" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">In this lesson, you will talk about your weekend, holidays, goals, and exciting plans for the future.</p><a href="#warmup" data-template-id="hero-button" class="canva-button mt-7 inline-flex items-center gap-2 rounded-xl px-5 py-3 font-extrabold shadow-md transition hover:-translate-y-1" style="background: rgb(77, 141, 247); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Start the lesson</a>
+      </div>
+      <div class="relative mx-auto w-full max-w-xl">
+       <div class="absolute -inset-3 rotate-3 rounded-[2.5rem] bg-white/60"></div>
+       <div class="relative overflow-hidden rounded-[2.25rem] border-4 border-white bg-[#8fc8ff] p-3 shadow-xl"><img data-template-id="hero-image" loading="lazy" class="canva-image h-80 w-full rounded-[1.65rem] object-cover sm:h-96" src="https://images.pexels.com/photos/5877650/pexels-photo-5877650.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="A young woman with blonde hair writing in a notebook at a desk with a laptop.">
+        <div class="absolute bottom-7 left-7 rounded-2xl bg-white/90 px-4 py-3 shadow-lg">
+         <p data-template-id="hero-photo-note" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Your future starts with a plan.</p>
+        </div>
+        <div class="absolute right-6 top-6 grid h-14 w-14 place-items-center rounded-2xl bg-[#ffd66b] text-[#73541d] shadow-md">
+         <i data-lucide="calendar-days"></i>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <div class="mb-7">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Today’s mission</p>
+      <h2 data-template-id="objectives-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">By the end of this lesson, I can...</h2>
+     </div>
+     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <article data-template-id="objective-one" class="canva-card lesson-card rounded-3xl border border-[#c5daf5] bg-white p-5" style="background: rgb(255, 255, 255);">
+       <i data-lucide="book-open" class="h-7 w-7 text-[#4d8df7]"></i>
+       <p data-template-id="objective-one-text" class="canva-text mt-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Understand how to use be going to to talk about future plans.</p>
+      </article>
+      <article data-template-id="objective-two" class="canva-card lesson-card rounded-3xl border border-[#d3cdf8] bg-white p-5" style="background: rgb(255, 255, 255);">
+       <i data-lucide="calendar-heart" class="h-7 w-7 text-[#8168e8]"></i>
+       <p data-template-id="objective-two-text" class="canva-text mt-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Discuss plans for the weekend, holidays, and future goals.</p>
+      </article>
+      <article data-template-id="objective-three" class="canva-card lesson-card rounded-3xl border border-[#bde9d6] bg-white p-5" style="background: rgb(255, 255, 255);">
+       <i data-lucide="search-check" class="h-7 w-7 text-[#25815d]"></i>
+       <p data-template-id="objective-three-text" class="canva-text mt-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Read and answer questions about someone’s future plans.</p>
+      </article>
+      <article data-template-id="objective-four" class="canva-card lesson-card rounded-3xl border border-[#f2dda2] bg-white p-5" style="background: rgb(255, 255, 255);">
+       <i data-lucide="messages-square" class="h-7 w-7 text-[#8b681d]"></i>
+       <p data-template-id="objective-four-text" class="canva-text mt-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Speak confidently about my own plans.</p>
+      </article>
+      <article data-template-id="objective-five" class="canva-card lesson-card rounded-3xl border border-[#f6cfb9] bg-white p-5" style="background: rgb(255, 255, 255);">
+       <i data-lucide="pen-line" class="h-7 w-7 text-[#b35f35]"></i>
+       <p data-template-id="objective-five-text" class="canva-text mt-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Write a short paragraph using the target grammar.</p>
+      </article>
+     </div>
+    </section>
+    <section id="warmup" class="section-anchor bg-[#edf7ff] py-14">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Warm-up</p>
+      <h2 data-template-id="warmup-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Let’s Talk About Tomorrow</h2>
+      <p data-template-id="warmup-copy" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Click a question, then answer naturally. There are many good answers!</p>
+      <div class="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><button type="button" class="warm-card rounded-3xl border border-[#c5daf5] bg-white p-5 text-left"><span class="text-3xl">📅</span><p data-template-id="warm-question-one" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What day is tomorrow?</p></button> <button type="button" class="warm-card rounded-3xl border border-[#d3cdf8] bg-white p-5 text-left"><span class="text-3xl">🎓</span><p data-template-id="warm-question-two" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What will you do after today’s lesson?</p></button> <button type="button" class="warm-card rounded-3xl border border-[#bde9d6] bg-white p-5 text-left"><span class="text-3xl">🌈</span><p data-template-id="warm-question-three" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Do you have any plans for next weekend?</p></button> <button type="button" class="warm-card rounded-3xl border border-[#f2dda2] bg-white p-5 text-left"><span class="text-3xl">✨</span><p data-template-id="warm-question-four" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are you excited about?</p></button>
+      </div>
+      <aside data-template-id="warmup-prompt-box" class="canva-panel mt-6 rounded-3xl border border-[#d3cdf8] bg-[#f5f2ff] p-6" style="background: rgb(245, 242, 255);">
+       <p data-template-id="warmup-prompt-label" class="canva-text font-extrabold text-[#6552c4]" style="color: rgb(101, 82, 196); font-weight: 800; font-style: normal; font-size: 16px;">Speaking prompt</p>
+       <p id="warmup-result" class="mt-2 font-bold text-[#315378]" aria-live="polite">Choose a question and answer naturally.</p>
+      </aside>
+     </div>
+    </section>
+    <section id="vocabulary" class="section-anchor mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <div class="mb-7">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Vocabulary explorer</p>
+      <h2 data-template-id="vocab-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Future Plans Vocabulary</h2>
+      <p data-template-id="vocab-copy" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Click each picture card to reveal the meaning and example sentence.</p>
+     </div>
+     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><button type="button" class="word-card rounded-3xl border border-[#c5daf5] bg-white p-5 text-left"><span class="text-3xl">🏖️</span><h3 data-template-id="vocab-vacation" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">vacation</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#eef5ff] p-3">
+        <p data-template-id="vocab-vacation-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">holiday — We are going on vacation.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#d3cdf8] bg-white p-5 text-left"><span class="text-3xl">👵</span><h3 data-template-id="vocab-visit" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">visit</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#f4f0ff] p-3">
+        <p data-template-id="vocab-visit-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">go to see someone — I’m going to visit my grandmother.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#f2dda2] bg-white p-5 text-left"><span class="text-3xl">✈️</span><h3 data-template-id="vocab-travel" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">travel</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#fff8df] p-3">
+        <p data-template-id="vocab-travel-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">go to another place — I want to travel to Japan.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#bde9d6] bg-white p-5 text-left"><span class="text-3xl">🎹</span><h3 data-template-id="vocab-practice" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">practice</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#eafbf3] p-3">
+        <p data-template-id="vocab-practice-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">train or study — I’m going to practice piano.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#f6cfb9] bg-white p-5 text-left"><span class="text-3xl">🎂</span><h3 data-template-id="vocab-celebrate" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">celebrate</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#fff0e8] p-3">
+        <p data-template-id="vocab-celebrate-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">enjoy a special day — We are going to celebrate my birthday.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#c5daf5] bg-white p-5 text-left"><span class="text-3xl">📝</span><h3 data-template-id="vocab-prepare" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">prepare</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#eef5ff] p-3">
+        <p data-template-id="vocab-prepare-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">get ready — I’m going to prepare my homework.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#d3cdf8] bg-white p-5 text-left"><span class="text-3xl">🔮</span><h3 data-template-id="vocab-future" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">future</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#f4f0ff] p-3">
+        <p data-template-id="vocab-future-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">time after now — The future is exciting.</p>
+       </div></button> <button type="button" class="word-card rounded-3xl border border-[#bde9d6] bg-white p-5 text-left"><span class="text-3xl">🎯</span><h3 data-template-id="vocab-goal" class="canva-text mt-3 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">goal</h3>
+       <div class="word-detail mt-3 rounded-2xl bg-[#eafbf3] p-3">
+        <p data-template-id="vocab-goal-detail" class="canva-text font-medium text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">something you want to achieve — My goal is to become a doctor.</p>
+       </div></button>
+     </div>
+     <aside data-template-id="quick-practice-card" class="canva-panel mt-7 rounded-3xl border border-[#f2dda2] bg-[#fff8df] p-6" style="background: rgb(255, 248, 223);">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+       <div>
+        <p data-template-id="quick-practice-title" class="canva-text font-extrabold text-[#8b681d]" style="color: rgb(139, 104, 29); font-weight: 800; font-style: normal; font-size: 16px;">Quick practice</p>
+        <p data-template-id="quick-practice-question" class="canva-text mt-2 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Teacher asks: “What are you going to do tomorrow?”</p>
+       </div><button id="reveal-quick-answer" data-template-id="quick-practice-button" type="button" class="canva-button rounded-xl px-5 py-3 font-extrabold" style="background: rgb(255, 214, 107); color: rgb(115, 84, 29); font-weight: 800; font-style: normal; font-size: 16px;">Reveal answer</button>
+      </div>
+      <p id="quick-answer" class="mt-4 hidden rounded-2xl bg-white p-4 font-extrabold text-[#25815d]">I'm going to study.</p>
+     </aside>
+    </section>
+    <section id="grammar" class="section-anchor bg-[#f6f2ff] py-14">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Grammar studio</p>
+      <h2 data-template-id="grammar-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Be Going To for Future Plans</h2>
+      <p data-template-id="grammar-copy" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Use be going to when you talk about plans you have already decided.</p>
+      <div class="mt-7 grid gap-5 lg:grid-cols-3">
+       <article data-template-id="positive-card" class="canva-card lesson-card rounded-[2rem] border border-[#c5daf5] bg-white p-6" style="background: rgb(255, 255, 255);">
+        <i data-lucide="circle-check" class="h-8 w-8 text-[#4d8df7]"></i>
+        <h3 data-template-id="positive-title" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Positive</h3>
+        <p data-template-id="positive-form" class="canva-text mt-3 rounded-2xl bg-[#eef5ff] p-3 font-extrabold text-[#315ea9]" style="color: rgb(49, 94, 169); font-weight: 800; font-style: normal; font-size: 16px;">Subject + am/is/are + going to + verb</p>
+        <p data-template-id="positive-examples" class="canva-text mt-4 font-medium leading-7 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">I am going to study.
+She is going to travel.
+They are going to play soccer.</p>
+       </article>
+       <article data-template-id="negative-card" class="canva-card lesson-card rounded-[2rem] border border-[#f6cfb9] bg-white p-6" style="background: rgb(255, 255, 255);">
+        <i data-lucide="circle-x" class="h-8 w-8 text-[#b35f35]"></i>
+        <h3 data-template-id="negative-title" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Negative</h3>
+        <p data-template-id="negative-form" class="canva-text mt-3 rounded-2xl bg-[#fff0e8] p-3 font-extrabold text-[#b35f35]" style="color: rgb(179, 95, 53); font-weight: 800; font-style: normal; font-size: 16px;">Subject + am/is/are + not + going to + verb</p>
+        <p data-template-id="negative-examples" class="canva-text mt-4 font-medium leading-7 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">I am not going to stay home.
+He isn’t going to watch TV.</p>
+       </article>
+       <article data-template-id="question-card" class="canva-card lesson-card rounded-[2rem] border border-[#bde9d6] bg-white p-6" style="background: rgb(255, 255, 255);">
+        <i data-lucide="circle-help" class="h-8 w-8 text-[#25815d]"></i>
+        <h3 data-template-id="question-title" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">Questions</h3>
+        <p data-template-id="question-form" class="canva-text mt-3 rounded-2xl bg-[#eafbf3] p-3 font-extrabold text-[#25815d]" style="color: rgb(37, 129, 93); font-weight: 800; font-style: normal; font-size: 16px;">Am / Is / Are + subject + going to + verb?</p>
+        <p data-template-id="question-examples" class="canva-text mt-4 font-medium leading-7 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">Are you going to cook?
+Is she going to visit her friend?</p>
+       </article>
+      </div>
+      <aside data-template-id="comparison-card" class="canva-panel mt-6 rounded-3xl border border-[#f2dda2] bg-[#fff8df] p-6" style="background: rgb(255, 248, 223);">
+       <p data-template-id="comparison-title" class="canva-text font-extrabold text-[#8b681d]" style="color: rgb(139, 104, 29); font-weight: 800; font-style: normal; font-size: 16px;">Present or future plan?</p>
+       <div class="mt-4 grid gap-4 md:grid-cols-2">
+        <p data-template-id="present-example" class="canva-text rounded-2xl bg-white p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Today → Present: “I study English.”</p>
+        <p data-template-id="future-example" class="canva-text rounded-2xl bg-white p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Future Plan: “I’m going to study English tomorrow.”</p>
+       </div>
+      </aside>
+      <div class="mt-6">
+       <p data-template-id="time-title" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Common time expressions</p>
+       <div class="mt-3 flex flex-wrap gap-3"><button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">tomorrow</button> <button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">next week</button> <button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">next month</button> <button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">tonight</button> <button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">this weekend</button> <button type="button" class="time-chip rounded-full border border-[#c5daf5] bg-white px-4 py-2 font-bold text-[#315378]">during vacation</button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="reading" class="section-anchor bg-[#edf7ff] py-14">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Reading activity</p>
+      <h2 data-template-id="reading-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Emma’s Weekend</h2>
+      <div class="mt-7 grid gap-6 lg:grid-cols-[.85fr_1.15fr]">
+       <aside class="lesson-card relative overflow-hidden rounded-[2rem] border border-[#c5daf5] bg-white p-4">
+        <img data-template-id="reading-image" loading="lazy" class="canva-image h-72 w-full rounded-[1.5rem] object-cover lg:h-full" src="https://images.pexels.com/photos/5704863/pexels-photo-5704863.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A grandmother and granddaughter share a happy moment with shopping bags outdoors.">
+       </aside>
+       <article data-template-id="reading-story-card" class="canva-card lesson-card rounded-[2rem] border border-[#d3cdf8] bg-white p-7" style="background: rgb(255, 255, 255);">
+        <p data-template-id="reading-label" class="canva-tag inline-flex rounded-full bg-[#f4f0ff] px-3 py-1 font-extrabold text-[#6552c4]" style="color: rgb(101, 82, 196); font-weight: 800; font-style: normal; font-size: 16px;">Read and notice the future plans</p>
+        <p data-template-id="reading-story" class="canva-text mt-5 text-lg font-medium leading-8 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">Emma has many plans for the weekend. On Saturday morning, she is going to clean her room. In the afternoon, she is going to visit her grandparents. On Sunday, she is going to go shopping with her mother. In the evening, she is going to watch a movie and prepare for school.</p>
+       </article>
+      </div>
+      <div class="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><button type="button" class="reveal-card rounded-3xl border border-[#c5daf5] bg-white p-5 text-left"><p data-template-id="read-q1" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What is Emma going to do on Saturday morning?</p><p data-template-id="read-a1" class="canva-text answer mt-3 rounded-xl bg-white p-3 font-bold text-[#4d8df7]" style="color: rgb(77, 141, 247); font-weight: 700; font-style: normal; font-size: 16px;">She is going to clean her room.</p></button> <button type="button" class="reveal-card rounded-3xl border border-[#d3cdf8] bg-white p-5 text-left"><p data-template-id="read-q2" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Who is she going to visit?</p><p data-template-id="read-a2" class="canva-text answer mt-3 rounded-xl bg-white p-3 font-bold text-[#8168e8]" style="color: rgb(129, 104, 232); font-weight: 700; font-style: normal; font-size: 16px;">She is going to visit her grandparents.</p></button> <button type="button" class="reveal-card rounded-3xl border border-[#bde9d6] bg-white p-5 text-left"><p data-template-id="read-q3" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What is she going to do on Sunday?</p><p data-template-id="read-a3" class="canva-text answer mt-3 rounded-xl bg-white p-3 font-bold text-[#25815d]" style="color: rgb(37, 129, 93); font-weight: 700; font-style: normal; font-size: 16px;">She is going to go shopping with her mother.</p></button> <button type="button" class="reveal-card rounded-3xl border border-[#f2dda2] bg-white p-5 text-left"><p data-template-id="read-q4" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Is she going to prepare for school?</p><p data-template-id="read-a4" class="canva-text answer mt-3 rounded-xl bg-white p-3 font-bold text-[#8b681d]" style="color: rgb(139, 104, 29); font-weight: 700; font-style: normal; font-size: 16px;">Yes, she is.</p></button> <button type="button" class="reveal-card rounded-3xl border border-[#f6cfb9] bg-white p-5 text-left sm:col-span-2"><p data-template-id="read-q5" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are your weekend plans?</p><p data-template-id="read-a5" class="canva-text answer mt-3 rounded-xl bg-white p-3 font-bold text-[#b35f35]" style="color: rgb(179, 95, 53); font-weight: 700; font-style: normal; font-size: 16px;">Your answer! Try: “I’m going to…”</p></button>
+      </div>
+     </div>
+    </section>
+    <section id="speaking" class="section-anchor mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+       <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Speaking practice</p>
+       <h2 data-template-id="speaking-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Interview a Classmate</h2>
+       <p data-template-id="speaking-copy" class="canva-text mt-3 max-w-2xl font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Choose a question, answer in a complete sentence, then ask a partner.</p>
+      </div><button id="random-prompt" data-template-id="random-prompt-button" type="button" class="canva-button inline-flex items-center gap-2 rounded-xl px-5 py-3 font-extrabold shadow-md" style="background: rgb(129, 104, 232); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Random prompt</button>
+     </div>
+     <div class="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-5"><button type="button" class="prompt-card rounded-3xl border border-[#c5daf5] bg-white p-5 text-left"><span class="text-3xl">🌙</span><p data-template-id="speak-q1" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are you going to do tonight?</p></button> <button type="button" class="prompt-card rounded-3xl border border-[#d3cdf8] bg-white p-5 text-left"><span class="text-3xl">🍜</span><p data-template-id="speak-q2" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are you going to eat today?</p></button> <button type="button" class="prompt-card rounded-3xl border border-[#bde9d6] bg-white p-5 text-left"><span class="text-3xl">✈️</span><p data-template-id="speak-q3" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">Are you going to travel this year?</p></button> <button type="button" class="prompt-card rounded-3xl border border-[#f2dda2] bg-white p-5 text-left"><span class="text-3xl">🏝️</span><p data-template-id="speak-q4" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are you going to do during your next vacation?</p></button> <button type="button" class="prompt-card rounded-3xl border border-[#f6cfb9] bg-white p-5 text-left"><span class="text-3xl">📚</span><p data-template-id="speak-q5" class="canva-text mt-4 font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">What are you going to study next week?</p></button>
+     </div>
+     <aside data-template-id="speaking-starters-card" class="canva-panel mt-7 rounded-3xl border border-[#bde9d6] bg-[#eafbf3] p-6" style="background: rgb(234, 251, 243);">
+      <p data-template-id="speaking-starters-title" class="canva-text font-extrabold text-[#25815d]" style="color: rgb(37, 129, 93); font-weight: 800; font-style: normal; font-size: 16px;">Sentence starters</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+       <span data-template-id="starter-one" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">I’m going to...</span><span data-template-id="starter-two" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Yes, I am going to...</span><span data-template-id="starter-three" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">No, I’m not going to...</span>
+      </div>
+     </aside>
+     <div class="mt-6 flex flex-wrap items-center gap-4"><img data-template-id="speaking-image" loading="lazy" class="canva-image h-20 w-20 rounded-3xl object-cover shadow-md" src="https://images.pexels.com/photos/9743053/pexels-photo-9743053.jpeg" alt="Flat lay of colorful stationery including pencils, paper clips, and sticky notes on a pink background."> <button id="sample-toggle" data-template-id="sample-button" type="button" class="canva-button rounded-xl px-5 py-3 font-extrabold" style="background: rgb(255, 214, 107); color: rgb(115, 84, 29); font-weight: 800; font-style: normal; font-size: 16px;">Show a sample answer</button>
+      <p data-template-id="sample-answer" id="sample-answer" class="canva-text sample-answer rounded-2xl bg-[#fff8df] px-5 py-3 font-extrabold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 800; font-style: normal; font-size: 16px;">I’m going to read a book tonight.</p>
+     </div>
+    </section>
+    <section id="writing" class="section-anchor bg-[#fffaf4] py-14">
+     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#b35f35]">Writing activity</p>
+      <h2 data-template-id="writing-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">My Plans for Next Weekend</h2>
+      <div class="mt-7 grid gap-6 lg:grid-cols-[.8fr_1.2fr]">
+       <aside data-template-id="writing-guide-card" class="canva-panel lesson-card rounded-[2rem] border border-[#f6cfb9] bg-white p-6" style="background: rgb(255, 255, 255);">
+        <h3 data-template-id="writing-guide-title" class="canva-text font-extrabold text-[#b35f35]" style="color: rgb(179, 95, 53); font-weight: 800; font-style: normal; font-size: 19px;">Plan your paragraph</h3>
+        <div class="mt-4 grid gap-3">
+         <p data-template-id="guide-one" class="canva-text rounded-2xl bg-[#fff0e8] p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Where are you going?</p>
+         <p data-template-id="guide-two" class="canva-text rounded-2xl bg-[#fff0e8] p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Who are you going with?</p>
+         <p data-template-id="guide-three" class="canva-text rounded-2xl bg-[#fff0e8] p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">What are you going to do?</p>
+         <p data-template-id="guide-four" class="canva-text rounded-2xl bg-[#fff0e8] p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">What are you going to eat?</p>
+         <p data-template-id="guide-five" class="canva-text rounded-2xl bg-[#fff0e8] p-4 font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">What are you looking forward to?</p>
+        </div>
+       </aside>
+       <article class="lesson-card rounded-[2rem] border border-[#c5daf5] bg-white p-6">
+        <h3 data-template-id="planner-title" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 19px;">My weekend planner</h3>
+        <form id="writing-form" class="mt-5">
+         <label for="student-writing" data-template-id="writing-label" class="canva-text font-bold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Write 5–7 sentences about your next weekend.</label><textarea id="student-writing" rows="10" class="mt-3 w-full rounded-2xl border border-[#d8e6fa] bg-[#f8fbff] p-4 leading-7 text-[#315378]" placeholder="Write your paragraph here..."></textarea>
+        </form>
+       </article>
+      </div>
+      <aside data-template-id="writing-example-card" class="canva-panel mt-7 rounded-3xl border border-[#d3cdf8] bg-[#f5f2ff] p-6" style="background: rgb(245, 242, 255);">
+       <p data-template-id="writing-example-title" class="canva-text font-extrabold text-[#6552c4]" style="color: rgb(101, 82, 196); font-weight: 800; font-style: normal; font-size: 16px;">Example paragraph</p>
+       <p data-template-id="writing-example" class="canva-text mt-3 rounded-2xl bg-white p-5 font-medium leading-7 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 500; font-style: normal; font-size: 16px;">Next weekend, I am going to visit my cousins. We are going to play games together. I am going to help my aunt cook dinner. We are going to eat pizza and ice cream. On Sunday, I am going to study English and finish my homework. I am excited because I love spending time with my family.</p>
+      </aside>
+     </div>
+    </section>
+    <section id="quiz" class="section-anchor mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#6552c4]">Review quiz</p>
+     <h2 data-template-id="quiz-title" class="canva-text mt-2 font-extrabold text-[#18314f]" style="color: rgb(24, 49, 79); font-weight: 800; font-style: normal; font-size: 24px;">Check Your Grammar</h2>
+     <p data-template-id="quiz-copy" class="canva-text mt-3 font-medium text-[#5d7692]" style="color: rgb(93, 118, 146); font-weight: 500; font-style: normal; font-size: 16px;">Choose an answer for every question, then check your score.</p>
+     <div class="mt-7 grid gap-4">
+      <article class="quiz-card lesson-card rounded-3xl border border-[#c5daf5] bg-white p-5" data-answer="a">
+       <p data-template-id="quiz-q1" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">1. I ______ going to study tonight.</p>
+       <div class="mt-4 flex gap-3">
+        <button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="a">a. am</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="b">b. is</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="c">c. are</button>
+       </div>
+      </article>
+      <article class="quiz-card lesson-card rounded-3xl border border-[#d3cdf8] bg-white p-5" data-answer="b">
+       <p data-template-id="quiz-q2" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">2. She _____ going to visit her grandmother.</p>
+       <div class="mt-4 flex gap-3">
+        <button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="a">a. am</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="b">b. is</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="c">c. are</button>
+       </div>
+      </article>
+      <article class="quiz-card lesson-card rounded-3xl border border-[#bde9d6] bg-white p-5" data-answer="a">
+       <p data-template-id="quiz-q3" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">3. They _____ going to play basketball.</p>
+       <div class="mt-4 flex gap-3">
+        <button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="a">a. are</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="b">b. is</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="c">c. am</button>
+       </div>
+      </article>
+      <article class="quiz-card lesson-card rounded-3xl border border-[#f2dda2] bg-white p-5" data-answer="a">
+       <p data-template-id="quiz-q4" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">4. “Are you going to travel?”</p>
+       <div class="mt-4 flex flex-wrap gap-3">
+        <button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="a">a. Yes, I am.</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="b">b. Yes, I is.</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="c">c. Yes, I are.</button>
+       </div>
+      </article>
+      <article class="quiz-card lesson-card rounded-3xl border border-[#f6cfb9] bg-white p-5" data-answer="b">
+       <p data-template-id="quiz-q5" class="canva-text font-extrabold text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 800; font-style: normal; font-size: 16px;">5. Which sentence is correct?</p>
+       <div class="mt-4 flex flex-wrap gap-3">
+        <button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="a">a. She going to study.</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="b">b. She is going to study.</button><button type="button" class="quiz-option rounded-xl border border-[#d8e6fa] px-4 py-3 font-bold" data-value="c">c. She are going to study.</button>
+       </div>
+      </article>
+     </div>
+     <div class="mt-6 flex flex-wrap items-center gap-4">
+      <button id="check-quiz" data-template-id="check-quiz-button" type="button" class="canva-button rounded-xl px-5 py-3 font-extrabold shadow-md" style="background: rgb(77, 141, 247); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Check answers</button>
+      <p id="quiz-result" class="font-extrabold text-[#315378]" aria-live="polite"></p>
+     </div>
+    </section>
+    <section id="homework" class="section-anchor mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
+     <article data-template-id="homework-card" class="canva-card lesson-card rounded-[2rem] border border-[#f2dda2] bg-[#fff8df] p-7" style="background: rgb(255, 248, 223);">
+      <div class="flex items-center gap-3">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-white text-[#8b681d]"><i data-lucide="house"></i></span>
+       <h2 data-template-id="homework-title" class="canva-text font-extrabold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 800; font-style: normal; font-size: 24px;">Homework</h2>
+      </div>
+      <p data-template-id="homework-task" class="canva-text mt-5 text-lg font-bold leading-7 text-[#315378]" style="color: rgb(49, 83, 120); font-weight: 700; font-style: normal; font-size: 16px;">Write 10 sentences about your plans for the next school holiday using be going to.</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+       <span data-template-id="home-chip-one" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">I am going to...</span><span data-template-id="home-chip-two" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">My family is going to...</span><span data-template-id="home-chip-three" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">We are going to...</span><span data-template-id="home-chip-four" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">I am not going to...</span><span data-template-id="home-chip-five" class="canva-tag rounded-full bg-white px-4 py-2 font-bold text-[#73541d]" style="color: rgb(115, 84, 29); font-weight: 700; font-style: normal; font-size: 16px;">I hope I am going to...</span>
+      </div>
+     </article>
+    </section>
+   </main>
+   <footer data-template-id="footer-section" class="canva-footer bg-[#315378] py-9 text-white" style="background: rgb(49, 83, 120);">
+    <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+     <p data-template-id="footer-title" class="canva-text font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Lesson 3 Summary</p>
+     <p data-template-id="footer-summary" class="canva-text mt-3 max-w-3xl font-medium text-white/85" style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;">Today you learned how to use am, is, and are going to for future plans. You practised new vocabulary, read about Emma’s weekend, spoke about your own plans, and wrote a future-plans paragraph.</p>
+    </div>
+   </footer>
+  </div>
+  <script src="/_sdk/afc2d393c2ac926b.editing_sdk.js" integrity="sha512-Ue7lZoRec1IGq7j3H/38aWZalTxanTjFGoCKdWTFUGFJwCO6Pinekpb6vP1nEQ3ZFuEOglmaFKfrRMeLheTxnw=="></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      document.querySelectorAll(".warm-card").forEach(card => {
+        card.addEventListener("click", () => {
+          document.querySelectorAll(".warm-card").forEach(item => item.classList.remove("is-selected"));
+          card.classList.add("is-selected");
+          document.getElementById("warmup-result").textContent = card.innerText.trim() + " Answer naturally in a complete sentence.";
+        });
+      });
+
+      document.querySelectorAll(".word-card").forEach(card => card.addEventListener("click", () => card.classList.toggle("is-open")));
+      document.querySelectorAll(".reveal-card").forEach(card => card.addEventListener("click", () => card.classList.toggle("is-revealed")));
+
+      document.getElementById("reveal-quick-answer").addEventListener("click", () => {
+        document.getElementById("quick-answer").classList.toggle("hidden");
+      });
+
+      document.querySelectorAll(".time-chip").forEach(chip => {
+        chip.addEventListener("click", () => chip.classList.toggle("is-selected"));
+      });
+
+      const prompts = [...document.querySelectorAll(".prompt-card")];
+      function selectPrompt(prompt) {
+        prompts.forEach(item => item.classList.remove("is-selected"));
+        prompt.classList.add("is-selected");
+      }
+      prompts.forEach(prompt => prompt.addEventListener("click", () => selectPrompt(prompt)));
+      document.getElementById("random-prompt").addEventListener("click", () => selectPrompt(prompts[Math.floor(Math.random() * prompts.length)]));
+      document.getElementById("sample-toggle").addEventListener("click", () => document.getElementById("sample-answer").classList.toggle("is-open"));
+      document.getElementById("writing-form").addEventListener("submit", event => event.preventDefault());
+
+      document.querySelectorAll(".quiz-option").forEach(option => {
+        option.addEventListener("click", () => {
+          const card = option.closest(".quiz-card");
+          card.querySelectorAll(".quiz-option").forEach(item => item.classList.remove("is-selected", "is-correct", "is-wrong"));
+          option.classList.add("is-selected");
+        });
+      });
+
+      document.getElementById("check-quiz").addEventListener("click", () => {
+        let score = 0;
+        document.querySelectorAll(".quiz-card").forEach(card => {
+          const chosen = card.querySelector(".quiz-option.is-selected");
+          card.querySelectorAll(".quiz-option").forEach(option => {
+            if (option.dataset.value === card.dataset.answer) option.classList.add("is-correct");
+            if (chosen && option === chosen && option.dataset.value !== card.dataset.answer) option.classList.add("is-wrong");
+          });
+          if (chosen && chosen.dataset.value === card.dataset.answer) score += 1;
+        });
+        document.getElementById("quiz-result").textContent = "Your score: " + score + " / 5. Keep practising!";
+      });
+    });
+  </script>
+ 
+</body></html>
