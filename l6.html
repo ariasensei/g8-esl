@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260904-05-c4a2e96","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/9e99ecf74af2a081.telemetry_sdk.js" integrity="sha512-tZ7fmfTx2KpCLjXQnEuL9azQ4A5+7+xumsx6r/WYVD0zCP/8LP8hDeCypMQesmP+WyAew4g7l5Ah23Bjd6yoVg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 6: Giving Opinions and Supporting Your Ideas</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #14213d;
+      --paper: #fffaf0;
+      --teal: #167d7f;
+      --teal-soft: #dff4f0;
+      --orange: #ef7b45;
+      --orange-soft: #fff0e8;
+      --line: #d8d1c2;
+      --muted: #5d6675;
+      --good: #237b50;
+      --bad: #b64242;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; width: 100%; font-family: "DM Sans", sans-serif; color: var(--ink); }
+    button, input, textarea, select { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid #f2b36c; outline-offset: 3px;
+    }
+    .lesson-shell { width: 100%; min-height: calc(100 * min(var(--vh, 1vh), 1vh)); background: #fffaf0; }
+    .top-rule { height: 8px; background: #ef7b45; }
+    .lesson-header { background: #14213d; color: white; position: relative; overflow: hidden; }
+    .lesson-header::after {
+      content: ""; position: absolute; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,.16);
+      border-radius: 999px; right: -80px; top: -155px; box-shadow: 0 0 0 32px rgba(255,255,255,.04), 0 0 0 64px rgba(255,255,255,.03);
+    }
+    .lesson-inner { width: 100%; max-width: 1120px; margin: 0 auto; padding: 26px 22px; position: relative; z-index: 1; }
+    .eyebrow { letter-spacing: .13em; text-transform: uppercase; font-size: .76rem; font-weight: 700; color: #ffd59a; }
+    .display-face { font-family: "Fraunces", serif; }
+    .route-chip { background: rgba(255,255,255,.11); border: 1px solid rgba(255,255,255,.17); border-radius: 999px; padding: 7px 11px; font-size: .78rem; white-space: nowrap; }
+    .progress-track { background: rgba(255,255,255,.18); height: 10px; border-radius: 999px; overflow: hidden; }
+    .progress-fill { width: 0%; height: 100%; background: #ffd59a; border-radius: 999px; transition: width .35s ease; }
+    .content-wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 30px 22px 60px; }
+    .lesson-section { margin-bottom: 28px; scroll-margin-top: 16px; animation: rise .45s both; }
+    .lesson-section:nth-child(2) { animation-delay: .04s; } .lesson-section:nth-child(3) { animation-delay: .08s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .section-kicker { color: var(--teal); text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .74rem; }
+    .section-heading { font-family: "Fraunces", serif; font-size: clamp(1.7rem, 4vw, 2.35rem); line-height: 1.08; margin: 5px 0 8px; }
+    .section-intro { color: var(--muted); max-width: 760px; line-height: 1.55; }
+    .workbook-card { background: #fffdf8; border: 1px solid var(--line); border-radius: 18px; padding: 20px; box-shadow: 0 7px 0 rgba(20,33,61,.04); }
+    .accent-card { background: var(--teal-soft); border-color: #acdcd2; }
+    .challenge-card { background: var(--orange-soft); border-color: #f2c5af; }
+    .subhead { font-weight: 700; font-size: 1.08rem; margin-bottom: 7px; }
+    .field-label { display: block; font-size: .87rem; font-weight: 700; margin-bottom: 6px; }
+    .student-input, .student-textarea, .student-select {
+      width: 100%; border: 1px solid #b9c0c8; border-radius: 10px; background: white; padding: 10px 12px; color: var(--ink);
+    }
+    .student-textarea { min-height: 94px; resize: vertical; line-height: 1.5; }
+    .student-input:focus, .student-textarea:focus, .student-select:focus { border-color: var(--teal); }
+    .action-btn { border: 0; border-radius: 10px; padding: 10px 14px; background: var(--teal); color: white; font-weight: 700; transition: transform .15s, filter .15s; }
+    .action-btn:hover { filter: brightness(.94); transform: translateY(-1px); }
+    .secondary-btn { border: 1px solid #aeb9bb; border-radius: 10px; padding: 9px 13px; color: var(--ink); background: white; font-weight: 700; }
+    .complete-btn { border: 1px solid #add8ca; background: #edf9f5; color: #176147; border-radius: 999px; padding: 8px 12px; font-size: .84rem; font-weight: 700; }
+    .complete-btn.done { background: #237b50; border-color: #237b50; color: white; }
+    .feedback { min-height: 24px; font-weight: 700; font-size: .92rem; margin-top: 10px; }
+    .feedback.good { color: var(--good); } .feedback.bad { color: var(--bad); }
+    .flashcard { perspective: 900px; min-height: 185px; }
+    .flashcard button { width: 100%; min-height: 185px; border: 0; background: transparent; padding: 0; text-align: left; }
+    .flash-inner { height: 185px; position: relative; transition: transform .55s; transform-style: preserve-3d; }
+    .flashcard.revealed .flash-inner { transform: rotateY(180deg); }
+    .flash-face { position: absolute; inset: 0; padding: 18px; border-radius: 16px; backface-visibility: hidden; border: 1px solid #b9dad4; }
+    .flash-front { background: #e7f8f4; display: flex; flex-direction: column; justify-content: space-between; }
+    .flash-back { background: #14213d; color: white; transform: rotateY(180deg); }
+    .word-number { color: var(--teal); font-weight: 700; font-size: .78rem; letter-spacing: .1em; }
+    .word-main { font-family: "Fraunces", serif; font-size: 1.65rem; font-weight: 700; }
+    .tiny-note { font-size: .79rem; color: var(--muted); }
+    .choice-btn { border: 1px solid #c8d1d0; border-radius: 9px; padding: 9px 12px; background: white; text-align: left; font-weight: 600; }
+    .choice-btn:hover { background: #f3fbf9; border-color: var(--teal); }
+    .ore-flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .ore-step { border-radius: 13px; padding: 15px; min-height: 125px; }
+    .ore-step strong { display: block; font-family: "Fraunces", serif; font-size: 1.3rem; margin-bottom: 6px; }
+    .opinion { background: #e6f1ff; border: 1px solid #b8d5f4; } .reason { background: #fff0df; border: 1px solid #f3c99a; } .example { background: #e5f6e8; border: 1px solid #b8ddbe; }
+    .reading-passage { border-left: 5px solid var(--orange); padding: 18px 20px; background: #fff8f2; line-height: 1.75; color: #28364d; }
+    .timer-readout { font-family: "Fraunces", serif; font-variant-numeric: tabular-nums; font-size: 2.6rem; color: var(--teal); line-height: 1; }
+    .rating-btn { border: 1px solid #c6ccd2; background: white; border-radius: 999px; padding: 8px 15px; font-weight: 700; }
+    .rating-btn:hover, .rating-btn.selected { background: var(--ink); color: white; border-color: var(--ink); }
+    .side-btn { width: 100%; border: 2px solid #9eb9b4; background: white; border-radius: 13px; padding: 14px; font-family: "Fraunces", serif; font-size: 1.2rem; }
+    .side-btn.selected { border-color: var(--teal); background: var(--teal); color: white; }
+    .formula-strip { border-radius: 12px; background: #14213d; color: #fff; padding: 14px 16px; line-height: 1.6; }
+    .word-meter { font-size: .88rem; font-weight: 700; color: var(--muted); }
+    .accordion-panel { border: 1px solid var(--line); background: #fffdf8; border-radius: 14px; overflow: hidden; margin-top: 10px; }
+    .accordion-trigger { width: 100%; display: flex; align-items: center; justify-content: space-between; background: transparent; border: 0; padding: 15px 16px; color: var(--ink); text-align: left; font-weight: 700; }
+    .accordion-content { padding: 0 16px 16px; line-height: 1.6; color: #45515e; }
+    .accordion-content[hidden] { display: none; }
+    .hidden-answer { display: none; }
+    .hidden-answer.visible { display: block; }
+    @media (max-width: 680px) { .ore-flow { grid-template-columns: 1fr; } .lesson-inner, .content-wrap { padding-left: 16px; padding-right: 16px; } }
+  </style>
+  <script src="/_sdk/fbe2ebfd64647c54.data_sdk.js" type="text/javascript" integrity="sha512-vkTX6CfvpHc3WbjK+tFJCaDuw4ERA4aEV/e5/7+MMJPMTF4RJYCI6CAwJBT/gtDW+dba4uLSsPUgDjVDHWtgUQ=="></script>
+  <script src="/_sdk/fcb6dc01f91829ac.resizing_sdk.js" type="text/javascript" integrity="sha512-YK8JfnN705qaEaVhiL7pcVB2Rs/BbdX5yxV55Az8zT/1JanyEWTw9HqCF915m9iV1YEaoil8qsjJz03l1Kb0Ug=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(255, 250, 240);">
+  <div class="lesson-shell">
+   <div class="top-rule"></div>
+   <header class="lesson-header">
+    <div class="lesson-inner">
+     <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+       <p data-template-id="lesson-eyebrow" class="canva-text eyebrow" style="color: rgb(255, 213, 154); font-weight: 700; font-style: normal; font-size: 16px;">GRADE 8 ENGLISH · LESSON 6</p>
+       <h1 data-template-id="lesson-title" class="canva-text display-face text-4xl md:text-5xl font-bold mt-2 max-w-3xl" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Giving Opinions and Supporting Your Ideas</h1>
+       <p data-template-id="lesson-subtitle" class="canva-text mt-3 text-slate-200 max-w-2xl leading-relaxed" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Build stronger answers with a clear opinion, a reason, and an example.</p>
+      </div>
+      <div data-template-id="lesson-duration" class="canva-tag route-chip" style="background: rgba(255, 255, 255, 0.11); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">60-minute lesson path</div>
+     </div>
+     <div class="mt-7">
+      <div class="flex justify-between gap-4 text-sm mb-2"><span data-template-id="progress-label" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">YOUR PROGRESS</span> <span id="progress-text" aria-live="polite">0 of 8 learning steps complete</span>
+      </div>
+      <div class="progress-track" aria-label="Lesson progress">
+       <div id="progress-fill" class="progress-fill"></div>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main class="content-wrap">
+    <nav aria-label="60-minute lesson path" class="mb-8">
+     <p data-template-id="path-label" class="canva-text eyebrow mb-3" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">TODAY'S ROUTE</p>
+     <div class="flex flex-wrap gap-2"><span data-template-id="path-1" class="canva-tag route-chip text-slate-700 border border-stone-300 bg-white" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">1 · Warm up</span> <span data-template-id="path-2" class="canva-tag route-chip text-slate-700 border border-stone-300 bg-white" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">2 · Vocabulary</span> <span data-template-id="path-3" class="canva-tag route-chip text-slate-700 border border-stone-300 bg-white" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">3 · O-R-E grammar</span> <span data-template-id="path-4" class="canva-tag route-chip text-slate-700 border border-stone-300 bg-white" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">4 · Reading + speaking</span> <span data-template-id="path-5" class="canva-tag route-chip text-slate-700 border border-stone-300 bg-white" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">5 · Writing + exit</span>
+     </div>
+    </nav>
+    <section class="lesson-section" aria-labelledby="warm-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="warm-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">5 minutes · Speak and write</p>
+       <h2 id="warm-title" data-template-id="warm-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Warm-Up Conversation</h2>
+       <p data-template-id="warm-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Give more than a yes/no answer. Every answer needs a reason.</p>
+      </div><button type="button" class="complete-btn" data-step="warm"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <form id="warm-form" class="workbook-card grid md:grid-cols-3 gap-4">
+      <div><label data-template-id="warm-q1-label" class="canva-text field-label" for="warm-q1" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">How was your week? Share one detail and explain why.</label> <textarea id="warm-q1" class="student-textarea" required=""></textarea>
+      </div>
+      <div><label data-template-id="warm-q2-label" class="canva-text field-label" for="warm-q2" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">What is your favourite school subject? Why do you enjoy it?</label> <textarea id="warm-q2" class="student-textarea" required=""></textarea>
+      </div>
+      <div><label data-template-id="warm-q3-label" class="canva-text field-label" for="warm-q3" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Starting tomorrow, students will have three hours of homework every night. Is this a good idea? Why or why not?</label> <textarea id="warm-q3" class="student-textarea" required=""></textarea>
+      </div>
+      <div class="md:col-span-3 flex flex-wrap items-center gap-3"><button data-template-id="warm-check-button" class="canva-button action-btn" type="submit" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check my answers</button> <button data-template-id="warm-reset-button" class="canva-button secondary-btn" type="reset" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Reset</button>
+       <p id="warm-feedback" class="feedback" aria-live="polite"></p>
+      </div>
+     </form>
+    </section>
+    <section class="lesson-section" aria-labelledby="vocab-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="vocab-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">12 minutes · Learn the tools</p>
+       <h2 id="vocab-title" data-template-id="vocab-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Vocabulary Lab</h2>
+       <p data-template-id="vocab-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Tap each flashcard to reveal a simple meaning, translation support, and example sentence.</p>
+      </div><button type="button" class="complete-btn" data-step="vocab"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal opinion flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">01 · TAP TO REVEAL</span><span data-template-id="word-opinion" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">opinion</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-opinion" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">an idea or belief about something</strong>
+          <p data-template-id="translation-opinion" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 意見 · Simplified Chinese: 意见</p>
+          <p data-template-id="example-opinion" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“My opinion is that homework should be shorter.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal reason flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">02 · TAP TO REVEAL</span><span data-template-id="word-reason" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">reason</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-reason" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">why something happens or why you think something</strong>
+          <p data-template-id="translation-reason" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 理由 · Simplified Chinese: 理由</p>
+          <p data-template-id="example-reason" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“My reason is that students need time to rest.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal support flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">03 · TAP TO REVEAL</span><span data-template-id="word-support" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">support</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-support" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">to help prove or strengthen an idea</strong>
+          <p data-template-id="translation-support" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 支える・裏付ける · Simplified Chinese: 支持・证明</p>
+          <p data-template-id="example-support" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“This example supports my opinion.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal benefit flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">04 · TAP TO REVEAL</span><span data-template-id="word-benefit" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">benefit</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-benefit" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">a good result or advantage</strong>
+          <p data-template-id="translation-benefit" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 利点 · Simplified Chinese: 好处</p>
+          <p data-template-id="example-benefit" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Exercise has many health benefits.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal pressure flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">05 · TAP TO REVEAL</span><span data-template-id="word-pressure" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">pressure</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-pressure" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">a strong feeling that you must do something</strong>
+          <p data-template-id="translation-pressure" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: プレッシャー · Simplified Chinese: 压力</p>
+          <p data-template-id="example-pressure" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Too many tests can create pressure.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal responsibility flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">06 · TAP TO REVEAL</span><span data-template-id="word-responsibility" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">responsibility</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-responsibility" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">something that is your job or duty to do</strong>
+          <p data-template-id="translation-responsibility" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 責任 · Simplified Chinese: 责任</p>
+          <p data-template-id="example-responsibility" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Homework can teach students responsibility.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal concentrate flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">07 · TAP TO REVEAL</span><span data-template-id="word-concentrate" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">concentrate</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-concentrate" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">to give all your attention to something</strong>
+          <p data-template-id="translation-concentrate" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 集中する · Simplified Chinese: 集中</p>
+          <p data-template-id="example-concentrate" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“I cannot concentrate when the room is noisy.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal effective flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">08 · TAP TO REVEAL</span><span data-template-id="word-effective" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">effective</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-effective" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">working well and producing a good result</strong>
+          <p data-template-id="translation-effective" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: 効果的な · Simplified Chinese: 有效的</p>
+          <p data-template-id="example-effective" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Short practice can be effective.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal balance flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">09 · TAP TO REVEAL</span><span data-template-id="word-balance" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">balance</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-balance" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">a fair amount of different things</strong>
+          <p data-template-id="translation-balance" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: バランス · Simplified Chinese: 平衡</p>
+          <p data-template-id="example-balance" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Students need a balance between school and free time.”</p>
+         </div>
+        </div></button>
+      </article>
+      <article class="flashcard">
+       <button type="button" aria-label="Reveal however flashcard" class="flash-toggle">
+        <div class="flash-inner">
+         <div class="flash-face flash-front">
+          <span class="word-number">10 · TAP TO REVEAL</span><span data-template-id="word-however" class="canva-text word-main" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">however</span>
+         </div>
+         <div class="flash-face flash-back">
+          <strong data-template-id="meaning-however" class="canva-text block text-lg" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">used to introduce a different or opposite idea</strong>
+          <p data-template-id="translation-however" class="canva-text mt-2 text-sm" style="color: rgb(220, 231, 245); font-weight: 400; font-style: normal; font-size: 16px;">Japanese: しかしながら · Simplified Chinese: 然而</p>
+          <p data-template-id="example-however" class="canva-text mt-3 text-sm italic" style="color: rgb(255, 255, 255); font-weight: 400; font-style: italic; font-size: 16px;">“Homework can help. However, too much can cause stress.”</p>
+         </div>
+        </div></button>
+      </article>
+     </div>
+     <div class="grid lg:grid-cols-2 gap-5 mt-5">
+      <div class="workbook-card">
+       <h3 data-template-id="match-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Quick Match</h3>
+       <p data-template-id="match-prompt" class="canva-text tiny-note mb-3" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Choose the correct meaning for benefit.</p>
+       <div id="matching-area" class="space-y-2"><button type="button" class="choice-btn w-full match-choice" data-correct="false">pressure — a good result you get from something</button> <button type="button" class="choice-btn w-full match-choice" data-correct="true">benefit — a good result you get from something</button> <button type="button" class="choice-btn w-full match-choice" data-correct="false">balance — to pay close attention</button>
+       </div>
+       <p id="match-feedback" class="feedback" aria-live="polite"></p>
+      </div>
+      <form id="sentence-form" class="workbook-card">
+       <h3 data-template-id="sentence-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Sentence Completion</h3>
+       <p data-template-id="sentence-prompt" class="canva-text tiny-note mb-3" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Choose the best vocabulary word for each blank.</p>
+       <div class="space-y-3"><label class="field-label" for="blank-1">I cannot ___ when the room is noisy.</label> <select id="blank-1" class="student-select"><option value="">Choose a word</option><option>concentrate</option><option>benefits</option><option>balance</option></select> <label class="field-label" for="blank-2">Exercise has many health ___.</label> <select id="blank-2" class="student-select"><option value="">Choose a word</option><option>opinion</option><option>benefits</option><option>responsibility</option></select> <label class="field-label" for="blank-3">Students need a ___ between school and free time.</label> <select id="blank-3" class="student-select"><option value="">Choose a word</option><option>balance</option><option>pressure</option><option>effective</option></select> <label class="field-label" for="blank-4">My ___ is that school should start later.</label> <select id="blank-4" class="student-select"><option value="">Choose a word</option><option>support</option><option>opinion</option><option>reason</option></select> <label class="field-label" for="blank-5">Homework can teach students ___.</label> <select id="blank-5" class="student-select"><option value="">Choose a word</option><option>responsibility</option><option>however</option><option>benefits</option></select>
+       </div>
+       <div class="flex gap-3 flex-wrap mt-4">
+        <button data-template-id="sentence-check-button" class="canva-button action-btn" type="submit" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check answers</button><button data-template-id="sentence-reset-button" class="canva-button secondary-btn" type="reset" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Reset</button>
+       </div>
+       <p id="sentence-feedback" class="feedback" aria-live="polite"></p>
+      </form>
+     </div>
+     <div class="workbook-card challenge-card mt-5">
+      <h3 data-template-id="original-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Your Turn</h3>
+      <p data-template-id="original-prompt" class="canva-text mb-3" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Choose any 3 vocabulary words. Write one original sentence for each word.</p><label data-template-id="original-label" class="canva-text field-label" for="original-sentences" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">My original sentences</label> <textarea id="original-sentences" class="student-textarea" placeholder="Write your three original sentences here."></textarea>
+     </div>
+    </section>
+    <section class="lesson-section" aria-labelledby="grammar-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="grammar-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">10 minutes · Build a strong answer</p>
+       <h2 id="grammar-title" data-template-id="grammar-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Grammar Studio: O-R-E</h2>
+       <p data-template-id="grammar-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Good opinions do not stop after one sentence. Use O-R-E: Opinion → Reason → Example.</p>
+      </div><button type="button" class="complete-btn" data-step="grammar"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="ore-flow">
+      <div class="ore-step opinion">
+       <strong data-template-id="ore-opinion-title" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">O · Opinion</strong>
+       <p data-template-id="ore-opinion-text" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Say clearly what you think: “I think that...” “I believe that...” “In my opinion,...” “I feel that...” “From my point of view,...”</p>
+      </div>
+      <div class="ore-step reason">
+       <strong data-template-id="ore-reason-title" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">R · Reason</strong>
+       <p data-template-id="ore-reason-text" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Explain why. Use because to connect your opinion and reason.</p>
+      </div>
+      <div class="ore-step example">
+       <strong data-template-id="ore-example-title" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">E · Example</strong>
+       <p data-template-id="ore-example-text" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Make your reason clearer: “For example,...” “For instance,...” “One example is...”</p>
+      </div>
+     </div>
+     <div class="grid lg:grid-cols-2 gap-5 mt-5">
+      <div class="workbook-card">
+       <h3 data-template-id="expressions-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Useful expressions</h3>
+       <p data-template-id="expressions-opinion" class="canva-text mb-2" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Opinion: I think that... · I believe that... · In my opinion,... · I feel that... · From my point of view,...</p>
+       <p data-template-id="expressions-reason" class="canva-text mb-2" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Reason: because</p>
+       <p data-template-id="expressions-example" class="canva-text mb-2" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Example: For example,... · For instance,... · One example is...</p>
+       <p data-template-id="however-support" class="canva-text font-semibold text-teal-800" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">However introduces another side. Japanese: しかし / しかしながら · Simplified Chinese: 然而</p>
+      </div>
+      <aside class="workbook-card accent-card">
+       <h3 data-template-id="model-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Model answer</h3>
+       <p data-template-id="model-answer" class="canva-text leading-relaxed" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">In my opinion, students should have less homework because they need enough time to rest. For example, students may already spend seven hours at school before completing assignments at home.</p>
+      </aside>
+     </div>
+     <form id="connector-form" class="workbook-card mt-5">
+      <h3 data-template-id="connector-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Because or However?</h3>
+      <p data-template-id="connector-prompt" class="canva-text mb-3" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Choose the connector that makes each sentence work.</p>
+      <div class="grid md:grid-cols-3 gap-3"><label class="field-label" for="connector-1">Students need rest ___ it helps them learn.</label> <select id="connector-1" class="student-select"><option value="">Choose</option><option>because</option><option>However</option></select> <label class="field-label" for="connector-2">Homework can be useful. ___, too much can cause stress.</label> <select id="connector-2" class="student-select"><option value="">Choose</option><option>because</option><option>However</option></select> <label class="field-label" for="connector-3">I support breaks ___ they improve concentration.</label> <select id="connector-3" class="student-select"><option value="">Choose</option><option>because</option><option>However</option></select>
+      </div>
+      <div class="flex flex-wrap gap-3 mt-4">
+       <button data-template-id="connector-check-button" class="canva-button action-btn" type="submit" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check answers</button><button data-template-id="connector-reset-button" class="canva-button secondary-btn" type="reset" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Reset</button>
+      </div>
+      <p id="connector-feedback" class="feedback" aria-live="polite"></p>
+     </form>
+    </section>
+    <section class="lesson-section" aria-labelledby="reading-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="reading-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">10 minutes · Timed reading</p>
+       <h2 id="reading-title" data-template-id="reading-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Timed Reading: Homework and Balance</h2>
+       <p data-template-id="reading-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Start the timer, read closely, then rate how the passage felt for you.</p>
+      </div><button type="button" class="complete-btn" data-step="reading"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="workbook-card">
+      <div class="flex flex-wrap justify-between gap-5 items-center mb-5">
+       <div>
+        <p data-template-id="timer-label" class="canva-text eyebrow text-teal-700" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">READING TIME</p>
+        <p id="timer-readout" class="timer-readout" aria-live="polite">00:00</p>
+       </div>
+       <div class="flex flex-wrap gap-3"><button data-template-id="timer-start-button" class="canva-button action-btn" id="timer-start" type="button" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Start timer</button> <button data-template-id="timer-stop-button" class="canva-button secondary-btn" id="timer-stop" type="button" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Stop</button> <button data-template-id="timer-reset-button" class="canva-button secondary-btn" id="timer-reset" type="button" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Reset timer</button>
+       </div>
+      </div>
+      <article data-template-id="reading-passage" class="canva-panel reading-passage" style="background: rgb(255, 248, 242); color: rgb(40, 54, 77); font-weight: 400; font-style: normal; font-size: 16px;">Homework has been part of school life for many years. Teachers often give homework because it allows students to practice what they learned in class. It can also help students develop responsibility and better study habits. However, some students believe that they receive too much homework. After spending many hours at school, students may still need to complete several assignments at home. This can reduce the amount of time they have for exercise, hobbies, family, and sleep. Researchers and teachers continue to discuss how much homework students actually need. Homework can be effective when it has a clear purpose and helps students review important skills. However, giving students a large amount of work does not always mean that they will learn more. Students also need balance. Rest and free time can help them concentrate better when they return to their studies. For this reason, some people believe schools should focus on the quality of homework rather than the quantity. In my opinion, homework should not completely disappear. It can be useful, but teachers should make sure that assignments are meaningful and manageable.</article>
+      <div class="mt-5">
+       <p data-template-id="rating-label" class="canva-text field-label" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">How did this reading feel?</p>
+       <div class="flex flex-wrap gap-2" role="group" aria-label="Reading difficulty rating"><button data-template-id="rating-easy" class="canva-button rating-btn" type="button" data-rating="Easy" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Easy</button> <button data-template-id="rating-okay" class="canva-button rating-btn" type="button" data-rating="Okay" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Okay</button> <button data-template-id="rating-difficult" class="canva-button rating-btn" type="button" data-rating="Difficult" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Difficult</button>
+       </div>
+       <p id="rating-feedback" class="feedback" aria-live="polite"></p>
+      </div>
+     </div>
+    </section>
+    <section class="lesson-section" aria-labelledby="comprehension-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="comprehension-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">8 minutes · Show your understanding</p>
+       <h2 id="comprehension-title" data-template-id="comprehension-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Reading Comprehension</h2>
+       <p data-template-id="comprehension-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Answer in complete sentences. Use evidence and ideas from the passage.</p>
+      </div><button type="button" class="complete-btn" data-step="comprehension"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <form id="reading-form" class="workbook-card grid md:grid-cols-2 gap-4">
+      <div>
+       <label data-template-id="read-q1" class="canva-text field-label" for="read-a1" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">1. Why do teachers give homework?</label><textarea id="read-a1" class="student-textarea" required=""></textarea>
+      </div>
+      <div>
+       <label data-template-id="read-q2" class="canva-text field-label" for="read-a2" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">2. What are two problems caused by too much homework?</label><textarea id="read-a2" class="student-textarea" required=""></textarea>
+      </div>
+      <div>
+       <label data-template-id="read-q3" class="canva-text field-label" for="read-a3" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">3. When can homework be effective?</label><textarea id="read-a3" class="student-textarea" required=""></textarea>
+      </div>
+      <div>
+       <label data-template-id="read-q4" class="canva-text field-label" for="read-a4" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">4. Why does balance matter for students?</label><textarea id="read-a4" class="student-textarea" required=""></textarea>
+      </div>
+      <div>
+       <label data-template-id="read-q5" class="canva-text field-label" for="read-a5" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">5. Does the writer want homework to disappear completely?</label><textarea id="read-a5" class="student-textarea" required=""></textarea>
+      </div>
+      <div>
+       <label data-template-id="read-q6" class="canva-text field-label" for="read-a6" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">6. Critical thinking: I agree/disagree with the writer because...</label><textarea id="read-a6" class="student-textarea" required="" placeholder="I agree/disagree with the writer because..."></textarea>
+      </div>
+      <div class="md:col-span-2 flex flex-wrap gap-3">
+       <button data-template-id="read-check-button" class="canva-button action-btn" type="submit" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check complete sentences</button><button data-template-id="read-reset-button" class="canva-button secondary-btn" type="reset" style="background: rgb(255, 255, 255); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Reset answers</button>
+      </div>
+      <p id="reading-feedback" class="feedback md:col-span-2" aria-live="polite"></p>
+     </form>
+    </section>
+    <section class="lesson-section" aria-labelledby="speaking-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="speaking-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">7 minutes · Pick a side!</p>
+       <h2 id="speaking-title" data-template-id="speaking-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Speaking: Pick a Side!</h2>
+       <p data-template-id="speaking-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Choose YES or NO. Then use O-R-E to explain your view aloud or in writing.</p>
+      </div><button type="button" class="complete-btn" data-step="speaking"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="grid lg:grid-cols-3 gap-4">
+      <div class="workbook-card">
+       <h3 data-template-id="side-q1" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Should students have homework every day?</h3>
+       <div class="grid grid-cols-2 gap-2">
+        <button class="side-btn" type="button" data-topic="Students should have homework every day." data-side="YES">YES</button><button class="side-btn" type="button" data-topic="Students should have homework every day." data-side="NO">NO</button>
+       </div>
+      </div>
+      <div class="workbook-card">
+       <h3 data-template-id="side-q2" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Should students use phones during lunch break?</h3>
+       <div class="grid grid-cols-2 gap-2">
+        <button class="side-btn" type="button" data-topic="Students should use phones during lunch break." data-side="YES">YES</button><button class="side-btn" type="button" data-topic="Students should use phones during lunch break." data-side="NO">NO</button>
+       </div>
+      </div>
+      <div class="workbook-card">
+       <h3 data-template-id="side-q3" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Should school uniforms be required?</h3>
+       <div class="grid grid-cols-2 gap-2">
+        <button class="side-btn" type="button" data-topic="School uniforms should be required." data-side="YES">YES</button><button class="side-btn" type="button" data-topic="School uniforms should be required." data-side="NO">NO</button>
+       </div>
+      </div>
+     </div>
+     <div class="workbook-card mt-5">
+      <p data-template-id="speaking-template-label" class="canva-text field-label" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Your O-R-E response template</p>
+      <p data-template-id="speaking-template" class="canva-text formula-strip" style="background: rgb(20, 33, 61); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">I think ___ because ___. For example, ___.</p><label data-template-id="speaking-response-label" class="canva-text field-label mt-4" for="speaking-response" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Build your response</label> <textarea id="speaking-response" class="student-textarea" placeholder="Choose a side, then build your response."></textarea>
+      <p id="side-feedback" class="feedback" aria-live="polite"></p>
+     </div>
+     <div class="workbook-card challenge-card mt-5">
+      <h3 data-template-id="counter-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Challenge: Answer a counterargument</h3>
+      <p data-template-id="counterargument" class="canva-text mb-3" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Counterargument: “Homework every day prepares students for the real world.” Respond politely and explain your view.</p><label data-template-id="counter-label" class="canva-text field-label" for="counter-response" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Your response</label> <textarea id="counter-response" class="student-textarea" placeholder="I understand, but..."></textarea>
+      <p data-template-id="counter-help" class="canva-text tiny-note mt-2" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Try: “I understand, but...” · “I see your point, however...” · “I agree because...” · “I disagree because...” · “That’s true, but...”</p>
+     </div>
+    </section>
+    <section class="lesson-section" aria-labelledby="writing-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="writing-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">8 minutes · Plan, then write</p>
+       <h2 id="writing-title" data-template-id="writing-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Opinion Writing</h2>
+       <p data-template-id="writing-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Write independently before corrections. Focus first on clear ideas and strong support.</p>
+      </div><button type="button" class="complete-btn" data-step="writing"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="workbook-card">
+      <h3 data-template-id="writing-question" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Should students have less homework?</h3>
+      <p data-template-id="writing-target" class="canva-text mb-4 text-teal-800 font-semibold" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">Target: 80–100 words</p>
+      <div class="grid md:grid-cols-3 gap-3 mb-5">
+       <div>
+        <label data-template-id="plan-opinion-label" class="canva-text field-label" for="plan-opinion" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">My opinion</label><input id="plan-opinion" class="student-input" type="text">
+       </div>
+       <div>
+        <label data-template-id="plan-reason1-label" class="canva-text field-label" for="plan-reason1" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">First reason</label><input id="plan-reason1" class="student-input" type="text">
+       </div>
+       <div>
+        <label data-template-id="plan-example-label" class="canva-text field-label" for="plan-example" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Example</label><input id="plan-example" class="student-input" type="text">
+       </div>
+       <div>
+        <label data-template-id="plan-reason2-label" class="canva-text field-label" for="plan-reason2" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Second reason</label><input id="plan-reason2" class="student-input" type="text">
+       </div>
+       <div>
+        <label data-template-id="plan-however-label" class="canva-text field-label" for="plan-however" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Opposite idea (However...)</label><input id="plan-however" class="student-input" type="text">
+       </div>
+       <div>
+        <label data-template-id="plan-conclusion-label" class="canva-text field-label" for="plan-conclusion" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Conclusion</label><input id="plan-conclusion" class="student-input" type="text">
+       </div>
+      </div>
+      <p data-template-id="writing-formula" class="canva-text formula-strip" style="background: rgb(20, 33, 61); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">In my opinion, ___. First, ___. This is because ___. For example, ___. Second, ___. However, ___. Therefore, I believe ___.</p><label data-template-id="writing-response-label" class="canva-text field-label mt-4" for="writing-response" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">My 80–100 word paragraph</label> <textarea id="writing-response" class="student-textarea" style="min-height:230px" placeholder="Write independently first. Then check your ideas and organization."></textarea>
+      <div class="mt-3 flex flex-wrap justify-between gap-3 items-center">
+       <span id="word-count" class="word-meter" aria-live="polite">0 words</span><button data-template-id="writing-check-button" id="writing-check" class="canva-button action-btn" type="button" style="background: rgb(22, 125, 127); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check word target</button>
+      </div>
+      <p id="writing-feedback" class="feedback" aria-live="polite"></p>
+     </div>
+    </section>
+    <section class="lesson-section" aria-labelledby="exit-title">
+     <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+      <div>
+       <p data-template-id="exit-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">Final 3 minutes · Exit challenge</p>
+       <h2 id="exit-title" data-template-id="exit-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Exit Challenge</h2>
+       <p data-template-id="exit-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Use what you learned: identify O-R-E and write one supported school opinion.</p>
+      </div><button type="button" class="complete-btn" data-step="exit"><i data-lucide="check" class="inline w-4 h-4 mr-1"></i><span>Mark complete</span></button>
+     </div>
+     <div class="workbook-card">
+      <p data-template-id="exit-task1" class="canva-text font-semibold mb-3" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">1. Identify the Opinion, Reason, and Example in a strong answer.</p><textarea id="exit-identify" class="student-textarea mb-4" placeholder="Opinion: ... Reason: ... Example: ..."></textarea>
+      <p data-template-id="exit-task2" class="canva-text font-semibold mb-3" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">2. Write one school opinion using O-R-E.</p><textarea id="exit-ore" class="student-textarea" placeholder="I think school should... because... For example,..."></textarea> <button data-template-id="exit-reveal-button" class="canva-button action-btn mt-4" id="exit-reveal" type="button" style="background: rgb(239, 123, 69); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Reveal model answer</button>
+      <div id="exit-answer" class="hidden-answer workbook-card accent-card mt-4">
+       <h3 data-template-id="exit-model-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Model O-R-E answer</h3>
+       <p data-template-id="exit-model" class="canva-text leading-relaxed" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">I think school should start later because teenagers need enough sleep. For example, students who sleep well may concentrate better during morning classes.</p>
+      </div>
+     </div>
+    </section>
+    <section class="lesson-section" aria-labelledby="homework-title">
+     <p data-template-id="homework-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">Homework</p>
+     <h2 id="homework-title" data-template-id="homework-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Keep Building Your Ideas</h2>
+     <p data-template-id="homework-intro" class="canva-text section-intro" style="color: rgb(93, 102, 117); font-weight: 400; font-style: normal; font-size: 16px;">Open each task for clear instructions.</p>
+     <div class="mt-4">
+      <div class="accordion-panel">
+       <button data-template-id="hw1-title" class="canva-button accordion-trigger" type="button" aria-expanded="false" aria-controls="hw1-panel" style="background: rgb(255, 253, 248); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Task 1 · Vocabulary sentences</button>
+       <div id="hw1-panel" class="accordion-content" hidden="">
+        <p data-template-id="hw1-content" class="canva-text" style="color: rgb(69, 81, 94); font-weight: 400; font-style: normal; font-size: 16px;">Write original sentences using these words: opinion, benefit, pressure, responsibility, concentrate, effective, balance, and however.</p>
+       </div>
+      </div>
+      <div class="accordion-panel">
+       <button data-template-id="hw2-title" class="canva-button accordion-trigger" type="button" aria-expanded="false" aria-controls="hw2-panel" style="background: rgb(255, 253, 248); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Task 2 · Opinion paragraph</button>
+       <div id="hw2-panel" class="accordion-content" hidden="">
+        <p data-template-id="hw2-content" class="canva-text" style="color: rgb(69, 81, 94); font-weight: 400; font-style: normal; font-size: 16px;">Write a 100–120 word opinion paragraph: “Should teenagers have a limit on their daily screen time?” Use this order: Opinion → Reason 1 → Example → Reason 2 → Opposite idea → Conclusion.</p>
+       </div>
+      </div>
+      <div class="accordion-panel">
+       <button data-template-id="hw3-title" class="canva-button accordion-trigger" type="button" aria-expanded="false" aria-controls="hw3-panel" style="background: rgb(255, 253, 248); color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 16px;">Task 3 · One-minute speaking</button>
+       <div id="hw3-panel" class="accordion-content" hidden="">
+        <p data-template-id="hw3-content" class="canva-text" style="color: rgb(69, 81, 94); font-weight: 400; font-style: normal; font-size: 16px;">Prepare a one-minute speaking response about one change you would make to school. Use an opinion, a reason, and an example.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <aside class="lesson-section workbook-card accent-card" aria-labelledby="teacher-title">
+     <p data-template-id="teacher-kicker" class="canva-text section-kicker" style="color: rgb(22, 125, 127); font-weight: 700; font-style: normal; font-size: 16px;">Teacher Notes</p>
+     <h2 id="teacher-title" data-template-id="teacher-title-text" class="canva-text section-heading" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 24px;">Focus on Extending Answers</h2>
+     <p data-template-id="teacher-focus" class="canva-text leading-relaxed" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">The main focus is extending answers rather than perfect grammar. Encourage learners to communicate a clear idea, then add a reason and an example.</p>
+     <div class="grid md:grid-cols-2 gap-4 mt-4">
+      <div>
+       <h3 data-template-id="teacher-follow-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Useful follow-ups</h3>
+       <p data-template-id="teacher-follow" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">Ask: “Why?” “Can you give me an example?” “What would someone who disagrees with you say?”</p>
+      </div>
+      <div>
+       <h3 data-template-id="teacher-growth-title" class="canva-text subhead" style="color: rgb(20, 33, 61); font-weight: 700; font-style: normal; font-size: 19px;">Growth example</h3>
+       <p data-template-id="teacher-growth" class="canva-text" style="color: rgb(20, 33, 61); font-weight: 400; font-style: normal; font-size: 16px;">From: “I think homework is bad.” To: “I think students should have less homework because they need time to rest. For example, students can exercise or sleep enough after school.”</p>
+      </div>
+     </div>
+    </aside>
+   </main>
+  </div>
+  <script src="/_sdk/5629ea66dc55d54f.editing_sdk.js" integrity="sha512-snPYzGvgiTEMUBOb+HlCBkFeiM0IRX4hcgA78wvalhC0WnJtaX+RCbosPWtNqZsZ7sZ9NwN0oePZYa+IlMwa+w=="></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      const completed = new Set();
+      const updateProgress = () => {
+        const count = completed.size;
+        document.getElementById('progress-fill').style.width = `${(count / 8) * 100}%`;
+        document.getElementById('progress-text').textContent = `${count} of 8 learning steps complete`;
+      };
+      document.querySelectorAll('.complete-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const step = button.dataset.step;
+          if (completed.has(step)) {
+            completed.delete(step);
+            button.classList.remove('done');
+            button.querySelector('span').textContent = 'Mark complete';
+          } else {
+            completed.add(step);
+            button.classList.add('done');
+            button.querySelector('span').textContent = 'Completed';
+          }
+          updateProgress();
+        });
+      });
+
+      document.querySelectorAll('.flash-toggle').forEach(button => {
+        button.addEventListener('click', () => button.closest('.flashcard').classList.toggle('revealed'));
+      });
+
+      const feedback = (id, message, isGood) => {
+        const target = document.getElementById(id);
+        target.textContent = message;
+        target.className = `feedback ${isGood ? 'good' : 'bad'}`;
+      };
+
+      document.getElementById('warm-form').addEventListener('submit', event => {
+        event.preventDefault();
+        const answers = [...event.currentTarget.querySelectorAll('textarea')];
+        const withReasons = answers.filter(a => /because|so|since|for example|i think|i believe/i.test(a.value) && a.value.trim().split(/\s+/).length >= 5);
+        feedback('warm-feedback', withReasons.length === 3 ? 'Great work — every answer includes an idea and a reason.' : 'Add a reason to each answer. Try using because, so, or for example.', withReasons.length === 3);
+      });
+      document.getElementById('warm-form').addEventListener('reset', () => setTimeout(() => feedback('warm-feedback', '', true), 0));
+
+      document.querySelectorAll('.match-choice').forEach(choice => {
+        choice.addEventListener('click', () => {
+          const correct = choice.dataset.correct === 'true';
+          feedback('match-feedback', correct ? 'Correct! A benefit is a good result or advantage.' : 'Try again. Look for the meaning “a good result or advantage.”', correct);
+        });
+      });
+
+      const sentenceForm = document.getElementById('sentence-form');
+      sentenceForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const answers = ['concentrate', 'benefits', 'balance', 'opinion', 'responsibility'];
+        const score = answers.filter((answer, index) => document.getElementById(`blank-${index + 1}`).value === answer).length;
+        feedback('sentence-feedback', score === 5 ? 'Excellent — 5 out of 5 answers are correct!' : `You have ${score} out of 5 correct. Read each sentence again and try once more.`, score === 5);
+      });
+      sentenceForm.addEventListener('reset', () => setTimeout(() => feedback('sentence-feedback', '', true), 0));
+
+      const connectorForm = document.getElementById('connector-form');
+      connectorForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const answers = ['because', 'However', 'because'];
+        const score = answers.filter((answer, index) => document.getElementById(`connector-${index + 1}`).value === answer).length;
+        feedback('connector-feedback', score === 3 ? 'Perfect! Use because for a reason and However for another side.' : `You have ${score} out of 3 correct. Remember: “However” introduces another side.`, score === 3);
+      });
+      connectorForm.addEventListener('reset', () => setTimeout(() => feedback('connector-feedback', '', true), 0));
+
+      let seconds = 0, timerId = null;
+      const renderTimer = () => {
+        const minutes = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        document.getElementById('timer-readout').textContent = `${minutes}:${secs}`;
+      };
+      document.getElementById('timer-start').addEventListener('click', () => {
+        if (!timerId) timerId = setInterval(() => { seconds += 1; renderTimer(); }, 1000);
+      });
+      document.getElementById('timer-stop').addEventListener('click', () => { clearInterval(timerId); timerId = null; });
+      document.getElementById('timer-reset').addEventListener('click', () => { clearInterval(timerId); timerId = null; seconds = 0; renderTimer(); });
+
+      document.querySelectorAll('[data-rating]').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('[data-rating]').forEach(item => item.classList.remove('selected'));
+          button.classList.add('selected');
+          feedback('rating-feedback', `You chose: ${button.dataset.rating}. Notice one sentence you understood well.`, true);
+        });
+      });
+
+      const readingForm = document.getElementById('reading-form');
+      readingForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const answers = [...readingForm.querySelectorAll('textarea')];
+        const complete = answers.every(area => area.value.trim().split(/\s+/).length >= 7 && /[.!?]$/.test(area.value.trim()));
+        feedback('reading-feedback', complete ? 'Well done — you have written complete-sentence answers. Review the passage to add precise details.' : 'Please write a complete sentence for every answer. Aim for at least seven words and end with punctuation.', complete);
+      });
+      readingForm.addEventListener('reset', () => setTimeout(() => feedback('reading-feedback', '', true), 0));
+
+      document.querySelectorAll('.side-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.side-btn').forEach(item => item.classList.remove('selected'));
+          button.classList.add('selected');
+          document.getElementById('speaking-response').value = `I think ${button.dataset.topic.toLowerCase()} ${button.dataset.side === 'YES' ? 'because' : 'because'} `;
+          feedback('side-feedback', `You chose ${button.dataset.side}. Now add a reason and a real example.`, true);
+        });
+      });
+
+      const writing = document.getElementById('writing-response');
+      writing.addEventListener('input', () => {
+        const count = writing.value.trim() ? writing.value.trim().split(/\s+/).length : 0;
+        document.getElementById('word-count').textContent = `${count} words`;
+      });
+      document.getElementById('writing-check').addEventListener('click', () => {
+        const count = writing.value.trim() ? writing.value.trim().split(/\s+/).length : 0;
+        if (count >= 80 && count <= 100) feedback('writing-feedback', 'You reached the 80–100 word target. Read once more and check that every reason has support.', true);
+        else if (count < 80) feedback('writing-feedback', `You need ${80 - count} more words to reach the target. Add another example or explain your reasons further.`, false);
+        else feedback('writing-feedback', `You are ${count - 100} words over the target. Keep your strongest ideas and edit for clarity.`, false);
+      });
+
+      document.getElementById('exit-reveal').addEventListener('click', () => {
+        const answer = document.getElementById('exit-answer');
+        answer.classList.toggle('visible');
+      });
+
+      document.querySelectorAll('.accordion-trigger').forEach(button => {
+        button.addEventListener('click', () => {
+          const panel = document.getElementById(button.getAttribute('aria-controls'));
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!isOpen));
+          panel.hidden = isOpen;
+        });
+      });
+    });
+  </script>
+ 
+</body></html>
