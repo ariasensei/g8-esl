@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amelie ESL Grade 8 - Lesson 7</title>
+<style>
+    :root{
+        --bg1:#0f172a;
+        --bg2:#172554;
+        --card:#ffffff;
+        --text:#172033;
+        --muted:#64748b;
+        --accent:#7c3aed;
+        --accent2:#ec4899;
+        --accent3:#06b6d4;
+        --good:#16a34a;
+        --bad:#dc2626;
+        --soft:#f8fafc;
+        --line:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+        margin:0;
+        font-family:Inter, "Segoe UI", Arial, sans-serif;
+        color:var(--text);
+        background:
+          radial-gradient(circle at top right, rgba(236,72,153,.22), transparent 28%),
+          radial-gradient(circle at top left, rgba(6,182,212,.18), transparent 30%),
+          linear-gradient(135deg,var(--bg1),var(--bg2));
+        min-height:100vh;
+    }
+    header{
+        min-height:78vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:42px 22px 24px;
+        text-align:center;
+        color:white;
+    }
+    .hero{
+        width:min(1050px,94vw);
+        padding:56px 26px;
+        border:1px solid rgba(255,255,255,.18);
+        background:rgba(255,255,255,.08);
+        backdrop-filter:blur(16px);
+        border-radius:34px;
+        box-shadow:0 30px 80px rgba(0,0,0,.28);
+    }
+    .badge{
+        display:inline-block;
+        padding:8px 14px;
+        border-radius:999px;
+        background:rgba(255,255,255,.13);
+        border:1px solid rgba(255,255,255,.18);
+        font-weight:700;
+        letter-spacing:.3px;
+        margin-bottom:18px;
+    }
+    h1{
+        font-size:clamp(2.4rem,6vw,5.5rem);
+        line-height:.95;
+        margin:0;
+    }
+    .gradient-text{
+        background:linear-gradient(90deg,#67e8f9,#f9a8d4,#c4b5fd);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    .hero p{
+        font-size:1.15rem;
+        max-width:760px;
+        margin:22px auto 0;
+        color:#e2e8f0;
+        line-height:1.7;
+    }
+    .hero-actions{
+        display:flex;
+        justify-content:center;
+        gap:12px;
+        flex-wrap:wrap;
+        margin-top:28px;
+    }
+    button,.btn{
+        border:none;
+        cursor:pointer;
+        padding:12px 18px;
+        border-radius:14px;
+        font-weight:800;
+        font-size:1rem;
+        transition:.2s ease;
+    }
+    .btn-primary{
+        background:linear-gradient(90deg,var(--accent),var(--accent2));
+        color:white;
+        box-shadow:0 10px 30px rgba(124,58,237,.28);
+    }
+    .btn-secondary{
+        background:white;
+        color:#312e81;
+    }
+    button:hover,.btn:hover{transform:translateY(-2px)}
+    nav{
+        position:sticky;
+        top:0;
+        z-index:20;
+        background:rgba(15,23,42,.92);
+        backdrop-filter:blur(12px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        overflow:auto;
+        white-space:nowrap;
+        padding:10px 14px;
+    }
+    nav a{
+        color:#e2e8f0;
+        text-decoration:none;
+        display:inline-block;
+        padding:9px 13px;
+        border-radius:10px;
+        font-size:.92rem;
+        font-weight:700;
+    }
+    nav a:hover{background:rgba(255,255,255,.1)}
+    main{
+        width:min(1120px,94vw);
+        margin:34px auto 80px;
+    }
+    section{
+        background:var(--card);
+        border-radius:28px;
+        padding:28px;
+        margin:24px 0;
+        box-shadow:0 22px 60px rgba(2,6,23,.18);
+        border:1px solid rgba(255,255,255,.65);
+    }
+    .section-title{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        margin-bottom:10px;
+    }
+    .section-title span{
+        width:44px;height:44px;
+        display:grid;place-items:center;
+        border-radius:14px;
+        color:white;
+        font-weight:900;
+        background:linear-gradient(135deg,var(--accent),var(--accent2));
+    }
+    h2{margin:0;font-size:clamp(1.6rem,4vw,2.35rem)}
+    h3{margin-top:26px}
+    .sub{color:var(--muted);line-height:1.65}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .card{
+        padding:20px;
+        background:var(--soft);
+        border:1px solid var(--line);
+        border-radius:20px;
+    }
+    .prompt{
+        font-size:1.07rem;
+        line-height:1.7;
+        margin:10px 0;
+    }
+    textarea,input[type="text"]{
+        width:100%;
+        border:1px solid #cbd5e1;
+        border-radius:14px;
+        padding:13px;
+        font:inherit;
+        background:white;
+        outline:none;
+    }
+    textarea{min-height:110px;resize:vertical}
+    input:focus,textarea:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px rgba(139,92,246,.12)}
+    .vocab-table{
+        width:100%;
+        border-collapse:separate;
+        border-spacing:0;
+        overflow:hidden;
+        border-radius:18px;
+        border:1px solid var(--line);
+    }
+    .vocab-table th,.vocab-table td{
+        padding:14px 13px;
+        border-bottom:1px solid var(--line);
+        text-align:left;
+        vertical-align:top;
+    }
+    .vocab-table th{
+        background:#ede9fe;
+        color:#4c1d95;
+    }
+    .vocab-table tr:last-child td{border-bottom:none}
+    .cn{font-weight:800;color:#be185d}
+    .quiz-item{
+        border:1px solid var(--line);
+        border-radius:18px;
+        padding:16px;
+        margin:12px 0;
+    }
+    .options{
+        display:grid;
+        gap:9px;
+        margin-top:10px;
+    }
+    .option{
+        display:block;
+        background:#f8fafc;
+        padding:11px 12px;
+        border:1px solid #e2e8f0;
+        border-radius:12px;
+        cursor:pointer;
+    }
+    .feedback{
+        margin-top:8px;
+        font-weight:800;
+        min-height:20px;
+    }
+    .good{color:var(--good)}
+    .bad{color:var(--bad)}
+    .reading{
+        font-size:1.08rem;
+        line-height:1.9;
+        background:linear-gradient(135deg,#f8fafc,#eef2ff);
+        border-left:5px solid #8b5cf6;
+        padding:20px;
+        border-radius:18px;
+    }
+    .timer{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        flex-wrap:wrap;
+        margin:14px 0;
+    }
+    .timer-box{
+        font-size:1.5rem;
+        font-weight:900;
+        padding:10px 14px;
+        border-radius:14px;
+        background:#111827;
+        color:white;
+        min-width:110px;
+        text-align:center;
+    }
+    .formula{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:10px;
+        margin:16px 0;
+    }
+    .formula div{
+        text-align:center;
+        padding:16px 10px;
+        border-radius:16px;
+        color:white;
+        font-weight:900;
+    }
+    .formula div:nth-child(1){background:#7c3aed}
+    .formula div:nth-child(2){background:#2563eb}
+    .formula div:nth-child(3){background:#0891b2}
+    .formula div:nth-child(4){background:#db2777}
+    .note{
+        background:#fff7ed;
+        border:1px solid #fed7aa;
+        padding:14px;
+        border-radius:14px;
+        color:#9a3412;
+    }
+    .chip{
+        display:inline-block;
+        padding:7px 10px;
+        border-radius:999px;
+        background:#ecfeff;
+        color:#155e75;
+        margin:4px;
+        font-size:.9rem;
+        font-weight:800;
+    }
+    .scorebox{
+        position:fixed;
+        right:18px;
+        bottom:18px;
+        z-index:50;
+        background:#111827;
+        color:white;
+        padding:12px 16px;
+        border-radius:16px;
+        box-shadow:0 14px 36px rgba(0,0,0,.28);
+        font-weight:800;
+    }
+    .progress{
+        width:100%;
+        height:10px;
+        background:#e2e8f0;
+        border-radius:999px;
+        overflow:hidden;
+        margin:14px 0 0;
+    }
+    .progress > div{
+        height:100%;
+        width:0%;
+        background:linear-gradient(90deg,#06b6d4,#7c3aed,#ec4899);
+        transition:.3s ease;
+    }
+    .hidden{display:none}
+    footer{
+        color:#cbd5e1;
+        text-align:center;
+        padding:20px 16px 50px;
+    }
+    @media(max-width:760px){
+        .grid,.grid-3{grid-template-columns:1fr}
+        .formula{grid-template-columns:repeat(2,1fr)}
+        section{padding:20px}
+        .scorebox{right:10px;bottom:10px}
+    }
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="hero">
+    <div class="badge">Grade 8 ESL • Lesson 7 • 60 Minutes</div>
+    <h1>Speak Your Mind <span class="gradient-text">Clearly</span></h1>
+    <p>Learn how to give an opinion, support it with reasons and examples, and respond politely when someone disagrees.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#warmup">Start Lesson</a>
+      <a class="btn btn-secondary" href="#homework">Jump to Homework</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#warmup">Warm-Up</a>
+  <a href="#vocab">Vocabulary</a>
+  <a href="#reading">Reading</a>
+  <a href="#grammar">Grammar</a>
+  <a href="#speaking">Speaking</a>
+  <a href="#writing">Writing</a>
+  <a href="#review">Review</a>
+  <a href="#homework">Homework</a>
+</nav>
+
+<div class="scorebox">⭐ Score: <span id="score">0</span></div>
+
+<main>
+<section id="warmup">
+  <div class="section-title"><span>1</span><h2>Warm-Up Conversation</h2></div>
+  <p class="sub">Answer in complete sentences. Try to give at least one reason.</p>
+  <div class="grid">
+    <div class="card"><b>Which is better: studying at home or studying at school?</b><textarea placeholder="Type your answer..."></textarea></div>
+    <div class="card"><b>Should students be allowed to use phones in class?</b><textarea placeholder="Type your answer..."></textarea></div>
+    <div class="card"><b>Which is better: books or movies?</b><textarea placeholder="Type your answer..."></textarea></div>
+    <div class="card"><b>Would you rather live in a big city or a small town?</b><textarea placeholder="Type your answer..."></textarea></div>
+  </div>
+
+  <h3>Key Idea</h3>
+  <div class="grid-3">
+    <div class="card"><b>Opinion</b><p>What you think or believe.</p></div>
+    <div class="card"><b>Reason</b><p>Why you think that way.</p></div>
+    <div class="card"><b>Example</b><p>Information that supports your reason.</p></div>
+  </div>
+  <p class="note"><b>Example:</b> I think students should exercise every day because exercise helps them stay healthy. For example, walking or playing sports can strengthen the body.</p>
+</section>
+
+<section id="vocab">
+  <div class="section-title"><span>2</span><h2>Vocabulary Builder</h2></div>
+  <p class="sub">Simple English meanings plus simple Chinese translations.</p>
+  <table class="vocab-table">
+    <thead>
+      <tr><th>Word</th><th>Easy Meaning</th><th>中文</th><th>Example</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>opinion</b></td><td>what someone thinks</td><td class="cn">意见 / 看法</td><td>In my opinion, school uniforms are useful.</td></tr>
+      <tr><td><b>reason</b></td><td>why you think something</td><td class="cn">原因 / 理由</td><td>My reason is that uniforms are convenient.</td></tr>
+      <tr><td><b>support</b></td><td>to make an idea stronger</td><td class="cn">支持</td><td>She supported her opinion with an example.</td></tr>
+      <tr><td><b>benefit</b></td><td>something helpful or good</td><td class="cn">好处 / 益处</td><td>Exercise has many health benefits.</td></tr>
+      <tr><td><b>disadvantage</b></td><td>something that causes a problem</td><td class="cn">缺点</td><td>One disadvantage of phones is distraction.</td></tr>
+      <tr><td><b>prefer</b></td><td>to like one thing more</td><td class="cn">更喜欢</td><td>I prefer reading books to watching movies.</td></tr>
+      <tr><td><b>effective</b></td><td>works well</td><td class="cn">有效的</td><td>Studying every day is an effective habit.</td></tr>
+      <tr><td><b>convenient</b></td><td>easy and useful</td><td class="cn">方便的</td><td>Online shopping is convenient.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Quick Check</h3>
+  <div class="quiz-item">
+    <p>1. I ______ studying in the morning because I have more energy.</p>
+    <div class="options">
+      <label class="option"><input type="radio" name="v1" value="prefer"> prefer</label>
+      <label class="option"><input type="radio" name="v1" value="benefit"> benefit</label>
+      <label class="option"><input type="radio" name="v1" value="effective"> effective</label>
+    </div>
+    <div class="feedback" id="fb-v1"></div>
+  </div>
+  <div class="quiz-item">
+    <p>2. One ______ of exercise is better health.</p>
+    <div class="options">
+      <label class="option"><input type="radio" name="v2" value="reason"> reason</label>
+      <label class="option"><input type="radio" name="v2" value="benefit"> benefit</label>
+      <label class="option"><input type="radio" name="v2" value="prefer"> prefer</label>
+    </div>
+    <div class="feedback" id="fb-v2"></div>
+  </div>
+  <div class="quiz-item">
+    <p>3. Online learning can be ______ because students can study at home.</p>
+    <div class="options">
+      <label class="option"><input type="radio" name="v3" value="convenient"> convenient</label>
+      <label class="option"><input type="radio" name="v3" value="disadvantage"> disadvantage</label>
+      <label class="option"><input type="radio" name="v3" value="support"> support</label>
+    </div>
+    <div class="feedback" id="fb-v3"></div>
+  </div>
+  <button class="btn-primary" onclick="checkVocab()">Check Vocabulary</button>
+</section>
+
+<section id="reading">
+  <div class="section-title"><span>3</span><h2>Reading Practice</h2></div>
+  <h3>Should Teenagers Have Less Homework?</h3>
+  <div class="reading">
+    <p>Many teenagers spend several hours doing homework after school. Some people believe that homework is necessary because it gives students additional practice. However, others believe that students receive too much homework.</p>
+    <p>In my opinion, teenagers should have less homework. First, students need enough time to rest after spending many hours at school. A tired student may find it difficult to concentrate and learn effectively.</p>
+    <p>Second, teenagers need time for other important activities. They may exercise, spend time with their families, develop hobbies, or participate in clubs and sports. These activities can also teach valuable skills.</p>
+    <p>Homework is still important, but the amount should be reasonable. Students need practice, but they also need a healthy balance between schoolwork and their personal lives.</p>
+  </div>
+
+  <div class="timer">
+    <div class="timer-box" id="timer">00:00</div>
+    <button class="btn-primary" onclick="startTimer()">Start Reading Timer</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+  <p class="sub">Target: about 1 minute 30 seconds to 2 minutes. Accuracy and understanding are more important than speed.</p>
+
+  <h3>Reading Check</h3>
+  <div class="quiz-item">
+    <p>What is the writer's main opinion?</p>
+    <div class="options">
+      <label class="option"><input type="radio" name="r1" value="a"> Homework should disappear completely.</label>
+      <label class="option"><input type="radio" name="r1" value="b"> Teenagers should have less homework.</label>
+      <label class="option"><input type="radio" name="r1" value="c"> Teenagers should study all evening.</label>
+    </div>
+    <div class="feedback" id="fb-r1"></div>
+  </div>
+  <div class="quiz-item">
+    <p>Why does the writer say students need less homework?</p>
+    <div class="options">
+      <label class="option"><input type="radio" name="r2" value="a"> They need time to rest and do other activities.</label>
+      <label class="option"><input type="radio" name="r2" value="b"> Homework is never useful.</label>
+      <label class="option"><input type="radio" name="r2" value="c"> Teachers do not like checking homework.</label>
+    </div>
+    <div class="feedback" id="fb-r2"></div>
+  </div>
+  <button class="btn-primary" onclick="checkReading()">Check Reading</button>
+
+  <h3>Critical Thinking</h3>
+  <p>Do you agree with the writer? Why or why not?</p>
+  <textarea placeholder="I agree/disagree with the writer because... For example,..."></textarea>
+</section>
+
+<section id="grammar">
+  <div class="section-title"><span>4</span><h2>Grammar Focus: Because, Since, and So</h2></div>
+  <div class="grid-3">
+    <div class="card"><b>BECAUSE</b><p>Result + because + reason</p><p><i>I prefer studying at home because it is quiet.</i></p></div>
+    <div class="card"><b>SINCE</b><p>Since + reason, result</p><p><i>Since I can concentrate better at home, I prefer studying there.</i></p></div>
+    <div class="card"><b>SO</b><p>Reason + so + result</p><p><i>My house is quiet, so I can concentrate better.</i></p></div>
+  </div>
+
+  <p class="note"><b>Easy rule:</b> BECAUSE = result + why. &nbsp;&nbsp; SO = reason + what happened.</p>
+
+  <h3>Practice</h3>
+  <div class="quiz-item">
+    <p>1. I like reading books ______ they help me learn new words.</p>
+    <input id="g1" type="text" placeholder="Type because, since, or so">
+    <div class="feedback" id="fb-g1"></div>
+  </div>
+  <div class="quiz-item">
+    <p>2. I have an exam tomorrow, ______ I need to study tonight.</p>
+    <input id="g2" type="text" placeholder="Type because, since, or so">
+    <div class="feedback" id="fb-g2"></div>
+  </div>
+  <button class="btn-primary" onclick="checkGrammar()">Check Grammar</button>
+</section>
+
+<section id="speaking">
+  <div class="section-title"><span>5</span><h2>Speaking Challenge</h2></div>
+  <p class="sub">Choose a topic and speak using the O → R → E formula.</p>
+  <div class="formula">
+    <div>O<br><small>Opinion</small></div>
+    <div>R<br><small>Reason</small></div>
+    <div>E<br><small>Example</small></div>
+    <div>O<br><small>Restate</small></div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><b>Topic A</b><p>Students should be allowed to use smartphones during class.</p></div>
+    <div class="card"><b>Topic B</b><p>School should start later in the morning.</p></div>
+    <div class="card"><b>Topic C</b><p>Teenagers should have a daily screen-time limit.</p></div>
+    <div class="card"><b>Topic D</b><p>Students learn better from books than from videos.</p></div>
+  </div>
+
+  <h3>Useful Speaking Frames</h3>
+  <span class="chip">In my opinion...</span>
+  <span class="chip">I think this because...</span>
+  <span class="chip">For example...</span>
+  <span class="chip">Therefore...</span>
+  <span class="chip">I understand your point, but...</span>
+
+  <div class="card" style="margin-top:16px">
+    <b>30-Second Prep</b>
+    <p>Choose one topic. Prepare your answer, then speak for about one minute.</p>
+    <div class="timer">
+      <div class="timer-box" id="prepTimer">00:30</div>
+      <button class="btn-primary" onclick="startPrep()">Start 30-Second Prep</button>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="section-title"><span>6</span><h2>Writing Skill: Opinion Paragraph</h2></div>
+  <p class="sub">Use the OREO formula to organize your paragraph.</p>
+  <div class="formula">
+    <div>O<br><small>Opinion</small></div>
+    <div>R<br><small>Reason</small></div>
+    <div>E<br><small>Example</small></div>
+    <div>O<br><small>Opinion Restated</small></div>
+  </div>
+
+  <h3>Topic: Should students have homework every day?</h3>
+  <div class="grid">
+    <div class="card"><b>Opinion</b><textarea id="opinion" placeholder="I think..."></textarea></div>
+    <div class="card"><b>Reason</b><textarea id="reason" placeholder="One reason is that..."></textarea></div>
+    <div class="card"><b>Example</b><textarea id="example" placeholder="For example,..."></textarea></div>
+    <div class="card"><b>Conclusion</b><textarea id="conclusion" placeholder="Therefore, I believe..."></textarea></div>
+  </div>
+  <button class="btn-primary" onclick="buildParagraph()">Build My Paragraph</button>
+
+  <h3>Your Paragraph</h3>
+  <textarea id="finalParagraph" placeholder="Your complete paragraph will appear here..."></textarea>
+</section>
+
+<section id="review">
+  <div class="section-title"><span>7</span><h2>Final Review</h2></div>
+  <p class="sub">Click each card to reveal the answer.</p>
+  <div class="grid-3">
+    <div class="card" onclick="toggleAnswer('a1')" style="cursor:pointer"><b>What is an opinion?</b><p id="a1" class="hidden">What you think or believe.</p></div>
+    <div class="card" onclick="toggleAnswer('a2')" style="cursor:pointer"><b>What is a reason?</b><p id="a2" class="hidden">Why you think something.</p></div>
+    <div class="card" onclick="toggleAnswer('a3')" style="cursor:pointer"><b>What is an example?</b><p id="a3" class="hidden">Information that supports your reason.</p></div>
+    <div class="card" onclick="toggleAnswer('a4')" style="cursor:pointer"><b>What does OREO mean?</b><p id="a4" class="hidden">Opinion, Reason, Example, Opinion Restated.</p></div>
+    <div class="card" onclick="toggleAnswer('a5')" style="cursor:pointer"><b>When do we use because?</b><p id="a5" class="hidden">To explain why something happens or why we believe something.</p></div>
+    <div class="card" onclick="toggleAnswer('a6')" style="cursor:pointer"><b>When do we use so?</b><p id="a6" class="hidden">To show a result.</p></div>
+  </div>
+
+  <h3>Final Speaking Challenge</h3>
+  <div class="card">
+    <b>“Social media is good for teenagers.”</b>
+    <p>Take 30 seconds to prepare, then speak for one minute using OREO.</p>
+  </div>
+</section>
+
+<section id="homework">
+  <div class="section-title"><span>8</span><h2>Homework</h2></div>
+  <h3>Topic: Is technology making students better learners?</h3>
+  <p>Write <b>8–10 sentences</b>.</p>
+  <div class="grid-3">
+    <div class="card">✅ State a clear opinion.</div>
+    <div class="card">✅ Give at least two reasons.</div>
+    <div class="card">✅ Give at least one example.</div>
+    <div class="card">✅ Use <b>because</b> correctly.</div>
+    <div class="card">✅ Use <b>so</b> correctly.</div>
+    <div class="card">✅ End with a conclusion.</div>
+  </div>
+  <h3>Writing Formula</h3>
+  <p class="note"><b>Opinion → Reason → Example → Additional Reason → Conclusion</b></p>
+</section>
+
+<section>
+  <div class="section-title"><span>✓</span><h2>Lesson Progress</h2></div>
+  <p class="sub">Your activity score will increase as you answer interactive checks.</p>
+  <div class="progress"><div id="progressBar"></div></div>
+</section>
+</main>
+
+<footer>
+  Amelie • Grade 8 ESL • Lesson 7 — Giving Opinions and Supporting Them with Reasons
+</footer>
+
+<script>
+let score = 0;
+let completed = new Set();
+
+function addScore(key, pts){
+  if(!completed.has(key)){
+    completed.add(key);
+    score += pts;
+    document.getElementById('score').textContent = score;
+    document.getElementById('progressBar').style.width = Math.min(score,100) + '%';
+  }
+}
+
+function checkedValue(name){
+  const el = document.querySelector('input[name="'+name+'"]:checked');
+  return el ? el.value : "";
+}
+
+function setFeedback(id, ok, message){
+  const fb = document.getElementById(id);
+  fb.textContent = message;
+  fb.className = "feedback " + (ok ? "good" : "bad");
+}
+
+function checkVocab(){
+  const answers = {v1:"prefer",v2:"benefit",v3:"convenient"};
+  Object.keys(answers).forEach((q,i)=>{
+    const val = checkedValue(q);
+    const ok = val === answers[q];
+    setFeedback("fb-"+q, ok, ok ? "Correct! 🌟" : "Try again.");
+    if(ok) addScore("vocab"+i,5);
+  });
+}
+
+function checkReading(){
+  const answers = {r1:"b",r2:"a"};
+  Object.keys(answers).forEach((q,i)=>{
+    const val = checkedValue(q);
+    const ok = val === answers[q];
+    setFeedback("fb-"+q, ok, ok ? "Correct! 📚" : "Check the reading again.");
+    if(ok) addScore("read"+i,7);
+  });
+}
+
+function checkGrammar(){
+  const g1 = document.getElementById("g1").value.trim().toLowerCase();
+  const g2 = document.getElementById("g2").value.trim().toLowerCase();
+  const ok1 = g1 === "because";
+  const ok2 = g2 === "so";
+  setFeedback("fb-g1",ok1,ok1 ? "Correct! ✅" : "Hint: result + WHY.");
+  setFeedback("fb-g2",ok2,ok2 ? "Correct! ✅" : "Hint: reason + RESULT.");
+  if(ok1) addScore("g1",8);
+  if(ok2) addScore("g2",8);
+}
+
+let timerInt, seconds=0;
+function renderTimer(){
+  let m = String(Math.floor(seconds/60)).padStart(2,'0');
+  let s = String(seconds%60).padStart(2,'0');
+  document.getElementById("timer").textContent = m+":"+s;
+}
+function startTimer(){
+  if(timerInt) return;
+  timerInt = setInterval(()=>{seconds++;renderTimer();},1000);
+}
+function stopTimer(){ clearInterval(timerInt); timerInt=null; }
+function resetTimer(){ stopTimer();seconds=0;renderTimer(); }
+
+let prepInt;
+function startPrep(){
+  clearInterval(prepInt);
+  let remain=30;
+  const box=document.getElementById("prepTimer");
+  box.textContent="00:30";
+  prepInt=setInterval(()=>{
+    remain--;
+    box.textContent="00:"+String(remain).padStart(2,'0');
+    if(remain<=0){
+      clearInterval(prepInt);
+      box.textContent="Speak!";
+      addScore("prep",10);
+    }
+  },1000);
+}
+
+function buildParagraph(){
+  const o=document.getElementById("opinion").value.trim();
+  const r=document.getElementById("reason").value.trim();
+  const e=document.getElementById("example").value.trim();
+  const c=document.getElementById("conclusion").value.trim();
+  const parts=[o,r,e,c].filter(Boolean);
+  document.getElementById("finalParagraph").value=parts.join(" ");
+  if(parts.length===4) addScore("writing",20);
+}
+
+function toggleAnswer(id){
+  document.getElementById(id).classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
