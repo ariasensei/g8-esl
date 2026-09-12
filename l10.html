@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 8 ESL - Lesson 10</title>
+<style>
+:root{--bg1:#0f172a;--bg2:#172554;--card:#fff;--text:#172033;--muted:#64748b;--accent:#7c3aed;--accent2:#ec4899;--good:#16a34a;--bad:#dc2626;--soft:#f8fafc;--line:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top right,rgba(236,72,153,.22),transparent 28%),radial-gradient(circle at top left,rgba(6,182,212,.18),transparent 30%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh}
+header{min-height:78vh;display:flex;align-items:center;justify-content:center;padding:42px 22px 24px;text-align:center;color:white}.hero{width:min(1050px,94vw);padding:56px 26px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border-radius:34px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,6vw,5.2rem);line-height:.95;margin:0}.gradient-text{background:linear-gradient(90deg,#67e8f9,#f9a8d4,#c4b5fd);-webkit-background-clip:text;color:transparent}.hero p{font-size:1.15rem;max-width:800px;margin:22px auto 0;color:#e2e8f0;line-height:1.7}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}button,.btn{border:none;cursor:pointer;padding:12px 18px;border-radius:14px;font-weight:800;font-size:1rem;transition:.2s ease}.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;box-shadow:0 10px 30px rgba(124,58,237,.28)}.btn-secondary{background:white;color:#312e81}button:hover,.btn:hover{transform:translateY(-2px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);overflow:auto;white-space:nowrap;padding:10px 14px}nav a{color:#e2e8f0;text-decoration:none;display:inline-block;padding:9px 13px;border-radius:10px;font-size:.92rem;font-weight:700}nav a:hover{background:rgba(255,255,255,.1)}
+main{width:min(1120px,94vw);margin:34px auto 80px}section{background:var(--card);border-radius:28px;padding:28px;margin:24px 0;box-shadow:0 22px 60px rgba(2,6,23,.18);border:1px solid rgba(255,255,255,.65)}
+.section-title{display:flex;align-items:center;gap:12px;margin-bottom:10px}.section-title span{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:white;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2))}h2{margin:0;font-size:clamp(1.6rem,4vw,2.35rem)}h3{margin-top:26px}.sub{color:var(--muted);line-height:1.65}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{padding:20px;background:var(--soft);border:1px solid var(--line);border-radius:20px}
+textarea,input[type="text"],select{width:100%;border:1px solid #cbd5e1;border-radius:14px;padding:13px;font:inherit;background:white;outline:none}textarea{min-height:110px;resize:vertical}
+.vocab-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;border:1px solid var(--line)}.vocab-table th,.vocab-table td{padding:14px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.vocab-table th{background:#ede9fe;color:#4c1d95}.vocab-table tr:last-child td{border-bottom:none}.cn{font-weight:800;color:#be185d}
+.quiz-item{border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}.options{display:grid;gap:9px;margin-top:10px}.option{display:block;background:#f8fafc;padding:11px 12px;border:1px solid #e2e8f0;border-radius:12px;cursor:pointer}.feedback{margin-top:8px;font-weight:800;min-height:20px}.good{color:var(--good)}.bad{color:var(--bad)}
+.reading{font-size:1.08rem;line-height:1.9;background:linear-gradient(135deg,#f8fafc,#eef2ff);border-left:5px solid #8b5cf6;padding:20px;border-radius:18px}.timer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}.timer-box{font-size:1.5rem;font-weight:900;padding:10px 14px;border-radius:14px;background:#111827;color:white;min-width:110px;text-align:center}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.formula div{text-align:center;padding:16px 10px;border-radius:16px;color:white;font-weight:900}.formula div:nth-child(1){background:#7c3aed}.formula div:nth-child(2){background:#2563eb}.formula div:nth-child(3){background:#0891b2}.formula div:nth-child(4){background:#db2777}
+.note{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:14px;color:#9a3412}.chip{display:inline-block;padding:7px 10px;border-radius:999px;background:#ecfeff;color:#155e75;margin:4px;font-size:.9rem;font-weight:800}
+.scorebox{position:fixed;right:18px;bottom:18px;z-index:50;background:#111827;color:white;padding:12px 16px;border-radius:16px;box-shadow:0 14px 36px rgba(0,0,0,.28);font-weight:800}.progress{width:100%;height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0 0}.progress>div{height:100%;width:0%;background:linear-gradient(90deg,#06b6d4,#7c3aed,#ec4899);transition:.3s ease}
+.hidden{display:none}footer{color:#cbd5e1;text-align:center;padding:20px 16px 50px}
+@media(max-width:760px){.grid,.grid-3{grid-template-columns:1fr}.formula{grid-template-columns:repeat(2,1fr)}section{padding:20px}.scorebox{right:10px;bottom:10px}}
+</style>
+</head>
+<body>
+<header id="top"><div class="hero"><div class="badge">Grade 8 ESL • Lesson 10 • 60 Minutes</div><h1>Predictions & <span class="gradient-text">The Future</span></h1><p>Learn how to talk about future possibilities, make predictions, explain reasons, and write about what may happen next.</p><div class="hero-actions"><a class="btn btn-primary" href="#warmup">Start Lesson</a><a class="btn btn-secondary" href="#homework">Jump to Homework</a></div></div></header>
+
+<nav><a href="#warmup">Warm-Up</a><a href="#vocab">Vocabulary</a><a href="#reading">Reading</a><a href="#grammar">Grammar</a><a href="#speaking">Speaking</a><a href="#writing">Writing</a><a href="#review">Review</a><a href="#homework">Homework</a></nav>
+<div class="scorebox">⭐ Score: <span id="score">0</span></div>
+
+<main>
+<section id="warmup"><div class="section-title"><span>1</span><h2>Warm-Up: What Will Happen?</h2></div><p class="sub">Make a prediction and explain why you think it may happen.</p>
+<div class="grid">
+<div class="card"><b>Technology in schools</b><textarea placeholder="In the future, schools may... because..."></textarea></div>
+<div class="card"><b>Transportation</b><textarea placeholder="Cars might... because..."></textarea></div>
+<div class="card"><b>Jobs</b><textarea placeholder="Some jobs will... because..."></textarea></div>
+<div class="card"><b>Daily life</b><textarea placeholder="People may... because..."></textarea></div>
+</div>
+<h3>Key Idea</h3><div class="grid-3"><div class="card"><b>Prediction</b><p>A statement about what you think will happen.</p></div><div class="card"><b>Possibility</b><p>Something that may happen.</p></div><div class="card"><b>Evidence</b><p>A reason or fact that supports your prediction.</p></div></div></section>
+
+<section id="vocab"><div class="section-title"><span>2</span><h2>Vocabulary Builder</h2></div><p class="sub">Simple English meanings with Chinese translations.</p>
+<table class="vocab-table"><thead><tr><th>Word</th><th>Easy Meaning</th><th>中文</th><th>Example</th></tr></thead><tbody>
+<tr><td><b>predict</b></td><td>say what you think will happen</td><td class="cn">预测</td><td>Scientists predict that technology will continue to change.</td></tr>
+<tr><td><b>future</b></td><td>time that has not happened yet</td><td class="cn">未来</td><td>In the future, classrooms may use more virtual tools.</td></tr>
+<tr><td><b>possibility</b></td><td>something that may happen</td><td class="cn">可能性</td><td>There is a possibility of rain tomorrow.</td></tr>
+<tr><td><b>likely</b></td><td>probably going to happen</td><td class="cn">可能的</td><td>It is likely that online learning will continue to grow.</td></tr>
+<tr><td><b>unlikely</b></td><td>probably not going to happen</td><td class="cn">不太可能的</td><td>It is unlikely that printed books will completely disappear soon.</td></tr>
+<tr><td><b>develop</b></td><td>grow or become more advanced</td><td class="cn">发展</td><td>Technology will continue to develop.</td></tr>
+<tr><td><b>replace</b></td><td>take the place of something</td><td class="cn">取代</td><td>Some machines may replace simple jobs.</td></tr>
+<tr><td><b>trend</b></td><td>a general direction of change</td><td class="cn">趋势</td><td>Using AI in education is a growing trend.</td></tr>
+</tbody></table>
+
+<h3>Quick Check</h3>
+<div class="quiz-item"><p>1. “Likely” means...</p><div class="options"><label class="option"><input type="radio" name="v1" value="a"> probably going to happen</label><label class="option"><input type="radio" name="v1" value="b"> impossible</label><label class="option"><input type="radio" name="v1" value="c"> already finished</label></div><div class="feedback" id="fb-v1"></div></div>
+<div class="quiz-item"><p>2. To “replace” something means...</p><div class="options"><label class="option"><input type="radio" name="v2" value="a"> to improve it</label><label class="option"><input type="radio" name="v2" value="b"> to take its place</label><label class="option"><input type="radio" name="v2" value="c"> to compare it</label></div><div class="feedback" id="fb-v2"></div></div>
+<div class="quiz-item"><p>3. A “trend” is...</p><div class="options"><label class="option"><input type="radio" name="v3" value="a"> a general direction of change</label><label class="option"><input type="radio" name="v3" value="b"> a personal problem</label><label class="option"><input type="radio" name="v3" value="c"> a school rule</label></div><div class="feedback" id="fb-v3"></div></div>
+<button class="btn-primary" onclick="checkVocab()">Check Vocabulary</button></section>
+
+<section id="reading"><div class="section-title"><span>3</span><h2>Reading Practice</h2></div><h3>What Might School Look Like in 2035?</h3>
+<div class="reading"><p>Schools are already changing because of new technology. In the future, students may use more digital tools, virtual reality, and artificial intelligence in their classes. However, this does not mean teachers will disappear.</p><p>One likely change is more personalized learning. Students may receive activities based on their own level and learning needs. Technology could help teachers quickly see which students need extra practice and which students are ready for more difficult work.</p><p>Another possibility is that classrooms will become more flexible. Some lessons may happen face-to-face, while others may happen online. Students might also work with classmates from different countries through video calls and shared digital projects.</p><p>Even with these changes, teachers will probably remain important. Technology can provide information, but teachers can guide students, explain difficult ideas, and give encouragement. The future classroom may become more digital, but human communication will still matter.</p></div>
+<div class="timer"><div class="timer-box" id="timer">00:00</div><button class="btn-primary" onclick="startTimer()">Start Reading Timer</button><button onclick="stopTimer()">Stop</button><button onclick="resetTimer()">Reset</button></div>
+<p class="sub">Target: about 1 minute 30 seconds to 2 minutes. Focus on pronunciation and understanding.</p>
+
+<h3>Reading Check</h3>
+<div class="quiz-item"><p>1. What is one likely change in future schools?</p><div class="options"><label class="option"><input type="radio" name="r1" value="a"> More personalized learning</label><label class="option"><input type="radio" name="r1" value="b"> No more teachers</label><label class="option"><input type="radio" name="r1" value="c"> No technology</label></div><div class="feedback" id="fb-r1"></div></div>
+<div class="quiz-item"><p>2. Why will teachers probably remain important?</p><div class="options"><label class="option"><input type="radio" name="r2" value="a"> They can guide and encourage students.</label><label class="option"><input type="radio" name="r2" value="b"> They can replace all technology.</label><label class="option"><input type="radio" name="r2" value="c"> They can stop students from using computers.</label></div><div class="feedback" id="fb-r2"></div></div>
+<button class="btn-primary" onclick="checkReading()">Check Reading</button>
+
+<h3>Critical Thinking</h3><p>Do you think future schools will be better than schools today? Why or why not?</p><textarea placeholder="I think future schools will / will not be better because..."></textarea></section>
+
+<section id="grammar"><div class="section-title"><span>4</span><h2>Grammar Focus: Will, May, and Might</h2></div>
+<div class="grid-3">
+<div class="card"><h3>will</h3><p>Use for a strong prediction.</p><p><b>Technology will continue to change.</b></p></div>
+<div class="card"><h3>may</h3><p>Use for a possible future event.</p><p><b>Students may use more virtual tools.</b></p></div>
+<div class="card"><h3>might</h3><p>Use for a weaker possibility.</p><p><b>Some schools might become fully digital.</b></p></div>
+</div>
+<p class="note"><b>Easy guide:</b> will = strong prediction • may = possible • might = less certain possibility</p>
+
+<h3>Practice</h3>
+<div class="quiz-item"><p>1. In the future, people ______ use more electric cars.</p><select id="g1"><option value="">Choose</option><option value="may">may</option><option value="because">because</option><option value="yesterday">yesterday</option></select><div class="feedback" id="fb-g1"></div></div>
+<div class="quiz-item"><p>2. Technology ______ continue to develop.</p><select id="g2"><option value="">Choose</option><option value="will">will</option><option value="did">did</option><option value="was">was</option></select><div class="feedback" id="fb-g2"></div></div>
+<div class="quiz-item"><p>3. Some jobs ______ be replaced by machines, but we are not sure.</p><select id="g3"><option value="">Choose</option><option value="might">might</option><option value="must">must</option><option value="were">were</option></select><div class="feedback" id="fb-g3"></div></div>
+<button class="btn-primary" onclick="checkGrammar()">Check Grammar</button></section>
+
+<section id="speaking"><div class="section-title"><span>5</span><h2>Speaking Challenge</h2></div><p class="sub">Choose one topic. Make a prediction, give a reason, and explain how certain you are.</p>
+<div class="formula"><div>P<br><small>Prediction</small></div><div>R<br><small>Reason</small></div><div>E<br><small>Example</small></div><div>C<br><small>Certainty</small></div></div>
+<div class="grid"><div class="card"><b>Topic A</b><p>How will schools change?</p></div><div class="card"><b>Topic B</b><p>How will transportation change?</p></div><div class="card"><b>Topic C</b><p>How will jobs change?</p></div><div class="card"><b>Topic D</b><p>How will communication change?</p></div></div>
+<h3>Useful Speaking Frames</h3><span class="chip">I think ... will...</span><span class="chip">It may...</span><span class="chip">It might...</span><span class="chip">One reason is...</span><span class="chip">For example...</span>
+<div class="card" style="margin-top:16px"><b>30-Second Preparation</b><p>Prepare for 30 seconds, then speak for about one minute.</p><div class="timer"><div class="timer-box" id="prepTimer">00:30</div><button class="btn-primary" onclick="startPrep()">Start 30-Second Prep</button></div></div></section>
+
+<section id="writing"><div class="section-title"><span>6</span><h2>Writing Skill: Future Prediction Paragraph</h2></div><p class="sub">Organize your ideas using four steps.</p>
+<div class="formula"><div>P<br><small>Prediction</small></div><div>R<br><small>Reason</small></div><div>E<br><small>Example</small></div><div>C<br><small>Conclusion</small></div></div>
+<h3>Topic: What Will Education Be Like in 10 Years?</h3>
+<div class="grid"><div class="card"><b>Prediction</b><textarea id="w1" placeholder="I think education will..."></textarea></div><div class="card"><b>Reason</b><textarea id="w2" placeholder="One reason is..."></textarea></div><div class="card"><b>Example</b><textarea id="w3" placeholder="For example,..."></textarea></div><div class="card"><b>Conclusion</b><textarea id="w4" placeholder="Overall, I believe..."></textarea></div></div>
+<button class="btn-primary" onclick="buildParagraph()">Build My Paragraph</button><h3>Your Paragraph</h3><textarea id="finalParagraph" placeholder="Your complete paragraph will appear here..."></textarea></section>
+
+<section id="review"><div class="section-title"><span>7</span><h2>Final Review</h2></div><p class="sub">Click each card to reveal the answer.</p>
+<div class="grid-3"><div class="card" onclick="toggleAnswer('a1')" style="cursor:pointer"><b>What is a prediction?</b><p id="a1" class="hidden">A statement about what you think will happen.</p></div><div class="card" onclick="toggleAnswer('a2')" style="cursor:pointer"><b>What does likely mean?</b><p id="a2" class="hidden">Probably going to happen.</p></div><div class="card" onclick="toggleAnswer('a3')" style="cursor:pointer"><b>What does unlikely mean?</b><p id="a3" class="hidden">Probably not going to happen.</p></div><div class="card" onclick="toggleAnswer('a4')" style="cursor:pointer"><b>When do we use will?</b><p id="a4" class="hidden">For a strong future prediction.</p></div><div class="card" onclick="toggleAnswer('a5')" style="cursor:pointer"><b>When do we use may?</b><p id="a5" class="hidden">For a possible future event.</p></div><div class="card" onclick="toggleAnswer('a6')" style="cursor:pointer"><b>When do we use might?</b><p id="a6" class="hidden">For a less certain possibility.</p></div></div>
+<h3>Final Speaking Challenge</h3><div class="card"><b>Prediction: “In 20 years, most students will use AI every day.”</b><p>Do you agree? Make a prediction, give a reason, and use <b>will</b>, <b>may</b>, or <b>might</b>.</p></div></section>
+
+<section id="homework"><div class="section-title"><span>8</span><h2>Homework</h2></div><h3>Topic: What Will Life Be Like in 2040?</h3><p>Write <b>8–10 sentences</b>.</p>
+<div class="grid-3"><div class="card">✅ Give at least three predictions.</div><div class="card">✅ Use <b>will</b> at least once.</div><div class="card">✅ Use <b>may</b> or <b>might</b>.</div><div class="card">✅ Give reasons for your predictions.</div><div class="card">✅ Give at least one example.</div><div class="card">✅ End with a concluding sentence.</div></div>
+<h3>Writing Formula</h3><p class="note"><b>Prediction → Reason → Example → Another Prediction → Conclusion</b></p></section>
+
+<section><div class="section-title"><span>✓</span><h2>Lesson Progress</h2></div><p class="sub">Your activity score increases as you complete the interactive checks.</p><div class="progress"><div id="progressBar"></div></div></section>
+</main>
+<footer>Grade 8 ESL • Lesson 10 — Predictions and the Future</footer>
+
+<script>
+let score=0;let completed=new Set();
+function addScore(key,pts){if(!completed.has(key)){completed.add(key);score+=pts;document.getElementById('score').textContent=score;document.getElementById('progressBar').style.width=Math.min(score,100)+'%'}}
+function checkedValue(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:""}
+function setFeedback(id,ok,message){const fb=document.getElementById(id);fb.textContent=message;fb.className="feedback "+(ok?"good":"bad")}
+function checkVocab(){const answers={v1:"a",v2:"b",v3:"a"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 🌟":"Try again.");if(ok)addScore("vocab"+i,5)})}
+function checkReading(){const answers={r1:"a",r2:"a"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 📚":"Read the passage again.");if(ok)addScore("read"+i,7)})}
+function checkGrammar(){const a=document.getElementById("g1").value,b=document.getElementById("g2").value,c=document.getElementById("g3").value;const ok1=a==="may",ok2=b==="will",ok3=c==="might";setFeedback("fb-g1",ok1,ok1?"Correct! ✅":"Use a word for possibility.");setFeedback("fb-g2",ok2,ok2?"Correct! ✅":"Use a strong prediction word.");setFeedback("fb-g3",ok3,ok3?"Correct! ✅":"Use a word for a less certain possibility.");if(ok1)addScore("g1",8);if(ok2)addScore("g2",8);if(ok3)addScore("g3",8)}
+let timerInt,seconds=0;function renderTimer(){let m=String(Math.floor(seconds/60)).padStart(2,'0');let s=String(seconds%60).padStart(2,'0');document.getElementById("timer").textContent=m+":"+s}function startTimer(){if(timerInt)return;timerInt=setInterval(()=>{seconds++;renderTimer()},1000)}function stopTimer(){clearInterval(timerInt);timerInt=null}function resetTimer(){stopTimer();seconds=0;renderTimer()}
+let prepInt;function startPrep(){clearInterval(prepInt);let remain=30;const box=document.getElementById("prepTimer");box.textContent="00:30";prepInt=setInterval(()=>{remain--;box.textContent="00:"+String(remain).padStart(2,'0');if(remain<=0){clearInterval(prepInt);box.textContent="Speak!";addScore("prep",10)}},1000)}
+function buildParagraph(){const parts=["w1","w2","w3","w4"].map(id=>document.getElementById(id).value.trim()).filter(Boolean);document.getElementById("finalParagraph").value=parts.join(" ");if(parts.length===4)addScore("writing",20)}
+function toggleAnswer(id){document.getElementById(id).classList.toggle("hidden")}
+</script>
+</body>
+</html>
