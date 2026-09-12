@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 8 ESL - Lesson 9</title>
+<style>
+:root{--bg1:#0f172a;--bg2:#172554;--card:#fff;--text:#172033;--muted:#64748b;--accent:#7c3aed;--accent2:#ec4899;--good:#16a34a;--bad:#dc2626;--soft:#f8fafc;--line:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top right,rgba(236,72,153,.22),transparent 28%),radial-gradient(circle at top left,rgba(6,182,212,.18),transparent 30%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh}
+header{min-height:78vh;display:flex;align-items:center;justify-content:center;padding:42px 22px 24px;text-align:center;color:white}.hero{width:min(1050px,94vw);padding:56px 26px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border-radius:34px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,6vw,5.2rem);line-height:.95;margin:0}.gradient-text{background:linear-gradient(90deg,#67e8f9,#f9a8d4,#c4b5fd);-webkit-background-clip:text;color:transparent}.hero p{font-size:1.15rem;max-width:780px;margin:22px auto 0;color:#e2e8f0;line-height:1.7}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}button,.btn{border:none;cursor:pointer;padding:12px 18px;border-radius:14px;font-weight:800;font-size:1rem;transition:.2s ease}.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;box-shadow:0 10px 30px rgba(124,58,237,.28)}.btn-secondary{background:white;color:#312e81}button:hover,.btn:hover{transform:translateY(-2px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);overflow:auto;white-space:nowrap;padding:10px 14px}nav a{color:#e2e8f0;text-decoration:none;display:inline-block;padding:9px 13px;border-radius:10px;font-size:.92rem;font-weight:700}nav a:hover{background:rgba(255,255,255,.1)}
+main{width:min(1120px,94vw);margin:34px auto 80px}section{background:var(--card);border-radius:28px;padding:28px;margin:24px 0;box-shadow:0 22px 60px rgba(2,6,23,.18);border:1px solid rgba(255,255,255,.65)}
+.section-title{display:flex;align-items:center;gap:12px;margin-bottom:10px}.section-title span{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:white;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2))}h2{margin:0;font-size:clamp(1.6rem,4vw,2.35rem)}h3{margin-top:26px}.sub{color:var(--muted);line-height:1.65}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{padding:20px;background:var(--soft);border:1px solid var(--line);border-radius:20px}
+textarea,input[type="text"],select{width:100%;border:1px solid #cbd5e1;border-radius:14px;padding:13px;font:inherit;background:white;outline:none}textarea{min-height:110px;resize:vertical}
+.vocab-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;border:1px solid var(--line)}.vocab-table th,.vocab-table td{padding:14px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.vocab-table th{background:#ede9fe;color:#4c1d95}.vocab-table tr:last-child td{border-bottom:none}.cn{font-weight:800;color:#be185d}
+.quiz-item{border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}.options{display:grid;gap:9px;margin-top:10px}.option{display:block;background:#f8fafc;padding:11px 12px;border:1px solid #e2e8f0;border-radius:12px;cursor:pointer}.feedback{margin-top:8px;font-weight:800;min-height:20px}.good{color:var(--good)}.bad{color:var(--bad)}
+.reading{font-size:1.08rem;line-height:1.9;background:linear-gradient(135deg,#f8fafc,#eef2ff);border-left:5px solid #8b5cf6;padding:20px;border-radius:18px}.timer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}.timer-box{font-size:1.5rem;font-weight:900;padding:10px 14px;border-radius:14px;background:#111827;color:white;min-width:110px;text-align:center}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.formula div{text-align:center;padding:16px 10px;border-radius:16px;color:white;font-weight:900}.formula div:nth-child(1){background:#7c3aed}.formula div:nth-child(2){background:#2563eb}.formula div:nth-child(3){background:#0891b2}.formula div:nth-child(4){background:#db2777}
+.note{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:14px;color:#9a3412}.chip{display:inline-block;padding:7px 10px;border-radius:999px;background:#ecfeff;color:#155e75;margin:4px;font-size:.9rem;font-weight:800}
+.scorebox{position:fixed;right:18px;bottom:18px;z-index:50;background:#111827;color:white;padding:12px 16px;border-radius:16px;box-shadow:0 14px 36px rgba(0,0,0,.28);font-weight:800}.progress{width:100%;height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0 0}.progress>div{height:100%;width:0%;background:linear-gradient(90deg,#06b6d4,#7c3aed,#ec4899);transition:.3s ease}
+.hidden{display:none}footer{color:#cbd5e1;text-align:center;padding:20px 16px 50px}
+@media(max-width:760px){.grid,.grid-3{grid-template-columns:1fr}.formula{grid-template-columns:repeat(2,1fr)}section{padding:20px}.scorebox{right:10px;bottom:10px}}
+</style>
+</head>
+<body>
+<header id="top"><div class="hero"><div class="badge">Grade 8 ESL • Lesson 9 • 60 Minutes</div><h1>Cause, Effect & <span class="gradient-text">Solutions</span></h1><p>Learn how to explain why something happens, describe its effects, and suggest practical solutions clearly.</p><div class="hero-actions"><a class="btn btn-primary" href="#warmup">Start Lesson</a><a class="btn btn-secondary" href="#homework">Jump to Homework</a></div></div></header>
+
+<nav><a href="#warmup">Warm-Up</a><a href="#vocab">Vocabulary</a><a href="#reading">Reading</a><a href="#grammar">Grammar</a><a href="#speaking">Speaking</a><a href="#writing">Writing</a><a href="#review">Review</a><a href="#homework">Homework</a></nav>
+<div class="scorebox">⭐ Score: <span id="score">0</span></div>
+
+<main>
+<section id="warmup"><div class="section-title"><span>1</span><h2>Warm-Up: Why Did It Happen?</h2></div><p class="sub">Think about causes and effects.</p>
+<div class="grid">
+<div class="card"><b>A student sleeps only four hours.</b><textarea placeholder="What might happen the next day?"></textarea></div>
+<div class="card"><b>A student studies every day for a test.</b><textarea placeholder="What might be the result?"></textarea></div>
+<div class="card"><b>It rains heavily for many hours.</b><textarea placeholder="What problems might happen?"></textarea></div>
+<div class="card"><b>A student spends too much time on social media.</b><textarea placeholder="What effect might this have?"></textarea></div>
+</div>
+<h3>Key Idea</h3><div class="grid-3"><div class="card"><b>Cause</b><p>Why something happens.</p></div><div class="card"><b>Effect</b><p>What happens as a result.</p></div><div class="card"><b>Solution</b><p>An action that can help fix a problem.</p></div></div></section>
+
+<section id="vocab"><div class="section-title"><span>2</span><h2>Vocabulary Builder</h2></div><p class="sub">Simple English meanings with Chinese translations.</p>
+<table class="vocab-table"><thead><tr><th>Word</th><th>Easy Meaning</th><th>中文</th><th>Example</th></tr></thead><tbody>
+<tr><td><b>cause</b></td><td>the reason something happens</td><td class="cn">原因</td><td>Lack of sleep can cause tiredness.</td></tr>
+<tr><td><b>effect</b></td><td>the result of something</td><td class="cn">结果 / 影响</td><td>One effect of stress is poor concentration.</td></tr>
+<tr><td><b>result</b></td><td>what happens in the end</td><td class="cn">结果</td><td>As a result, he missed the bus.</td></tr>
+<tr><td><b>problem</b></td><td>something difficult that needs fixing</td><td class="cn">问题</td><td>Too much screen time can become a problem.</td></tr>
+<tr><td><b>solution</b></td><td>a way to fix a problem</td><td class="cn">解决办法</td><td>One solution is to make a study schedule.</td></tr>
+<tr><td><b>prevent</b></td><td>stop something before it happens</td><td class="cn">预防 / 阻止</td><td>Exercise can help prevent some health problems.</td></tr>
+<tr><td><b>reduce</b></td><td>make something smaller or less</td><td class="cn">减少</td><td>Turning off notifications can reduce distractions.</td></tr>
+<tr><td><b>improve</b></td><td>make something better</td><td class="cn">改善 / 提高</td><td>Reading daily can improve vocabulary.</td></tr>
+</tbody></table>
+
+<h3>Quick Check</h3>
+<div class="quiz-item"><p>1. A ______ is a way to fix a problem.</p><div class="options"><label class="option"><input type="radio" name="v1" value="solution"> solution</label><label class="option"><input type="radio" name="v1" value="effect"> effect</label><label class="option"><input type="radio" name="v1" value="cause"> cause</label></div><div class="feedback" id="fb-v1"></div></div>
+<div class="quiz-item"><p>2. To make something smaller or less means...</p><div class="options"><label class="option"><input type="radio" name="v2" value="improve"> improve</label><label class="option"><input type="radio" name="v2" value="reduce"> reduce</label><label class="option"><input type="radio" name="v2" value="prevent"> prevent</label></div><div class="feedback" id="fb-v2"></div></div>
+<div class="quiz-item"><p>3. The word “effect” means...</p><div class="options"><label class="option"><input type="radio" name="v3" value="a"> a result</label><label class="option"><input type="radio" name="v3" value="b"> a question</label><label class="option"><input type="radio" name="v3" value="c"> a plan</label></div><div class="feedback" id="fb-v3"></div></div>
+<button class="btn-primary" onclick="checkVocab()">Check Vocabulary</button></section>
+
+<section id="reading"><div class="section-title"><span>3</span><h2>Reading Practice</h2></div><h3>The Problem of Too Much Screen Time</h3>
+<div class="reading"><p>Many teenagers use phones, tablets, computers, and game consoles every day. Technology can be useful for learning and communication, but too much screen time may create problems.</p><p>One cause of excessive screen time is easy access to entertainment. Social media, games, and videos are available at any time. As a result, some students stay online longer than they planned. This can reduce the amount of time they spend studying, exercising, or sleeping.</p><p>Another effect is tiredness. Students who use devices late at night may sleep less. Because they are tired the next day, they may find it difficult to focus in class.</p><p>There are several possible solutions. Students can set daily screen-time limits, turn off unnecessary notifications, and keep devices away during study time. Families can also create technology-free times, such as during meals or before bedtime. These small changes can help students use technology in a healthier way.</p></div>
+<div class="timer"><div class="timer-box" id="timer">00:00</div><button class="btn-primary" onclick="startTimer()">Start Reading Timer</button><button onclick="stopTimer()">Stop</button><button onclick="resetTimer()">Reset</button></div>
+<p class="sub">Target: about 1 minute 30 seconds to 2 minutes. Focus on meaning and pronunciation.</p>
+
+<h3>Reading Check</h3>
+<div class="quiz-item"><p>1. What is one cause of too much screen time?</p><div class="options"><label class="option"><input type="radio" name="r1" value="a"> Easy access to entertainment</label><label class="option"><input type="radio" name="r1" value="b"> Too much exercise</label><label class="option"><input type="radio" name="r1" value="c"> Reading books</label></div><div class="feedback" id="fb-r1"></div></div>
+<div class="quiz-item"><p>2. What is one effect of using devices late at night?</p><div class="options"><label class="option"><input type="radio" name="r2" value="a"> Better sleep</label><label class="option"><input type="radio" name="r2" value="b"> Tiredness and poor focus</label><label class="option"><input type="radio" name="r2" value="c"> More free time</label></div><div class="feedback" id="fb-r2"></div></div>
+<button class="btn-primary" onclick="checkReading()">Check Reading</button>
+
+<h3>Critical Thinking</h3><p>Which solution from the passage do you think is most useful? Why?</p><textarea placeholder="I think the best solution is... because..."></textarea></section>
+
+<section id="grammar"><div class="section-title"><span>4</span><h2>Grammar Focus: Cause-and-Effect Connectors</h2></div>
+<div class="grid-3">
+<div class="card"><h3>because</h3><p>Shows the cause.</p><p><b>I was tired because I slept late.</b></p></div>
+<div class="card"><h3>so</h3><p>Shows the result.</p><p><b>I slept late, so I was tired.</b></p></div>
+<div class="card"><h3>as a result</h3><p>Introduces an effect.</p><p><b>I missed the bus. As a result, I was late.</b></p></div>
+</div>
+<p class="note"><b>Remember:</b> Cause = why it happened. Effect = what happened next.</p>
+
+<h3>Practice</h3>
+<div class="quiz-item"><p>1. I forgot to set my alarm, ______ I woke up late.</p><select id="g1"><option value="">Choose</option><option value="so">so</option><option value="because">because</option><option value="however">however</option></select><div class="feedback" id="fb-g1"></div></div>
+<div class="quiz-item"><p>2. I was late ______ I woke up late.</p><select id="g2"><option value="">Choose</option><option value="because">because</option><option value="so">so</option><option value="whereas">whereas</option></select><div class="feedback" id="fb-g2"></div></div>
+<div class="quiz-item"><p>3. The internet stopped working. ______, the online class was delayed.</p><select id="g3"><option value="">Choose</option><option value="As a result">As a result</option><option value="Because">Because</option><option value="Although">Although</option></select><div class="feedback" id="fb-g3"></div></div>
+<button class="btn-primary" onclick="checkGrammar()">Check Grammar</button></section>
+
+<section id="speaking"><div class="section-title"><span>5</span><h2>Speaking Challenge</h2></div><p class="sub">Choose one problem. Explain the cause, effect, and one possible solution.</p>
+<div class="formula"><div>P<br><small>Problem</small></div><div>C<br><small>Cause</small></div><div>E<br><small>Effect</small></div><div>S<br><small>Solution</small></div></div>
+<div class="grid"><div class="card"><b>Topic A</b><p>Students are often late to school.</p></div><div class="card"><b>Topic B</b><p>Teenagers do not get enough sleep.</p></div><div class="card"><b>Topic C</b><p>Students are distracted while studying.</p></div><div class="card"><b>Topic D</b><p>Students feel nervous before tests.</p></div></div>
+<h3>Useful Speaking Frames</h3><span class="chip">One cause is...</span><span class="chip">Because of this...</span><span class="chip">As a result...</span><span class="chip">One possible solution is...</span><span class="chip">This could help because...</span>
+<div class="card" style="margin-top:16px"><b>30-Second Preparation</b><p>Prepare your answer, then speak for about one minute.</p><div class="timer"><div class="timer-box" id="prepTimer">00:30</div><button class="btn-primary" onclick="startPrep()">Start 30-Second Prep</button></div></div></section>
+
+<section id="writing"><div class="section-title"><span>6</span><h2>Writing Skill: Problem–Cause–Effect–Solution Paragraph</h2></div><p class="sub">Organize your ideas using four steps.</p>
+<div class="formula"><div>P<br><small>Problem</small></div><div>C<br><small>Cause</small></div><div>E<br><small>Effect</small></div><div>S<br><small>Solution</small></div></div>
+<h3>Topic: Students Not Getting Enough Sleep</h3>
+<div class="grid"><div class="card"><b>Problem</b><textarea id="w1" placeholder="Many students do not get enough sleep..."></textarea></div><div class="card"><b>Cause</b><textarea id="w2" placeholder="One cause is..."></textarea></div><div class="card"><b>Effect</b><textarea id="w3" placeholder="As a result,..."></textarea></div><div class="card"><b>Solution</b><textarea id="w4" placeholder="One possible solution is..."></textarea></div></div>
+<button class="btn-primary" onclick="buildParagraph()">Build My Paragraph</button><h3>Your Paragraph</h3><textarea id="finalParagraph" placeholder="Your complete paragraph will appear here..."></textarea></section>
+
+<section id="review"><div class="section-title"><span>7</span><h2>Final Review</h2></div><p class="sub">Click each card to reveal the answer.</p>
+<div class="grid-3"><div class="card" onclick="toggleAnswer('a1')" style="cursor:pointer"><b>What is a cause?</b><p id="a1" class="hidden">The reason something happens.</p></div><div class="card" onclick="toggleAnswer('a2')" style="cursor:pointer"><b>What is an effect?</b><p id="a2" class="hidden">What happens as a result.</p></div><div class="card" onclick="toggleAnswer('a3')" style="cursor:pointer"><b>What is a solution?</b><p id="a3" class="hidden">A way to fix or improve a problem.</p></div><div class="card" onclick="toggleAnswer('a4')" style="cursor:pointer"><b>What does because show?</b><p id="a4" class="hidden">The cause or reason.</p></div><div class="card" onclick="toggleAnswer('a5')" style="cursor:pointer"><b>What does so show?</b><p id="a5" class="hidden">The result.</p></div><div class="card" onclick="toggleAnswer('a6')" style="cursor:pointer"><b>What does “as a result” introduce?</b><p id="a6" class="hidden">An effect or result.</p></div></div>
+<h3>Final Speaking Challenge</h3><div class="card"><b>Problem: Students procrastinate on homework.</b><p>Explain one cause, one effect, and one solution.</p></div></section>
+
+<section id="homework"><div class="section-title"><span>8</span><h2>Homework</h2></div><h3>Topic: Why Do Students Feel Stressed?</h3><p>Write <b>8–10 sentences</b>.</p>
+<div class="grid-3"><div class="card">✅ Clearly state the problem.</div><div class="card">✅ Give at least two causes.</div><div class="card">✅ Give at least two effects.</div><div class="card">✅ Suggest one solution.</div><div class="card">✅ Use <b>because</b>, <b>so</b>, or <b>as a result</b>.</div><div class="card">✅ Finish with a concluding sentence.</div></div>
+<h3>Writing Formula</h3><p class="note"><b>Problem → Cause → Effect → Solution → Conclusion</b></p></section>
+
+<section><div class="section-title"><span>✓</span><h2>Lesson Progress</h2></div><p class="sub">Your activity score increases as you complete the interactive checks.</p><div class="progress"><div id="progressBar"></div></div></section>
+</main>
+<footer>Grade 8 ESL • Lesson 9 — Cause, Effect, and Solutions</footer>
+
+<script>
+let score=0;let completed=new Set();
+function addScore(key,pts){if(!completed.has(key)){completed.add(key);score+=pts;document.getElementById('score').textContent=score;document.getElementById('progressBar').style.width=Math.min(score,100)+'%'}}
+function checkedValue(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:""}
+function setFeedback(id,ok,message){const fb=document.getElementById(id);fb.textContent=message;fb.className="feedback "+(ok?"good":"bad")}
+function checkVocab(){const answers={v1:"solution",v2:"reduce",v3:"a"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 🌟":"Try again.");if(ok)addScore("vocab"+i,5)})}
+function checkReading(){const answers={r1:"a",r2:"b"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 📚":"Read the passage again.");if(ok)addScore("read"+i,7)})}
+function checkGrammar(){const a=document.getElementById("g1").value,b=document.getElementById("g2").value,c=document.getElementById("g3").value;const ok1=a==="so",ok2=b==="because",ok3=c==="As a result";setFeedback("fb-g1",ok1,ok1?"Correct! ✅":"Think: cause first, then result.");setFeedback("fb-g2",ok2,ok2?"Correct! ✅":"Think: this word gives the reason.");setFeedback("fb-g3",ok3,ok3?"Correct! ✅":"This phrase introduces the result.");if(ok1)addScore("g1",8);if(ok2)addScore("g2",8);if(ok3)addScore("g3",8)}
+let timerInt,seconds=0;function renderTimer(){let m=String(Math.floor(seconds/60)).padStart(2,'0');let s=String(seconds%60).padStart(2,'0');document.getElementById("timer").textContent=m+":"+s}function startTimer(){if(timerInt)return;timerInt=setInterval(()=>{seconds++;renderTimer()},1000)}function stopTimer(){clearInterval(timerInt);timerInt=null}function resetTimer(){stopTimer();seconds=0;renderTimer()}
+let prepInt;function startPrep(){clearInterval(prepInt);let remain=30;const box=document.getElementById("prepTimer");box.textContent="00:30";prepInt=setInterval(()=>{remain--;box.textContent="00:"+String(remain).padStart(2,'0');if(remain<=0){clearInterval(prepInt);box.textContent="Speak!";addScore("prep",10)}},1000)}
+function buildParagraph(){const parts=["w1","w2","w3","w4"].map(id=>document.getElementById(id).value.trim()).filter(Boolean);document.getElementById("finalParagraph").value=parts.join(" ");if(parts.length===4)addScore("writing",20)}
+function toggleAnswer(id){document.getElementById(id).classList.toggle("hidden")}
+</script>
+</body>
+</html>
