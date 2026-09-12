@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 8 ESL - Lesson 8</title>
+<style>
+:root{--bg1:#0f172a;--bg2:#172554;--card:#fff;--text:#172033;--muted:#64748b;--accent:#7c3aed;--accent2:#ec4899;--good:#16a34a;--bad:#dc2626;--soft:#f8fafc;--line:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top right,rgba(236,72,153,.22),transparent 28%),radial-gradient(circle at top left,rgba(6,182,212,.18),transparent 30%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh}
+header{min-height:78vh;display:flex;align-items:center;justify-content:center;padding:42px 22px 24px;text-align:center;color:white}.hero{width:min(1050px,94vw);padding:56px 26px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border-radius:34px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,6vw,5.3rem);line-height:.95;margin:0}.gradient-text{background:linear-gradient(90deg,#67e8f9,#f9a8d4,#c4b5fd);-webkit-background-clip:text;color:transparent}.hero p{font-size:1.15rem;max-width:780px;margin:22px auto 0;color:#e2e8f0;line-height:1.7}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}button,.btn{border:none;cursor:pointer;padding:12px 18px;border-radius:14px;font-weight:800;font-size:1rem;transition:.2s ease}.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;box-shadow:0 10px 30px rgba(124,58,237,.28)}.btn-secondary{background:white;color:#312e81}button:hover,.btn:hover{transform:translateY(-2px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);overflow:auto;white-space:nowrap;padding:10px 14px}nav a{color:#e2e8f0;text-decoration:none;display:inline-block;padding:9px 13px;border-radius:10px;font-size:.92rem;font-weight:700}nav a:hover{background:rgba(255,255,255,.1)}
+main{width:min(1120px,94vw);margin:34px auto 80px}section{background:var(--card);border-radius:28px;padding:28px;margin:24px 0;box-shadow:0 22px 60px rgba(2,6,23,.18);border:1px solid rgba(255,255,255,.65)}
+.section-title{display:flex;align-items:center;gap:12px;margin-bottom:10px}.section-title span{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:white;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2))}h2{margin:0;font-size:clamp(1.6rem,4vw,2.35rem)}h3{margin-top:26px}.sub{color:var(--muted);line-height:1.65}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{padding:20px;background:var(--soft);border:1px solid var(--line);border-radius:20px}
+textarea,input[type="text"],select{width:100%;border:1px solid #cbd5e1;border-radius:14px;padding:13px;font:inherit;background:white;outline:none}textarea{min-height:110px;resize:vertical}
+.vocab-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;border:1px solid var(--line)}.vocab-table th,.vocab-table td{padding:14px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.vocab-table th{background:#ede9fe;color:#4c1d95}.vocab-table tr:last-child td{border-bottom:none}.cn{font-weight:800;color:#be185d}
+.quiz-item{border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}.options{display:grid;gap:9px;margin-top:10px}.option{display:block;background:#f8fafc;padding:11px 12px;border:1px solid #e2e8f0;border-radius:12px;cursor:pointer}.feedback{margin-top:8px;font-weight:800;min-height:20px}.good{color:var(--good)}.bad{color:var(--bad)}
+.reading{font-size:1.08rem;line-height:1.9;background:linear-gradient(135deg,#f8fafc,#eef2ff);border-left:5px solid #8b5cf6;padding:20px;border-radius:18px}.timer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}.timer-box{font-size:1.5rem;font-weight:900;padding:10px 14px;border-radius:14px;background:#111827;color:white;min-width:110px;text-align:center}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.formula div{text-align:center;padding:16px 10px;border-radius:16px;color:white;font-weight:900}.formula div:nth-child(1){background:#7c3aed}.formula div:nth-child(2){background:#2563eb}.formula div:nth-child(3){background:#0891b2}.formula div:nth-child(4){background:#db2777}
+.note{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:14px;color:#9a3412}.chip{display:inline-block;padding:7px 10px;border-radius:999px;background:#ecfeff;color:#155e75;margin:4px;font-size:.9rem;font-weight:800}
+.scorebox{position:fixed;right:18px;bottom:18px;z-index:50;background:#111827;color:white;padding:12px 16px;border-radius:16px;box-shadow:0 14px 36px rgba(0,0,0,.28);font-weight:800}.progress{width:100%;height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0 0}.progress>div{height:100%;width:0%;background:linear-gradient(90deg,#06b6d4,#7c3aed,#ec4899);transition:.3s ease}
+.compare-box{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin-top:14px}.vs{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#7c3aed,#ec4899);color:#fff;font-weight:900}.hidden{display:none}footer{color:#cbd5e1;text-align:center;padding:20px 16px 50px}
+@media(max-width:760px){.grid,.grid-3,.compare-box{grid-template-columns:1fr}.formula{grid-template-columns:repeat(2,1fr)}.vs{margin:auto}section{padding:20px}.scorebox{right:10px;bottom:10px}}
+</style>
+</head>
+<body>
+<header id="top"><div class="hero"><div class="badge">Grade 8 ESL • Lesson 8 • 60 Minutes</div><h1>Compare, Contrast & <span class="gradient-text">Explain</span></h1><p>Learn how to compare two ideas, describe similarities and differences, and organize a clear comparison paragraph.</p><div class="hero-actions"><a class="btn btn-primary" href="#warmup">Start Lesson</a><a class="btn btn-secondary" href="#homework">Jump to Homework</a></div></div></header>
+
+<nav><a href="#warmup">Warm-Up</a><a href="#vocab">Vocabulary</a><a href="#reading">Reading</a><a href="#grammar">Grammar</a><a href="#speaking">Speaking</a><a href="#writing">Writing</a><a href="#review">Review</a><a href="#homework">Homework</a></nav>
+<div class="scorebox">⭐ Score: <span id="score">0</span></div>
+
+<main>
+<section id="warmup"><div class="section-title"><span>1</span><h2>Warm-Up: Spot the Difference</h2></div><p class="sub">Compare the two choices. Give one similarity and one difference.</p>
+<div class="compare-box"><div class="card"><h3>📚 Printed Books</h3><p>Paper pages, no battery, easy to highlight.</p></div><div class="vs">VS</div><div class="card"><h3>📱 E-Books</h3><p>Digital, portable, easy to search.</p></div></div>
+<div class="grid" style="margin-top:18px"><div class="card"><b>What is one similarity?</b><textarea placeholder="Both printed books and e-books..."></textarea></div><div class="card"><b>What is one difference?</b><textarea placeholder="Printed books..., while e-books..."></textarea></div></div>
+<h3>Key Idea</h3><div class="grid-3"><div class="card"><b>Compare</b><p>Tell how things are similar.</p></div><div class="card"><b>Contrast</b><p>Tell how things are different.</p></div><div class="card"><b>Evidence</b><p>Give details or examples to support your comparison.</p></div></div></section>
+
+<section id="vocab"><div class="section-title"><span>2</span><h2>Vocabulary Builder</h2></div><p class="sub">Simple meanings with Chinese translations.</p>
+<table class="vocab-table"><thead><tr><th>Word</th><th>Easy Meaning</th><th>中文</th><th>Example</th></tr></thead><tbody>
+<tr><td><b>compare</b></td><td>look at how things are similar</td><td class="cn">比较</td><td>Let's compare studying at home and studying at school.</td></tr>
+<tr><td><b>contrast</b></td><td>look at how things are different</td><td class="cn">对比 / 比较差异</td><td>The article contrasts city life with country life.</td></tr>
+<tr><td><b>similar</b></td><td>almost the same</td><td class="cn">相似的</td><td>The two phones have similar features.</td></tr>
+<tr><td><b>different</b></td><td>not the same</td><td class="cn">不同的</td><td>Online classes are different from classroom classes.</td></tr>
+<tr><td><b>advantage</b></td><td>a good point or benefit</td><td class="cn">优点</td><td>One advantage of e-books is portability.</td></tr>
+<tr><td><b>feature</b></td><td>an important part or quality</td><td class="cn">特点 / 功能</td><td>A useful feature of this app is the search tool.</td></tr>
+<tr><td><b>whereas</b></td><td>used to show a difference</td><td class="cn">然而 / 而</td><td>Books need no battery, whereas tablets do.</td></tr>
+<tr><td><b>however</b></td><td>used to show contrast</td><td class="cn">然而</td><td>Online learning is convenient. However, it can feel less social.</td></tr>
+</tbody></table>
+
+<h3>Quick Check</h3>
+<div class="quiz-item"><p>1. “Similar” means...</p><div class="options"><label class="option"><input type="radio" name="v1" value="a"> completely opposite</label><label class="option"><input type="radio" name="v1" value="b"> almost the same</label><label class="option"><input type="radio" name="v1" value="c"> very difficult</label></div><div class="feedback" id="fb-v1"></div></div>
+<div class="quiz-item"><p>2. One ______ of studying online is that students can learn from home.</p><div class="options"><label class="option"><input type="radio" name="v2" value="advantage"> advantage</label><label class="option"><input type="radio" name="v2" value="contrast"> contrast</label><label class="option"><input type="radio" name="v2" value="different"> different</label></div><div class="feedback" id="fb-v2"></div></div>
+<div class="quiz-item"><p>3. Which word is used to show a difference?</p><div class="options"><label class="option"><input type="radio" name="v3" value="whereas"> whereas</label><label class="option"><input type="radio" name="v3" value="feature"> feature</label><label class="option"><input type="radio" name="v3" value="similar"> similar</label></div><div class="feedback" id="fb-v3"></div></div>
+<button class="btn-primary" onclick="checkVocab()">Check Vocabulary</button></section>
+
+<section id="reading"><div class="section-title"><span>3</span><h2>Reading Practice</h2></div><h3>Online Learning vs. Classroom Learning</h3>
+<div class="reading"><p>Online learning and classroom learning are both common ways for students to study. They have the same goal: helping students gain knowledge and develop skills. However, the learning experience can be very different.</p><p>One advantage of online learning is flexibility. Students can often study from home and use digital resources whenever they need them. It is also convenient for students who live far from school. However, online learning may require strong self-discipline because students must manage their own time.</p><p>Classroom learning, on the other hand, gives students more face-to-face interaction. They can ask questions directly, work with classmates, and participate in activities in the same room. Whereas online learning depends heavily on technology, classroom learning often depends more on direct communication.</p><p>Both forms of learning can be effective. The best choice may depend on a student's learning style, schedule, and personal needs.</p></div>
+<div class="timer"><div class="timer-box" id="timer">00:00</div><button class="btn-primary" onclick="startTimer()">Start Reading Timer</button><button onclick="stopTimer()">Stop</button><button onclick="resetTimer()">Reset</button></div>
+<p class="sub">Target: around 1 minute 30 seconds to 2 minutes. Focus on understanding and pronunciation.</p>
+
+<h3>Reading Check</h3>
+<div class="quiz-item"><p>1. What is one similarity between online and classroom learning?</p><div class="options"><label class="option"><input type="radio" name="r1" value="a"> Both help students learn.</label><label class="option"><input type="radio" name="r1" value="b"> Both happen only at school.</label><label class="option"><input type="radio" name="r1" value="c"> Both require no technology.</label></div><div class="feedback" id="fb-r1"></div></div>
+<div class="quiz-item"><p>2. What is one advantage of classroom learning?</p><div class="options"><label class="option"><input type="radio" name="r2" value="a"> Students can avoid all group work.</label><label class="option"><input type="radio" name="r2" value="b"> Students get more face-to-face interaction.</label><label class="option"><input type="radio" name="r2" value="c"> Students never need a teacher.</label></div><div class="feedback" id="fb-r2"></div></div>
+<button class="btn-primary" onclick="checkReading()">Check Reading</button>
+<h3>Critical Thinking</h3><p>Which learning style do you prefer, and why?</p><textarea placeholder="I prefer... because... However,..."></textarea></section>
+
+<section id="grammar"><div class="section-title"><span>4</span><h2>Grammar Focus: Comparatives and Contrast Words</h2></div>
+<div class="grid"><div class="card"><h3>Comparatives</h3><p>Use <b>-er</b> or <b>more</b> to compare two things.</p><p><b>small → smaller</b></p><p><b>easy → easier</b></p><p><b>interesting → more interesting</b></p></div><div class="card"><h3>Contrast Words</h3><p><b>while / whereas</b> connect two different ideas.</p><p><b>however</b> starts a contrasting sentence.</p></div></div>
+<p class="note"><b>Example:</b> E-books are lighter than printed books, whereas printed books do not need batteries.</p>
+
+<h3>Practice</h3>
+<div class="quiz-item"><p>1. A laptop is usually ______ than a desktop computer.</p><input id="g1" type="text" placeholder="Type the comparative form of light"><div class="feedback" id="fb-g1"></div></div>
+<div class="quiz-item"><p>2. Classroom learning offers more face-to-face interaction, ______ online learning offers more flexibility.</p><select id="g2"><option value="">Choose an answer</option><option value="whereas">whereas</option><option value="because">because</option><option value="so">so</option></select><div class="feedback" id="fb-g2"></div></div>
+<div class="quiz-item"><p>3. Online learning is convenient. ______, some students may feel less connected.</p><select id="g3"><option value="">Choose an answer</option><option value="However">However</option><option value="Because">Because</option><option value="So">So</option></select><div class="feedback" id="fb-g3"></div></div>
+<button class="btn-primary" onclick="checkGrammar()">Check Grammar</button></section>
+
+<section id="speaking"><div class="section-title"><span>5</span><h2>Speaking Challenge</h2></div><p class="sub">Compare two things using at least one similarity, one difference, and one opinion.</p>
+<div class="formula"><div>S<br><small>Similarity</small></div><div>D<br><small>Difference</small></div><div>E<br><small>Example</small></div><div>O<br><small>Opinion</small></div></div>
+<div class="grid"><div class="card"><b>Topic A</b><p>City life vs. country life</p></div><div class="card"><b>Topic B</b><p>Studying alone vs. studying with friends</p></div><div class="card"><b>Topic C</b><p>Watching movies vs. reading books</p></div><div class="card"><b>Topic D</b><p>School uniforms vs. casual clothes</p></div></div>
+<h3>Useful Speaking Frames</h3><span class="chip">Both ___ and ___...</span><span class="chip">One similarity is...</span><span class="chip">However,...</span><span class="chip">Whereas...</span><span class="chip">I prefer... because...</span>
+<div class="card" style="margin-top:16px"><b>30-Second Preparation</b><p>Choose one topic. Prepare for 30 seconds, then speak for about one minute.</p><div class="timer"><div class="timer-box" id="prepTimer">00:30</div><button class="btn-primary" onclick="startPrep()">Start 30-Second Prep</button></div></div></section>
+
+<section id="writing"><div class="section-title"><span>6</span><h2>Writing Skill: Compare-and-Contrast Paragraph</h2></div><p class="sub">Use this simple 4-part structure.</p>
+<div class="formula"><div>T<br><small>Topic</small></div><div>S<br><small>Similarity</small></div><div>D<br><small>Difference</small></div><div>C<br><small>Conclusion</small></div></div>
+<h3>Topic: Printed Books vs. E-Books</h3>
+<div class="grid"><div class="card"><b>Topic Sentence</b><textarea id="w1" placeholder="Printed books and e-books are both..."></textarea></div><div class="card"><b>Similarity</b><textarea id="w2" placeholder="Both..."></textarea></div><div class="card"><b>Difference</b><textarea id="w3" placeholder="However / Whereas..."></textarea></div><div class="card"><b>Conclusion</b><textarea id="w4" placeholder="Overall, I think..."></textarea></div></div>
+<button class="btn-primary" onclick="buildParagraph()">Build My Paragraph</button><h3>Your Paragraph</h3><textarea id="finalParagraph" placeholder="Your complete paragraph will appear here..."></textarea></section>
+
+<section id="review"><div class="section-title"><span>7</span><h2>Final Review</h2></div><p class="sub">Click each card to reveal the answer.</p>
+<div class="grid-3"><div class="card" onclick="toggleAnswer('a1')" style="cursor:pointer"><b>What does compare mean?</b><p id="a1" class="hidden">To explain how things are similar.</p></div><div class="card" onclick="toggleAnswer('a2')" style="cursor:pointer"><b>What does contrast mean?</b><p id="a2" class="hidden">To explain how things are different.</p></div><div class="card" onclick="toggleAnswer('a3')" style="cursor:pointer"><b>What does whereas show?</b><p id="a3" class="hidden">A difference between two ideas.</p></div><div class="card" onclick="toggleAnswer('a4')" style="cursor:pointer"><b>What does however show?</b><p id="a4" class="hidden">A contrasting idea.</p></div><div class="card" onclick="toggleAnswer('a5')" style="cursor:pointer"><b>Comparative of easy?</b><p id="a5" class="hidden">Easier.</p></div><div class="card" onclick="toggleAnswer('a6')" style="cursor:pointer"><b>Comparative of interesting?</b><p id="a6" class="hidden">More interesting.</p></div></div>
+<h3>Final Speaking Challenge</h3><div class="card"><b>Compare learning English through videos and learning English through books.</b><p>Include one similarity, one difference, and your preference.</p></div></section>
+
+<section id="homework"><div class="section-title"><span>8</span><h2>Homework</h2></div><h3>Topic: Studying at Home vs. Studying at School</h3><p>Write <b>8–10 sentences</b>.</p>
+<div class="grid-3"><div class="card">✅ Give at least one similarity.</div><div class="card">✅ Give at least two differences.</div><div class="card">✅ Use one comparative adjective.</div><div class="card">✅ Use <b>whereas</b> or <b>while</b>.</div><div class="card">✅ Use <b>however</b>.</div><div class="card">✅ End with your preference.</div></div>
+<h3>Writing Formula</h3><p class="note"><b>Topic Sentence → Similarity → Difference → Example → Preference/Conclusion</b></p></section>
+
+<section><div class="section-title"><span>✓</span><h2>Lesson Progress</h2></div><p class="sub">Your activity score increases as you complete the interactive checks.</p><div class="progress"><div id="progressBar"></div></div></section>
+</main>
+
+<footer>Grade 8 ESL • Lesson 8 — Comparing and Contrasting Ideas</footer>
+
+<script>
+let score=0;let completed=new Set();
+function addScore(key,pts){if(!completed.has(key)){completed.add(key);score+=pts;document.getElementById('score').textContent=score;document.getElementById('progressBar').style.width=Math.min(score,100)+'%'}}
+function checkedValue(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:""}
+function setFeedback(id,ok,message){const fb=document.getElementById(id);fb.textContent=message;fb.className="feedback "+(ok?"good":"bad")}
+function checkVocab(){const answers={v1:"b",v2:"advantage",v3:"whereas"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 🌟":"Try again.");if(ok)addScore("vocab"+i,5)})}
+function checkReading(){const answers={r1:"a",r2:"b"};Object.keys(answers).forEach((q,i)=>{const ok=checkedValue(q)===answers[q];setFeedback("fb-"+q,ok,ok?"Correct! 📚":"Read the passage again.");if(ok)addScore("read"+i,7)})}
+function checkGrammar(){const g1=document.getElementById("g1").value.trim().toLowerCase();const g2=document.getElementById("g2").value;const g3=document.getElementById("g3").value;const ok1=g1==="lighter",ok2=g2==="whereas",ok3=g3==="However";setFeedback("fb-g1",ok1,ok1?"Correct! ✅":"Hint: light → lighter.");setFeedback("fb-g2",ok2,ok2?"Correct! ✅":"Use a word that shows contrast.");setFeedback("fb-g3",ok3,ok3?"Correct! ✅":"Use a transition that introduces contrast.");if(ok1)addScore("g1",8);if(ok2)addScore("g2",8);if(ok3)addScore("g3",8)}
+let timerInt,seconds=0;function renderTimer(){let m=String(Math.floor(seconds/60)).padStart(2,'0');let s=String(seconds%60).padStart(2,'0');document.getElementById("timer").textContent=m+":"+s}function startTimer(){if(timerInt)return;timerInt=setInterval(()=>{seconds++;renderTimer()},1000)}function stopTimer(){clearInterval(timerInt);timerInt=null}function resetTimer(){stopTimer();seconds=0;renderTimer()}
+let prepInt;function startPrep(){clearInterval(prepInt);let remain=30;const box=document.getElementById("prepTimer");box.textContent="00:30";prepInt=setInterval(()=>{remain--;box.textContent="00:"+String(remain).padStart(2,'0');if(remain<=0){clearInterval(prepInt);box.textContent="Speak!";addScore("prep",10)}},1000)}
+function buildParagraph(){const parts=["w1","w2","w3","w4"].map(id=>document.getElementById(id).value.trim()).filter(Boolean);document.getElementById("finalParagraph").value=parts.join(" ");if(parts.length===4)addScore("writing",20)}
+function toggleAnswer(id){document.getElementById(id).classList.toggle("hidden")}
+</script>
+</body>
+</html>
